@@ -115,11 +115,20 @@ var pub = Redis.createClient(redisConfig.port, redisConfig.host, redisConfig.opt
     sub = Redis.createClient(redisConfig.port, redisConfig.host, redisConfig.options),
     rdb = Redis.createClient(redisConfig.port, redisConfig.host, redisConfig.options);
 
-// Stylus mixins (nib)
+// Stylus mixins (nib) with integrated support for recursive child imports
+// https://github.com/LearnBoost/stylus/pull/227/files
 function compile(str, path) {
   return stylus(str)
     .set('filename', path)
     .set('compress', true)
+    /*
+    // replaced with stylus --watch for simplicity, this is mainly for production
+    // cd /path/to/sponoders/public/css
+    // stylus --watch --line-numbers -include ../../node_modules/nib/lib
+    .set('linenos', true)
+    .set('force', true)
+    .set('warn', true)
+     */
     .use(nib());
 }
 
