@@ -56,6 +56,21 @@ script#user-list-template(type='text/template')
 //- User profile
 script#user-template(type='text/template')
 
+//- Track
+script#track-template(type='text/template')
+
+//- Track line item
+script#track-line-template(type='text/template')
+  .row
+    .column.col_1
+    .column.col_2
+    .column.col_3
+    .column.col_4
+    .column.col_5
+
+//- Beat
+script#beat-template(type='text/template')
+
 //- Room
 script#room-template(type='text/template')
   h1.name
@@ -71,7 +86,7 @@ script#room-template(type='text/template')
       
     p.description {{ description }}
   .statistics.room-stats
-  
+  .track
   .users
   .messages
   .message-form
