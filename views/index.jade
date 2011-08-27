@@ -18,6 +18,8 @@ script(src='/js/vendor/happy.js')
 script(src='/js/vendor/happy.methods.js')
 script(src='/js/vendor/spin.js')
 
+script(src='/routers/app.router.js')
+
 //- Core
 script(src='/core.js')
 script(type='text/javascript')
@@ -26,12 +28,23 @@ script(type='text/javascript')
 
 //- Bootstrapped server settings
 script(type='text/javascript')
-  var port    = '!{locals.port}',
-      token   = '!{locals.token}';
+  var port      = '!{locals.port}',
+      token     = '!{locals.token}',
+      bootstrap = !{JSON.stringify(bootstrap)};
+
+script(src='/models/app.model.js')
+script(src='/models/message.model.js')
+script(src='/models/room.model.js')
+script(src='/models/user.model.js')
+
+script(src='/views/app.view.js')
+script(src='/views/message.view.js')
+script(src='/views/room.view.js')
+script(src='/views/user.view.js')
 
 //- Helpers
-script(src='helpers.js')
-script(src='google.js')
+script(src='/js/helpers.js')
+script(src='/js/google.js')
 
 //- Initialize
-script(src='init.js')
+script(src='/js/init.js')

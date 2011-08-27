@@ -3,12 +3,20 @@
 script#application-template(type='text/template')
   .wrapper
     #header
+      nav#navigation
+        a#create-room(accesskey='C') Create Room
+        a#logout(accesskey='L', href='/logout') Logout
     #sidebar
+      #quicklaunch
+        a#home Home
+        a#rooms Rooms
+        a#settings Settings
     #main-content
     #footer
   #spinner
     #inner-spinner
   #overlay
+  .dialog-wrapper#create-room-dialog
 
 //- Application statistics
 script#application-stats-template(type='text/template')
@@ -46,14 +54,14 @@ script#user-template(type='text/template')
 script#room-template(type='text/template')
   h1.name
     span.headline {{ name }}
-    .controls
-      .icon#add-favorite(title='Add to Favorites', accesskey='W')&nbsp;
-      .icon#remove-favorite(title='Remove from Favorites', accesskey='Q')&nbsp;
-      .icon#leave-room(title='Leave Room', accesskey='X')&nbsp;
-      .admin-controls
-        button.delete-room.delete Delete Room
-        button.ban-user Ban User
-        button.invite-user Invite User
+  .controls
+    .icon#add-favorite(title='Add to Favorites', accesskey='W')&nbsp;
+    .icon#remove-favorite(title='Remove from Favorites', accesskey='Q')&nbsp;
+    .icon#leave-room(title='Leave Room', accesskey='X')&nbsp;
+    .admin-controls
+      button.delete-room.delete Delete Room
+      button.ban-user Ban User
+      button.invite-user Invite User
       
     p.description {{ description }}
   .statistics.room-stats

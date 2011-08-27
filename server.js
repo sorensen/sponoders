@@ -29,7 +29,7 @@ var token        = '',
     staticViews  = __dirname + '/public',
     staticAge    = 60000 * 60 * 24 * 365,
     cookieAge    = 60000 * 60 * 1,
-    port         = 8080,
+    port         = 3000,
     secret       = 'abcdefg',
     redisConfig  = {
         host : '127.0.0.1',
@@ -38,8 +38,8 @@ var token        = '',
     mongoConfig  = {
         host : 'mongodb://localhost',
         port : 27017,
-        name : 'sponoders'
-        path : 'mongodb://localhost/sponoders'
+        name : 'sponoders',
+        path : 'mongodb://localhost/db'
     },
     sessionConfig = {
         host     : 'localhost',
@@ -63,14 +63,32 @@ var core = browserify({
         'backbone-dnode'
     ],
     entry : [
+        /**
+        __dirname + '/lib/models/message.model.js',
+        __dirname + '/lib/models/user.model.js',
+        __dirname + '/lib/models/app.model.js',
+        __dirname + '/lib/models/room.model.js',
+        
+        __dirname + '/lib/views/message.view.js',
+        __dirname + '/lib/views/room.view.js',
+        __dirname + '/lib/views/user.view.js',
+        __dirname + '/lib/views/app.view.js',
+        
+        __dirname + '/lib/routers/app.router.js',
+
+        __dirname + '/public/js/google.js',
+        __dirname + '/public/js/helpers.js',
+        __dirname + '/public/js/init.js'
+        **/
     ],
     mount  : '/core.js'
-    filter : require('uglify-js')
+    //filter : require('uglify-js')
 });
 
 // Development
 app.configure('development', function() {
     app.use(express.static(staticViews));
+    app.use(express.static(__dirname + '/lib'));
     app.use(express.errorHandler({
         dumpExceptions : true, 
         showStack      : true 
@@ -81,12 +99,13 @@ app.configure('development', function() {
 app.configure('production', function() {
     port = 80;
     app.use(express.static(staticViews, {maxAge: cacheAge}));
+    app.use(express.static(__dirname + '/lib', {maxAge: cacheAge}));
     app.use(express.errorHandler());
 });
 
 // Session
-var mongoConfig = new Mongo.Server(session.host, session.post, session.options),
-    mongoDb     = new Mongo.Db(session.name, mongoConfig, {}),
+var mongoConfig = new Mongo.Server(sessionConfig.host, sessionConfig.post, sessionConfig.options),
+    mongoDb     = new Mongo.Db(sessionConfig.name, mongoConfig, {}),
     session     = new SessionStore({db : mongoDb});
 
 // Redis
@@ -99,8 +118,9 @@ app.configure(function() {
     app.use(express.bodyParser());
     app.use(express.cookieParser());
     app.use(express.methodOverride());
+
     app.set('view engine', 'jade');
-    app.use(stylus.middleware({ src: staticViews }));
+    app.use(stylus.middleware({src: staticViews}));
 
     app.use(express.session({
         cookie : {maxAge : cookieAge},
@@ -113,14 +133,13 @@ app.configure(function() {
 
 // Mongoose setup / schemas
 Schemas.defineModels(Mongoose, function() {
-    database = Mongoose.connect(config.mongo.host);
+    database = Mongoose.connect('mongodb://localhost/db');
     middleware.crud.config(database);
     middleware.pubsub.config({
         publish   : pub,
         subscribe : sub,
         database  : rdb
     });
-    auth.config(database, session);
 });
 
 // Routes
@@ -135,9 +154,24 @@ app.get('/', function(req, res) {
             locals : {
                 port  : port,
                 token : token,
+                bootstrap : {
+                    user : {},
+                    users : [],
+                    rooms : []
+                }
             }
         });
     });
+});
+
+// Login
+app.get('/login', function(requ, res) {
+    
+});
+
+// Logout
+app.get('/logout', function(requ, res) {
+    
 });
 
 // Initialize
