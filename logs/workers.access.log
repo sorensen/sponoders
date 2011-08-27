@@ -1,0 +1,56 @@
+25 Aug 11:52:12 - Your node instance does not have root privileges. This means that the flash XML policy file will be served inline instead of on port 843. This will slow down initial connections slightly.
+25 Aug 11:52:12 - Your node instance does not have root privileges. This means that the flash XML policy file will be served inline instead of on port 843. This will slow down initial connections slightly.
+25 Aug 11:52:12 - Your node instance does not have root privileges. This means that the flash XML policy file will be served inline instead of on port 843. This will slow down initial connections slightly.
+25 Aug 11:52:12 - Your node instance does not have root privileges. This means that the flash XML policy file will be served inline instead of on port 843. This will slow down initial connections slightly.
+25 Aug 11:52:12 - socket.io ready - accepting connections
+25 Aug 11:52:12 - socket.io ready - accepting connections
+25 Aug 11:52:12 - socket.io ready - accepting connections
+25 Aug 11:52:12 - socket.io ready - accepting connections
+25 Aug 11:52:14 - Initializing client with transport "websocket"
+25 Aug 11:52:14 - Client 9983324056956917 connected
+25 Aug 17:05:48 - Initializing client with transport "websocket"
+25 Aug 17:05:48 - Client 31285961298272014 connected
+25 Aug 17:06:06 - Client 9983324056956917 disconnected
+25 Aug 17:06:13 - Initializing client with transport "websocket"
+25 Aug 17:06:13 - Client 8886398896574974 connected
+25 Aug 20:41:25 - Initializing client with transport "websocket"
+25 Aug 20:41:25 - Client 8457702735904604 connected
+25 Aug 20:41:23 - Initializing client with transport "websocket"
+25 Aug 20:41:24 - Client 7641950009856373 connected
+25 Aug 20:41:36 - Client 31285961298272014 disconnected
+25 Aug 20:41:36 - Client 8886398896574974 disconnected
+25 Aug 20:41:43 - Initializing client with transport "websocket"
+25 Aug 20:41:43 - Client 12888854299671948 connected
+25 Aug 20:41:43 - Client 12888854299671948 disconnected
+25 Aug 20:41:43 - Client 8457702735904604 disconnected
+25 Aug 20:41:43 - Client 7641950009856373 disconnected
+25 Aug 20:41:45 - Initializing client with transport "websocket"
+25 Aug 20:41:45 - Client 5224627265706658 connected
+25 Aug 20:45:41 - Initializing client with transport "websocket"
+25 Aug 20:45:41 - Client 40987097122706473 connected
+25 Aug 22:25:10 - Initializing client with transport "websocket"
+25 Aug 22:25:10 - Client 49202543520368636 connected
+25 Aug 22:25:18 - Client 5224627265706658 disconnected
+25 Aug 22:25:26 - Client 40987097122706473 disconnected
+25 Aug 22:25:33 - Initializing client with transport "websocket"
+25 Aug 22:25:33 - Client 2790402206592262 connected
+25 Aug 22:29:04 - Initializing client with transport "websocket"
+25 Aug 22:29:04 - Client 5095338439568877 connected
+26 Aug 08:14:10 - Initializing client with transport "websocket"
+26 Aug 08:14:11 - Client 8457702735904604 connected
+26 Aug 08:14:20 - Client 2790402206592262 disconnected
+26 Aug 08:14:20 - Client 49202543520368636 disconnected
+26 Aug 08:14:20 - Client 5095338439568877 disconnected
+26 Aug 08:14:28 - Initializing client with transport "websocket"
+26 Aug 08:14:28 - Client 9886878593824804 connected
+26 Aug 08:14:28 - Initializing client with transport "websocket"
+26 Aug 08:14:28 - Client 5053863644134253 connected
+26 Aug 08:21:55 - Client 5053863644134253 disconnected
+26 Aug 08:21:55 - Client 9886878593824804 disconnected
+26 Aug 08:21:55 - Client 8457702735904604 disconnected
+26 Aug 08:21:55 - Initializing client with transport "websocket"
+26 Aug 08:21:55 - Client 058717691572383046 connected
+26 Aug 08:31:45 - Client 058717691572383046 disconnected
+26 Aug 08:31:45 - Initializing client with transport "websocket"
+26 Aug 08:31:45 - Client 5716811947058886 connected
+26 Aug 08:32:03 - Client 5716811947058886 disconnected

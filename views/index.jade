@@ -1,0 +1,37 @@
+
+//- DOM Base
+#application
+#templates!= partial('micros')
+
+//- Dependencies
+script(src='/js/vendor/jquery.min.js')
+script(src='/js/vendor/jquery-ui.min.js')
+script(src='/js/vendor/jquery.cookie.js')
+script(src='/js/vendor/jquery.cssemoticons.js')
+script(src='/js/vendor/jquery.timeago.js')
+script(src='/js/vendor/underscore.js')
+script(src='/js/vendor/backbone.js')
+script(src='/js/vendor/mustache.js')
+script(src='/js/vendor/json2.js')
+script(src='/js/vendor/keyCandy.js')
+script(src='/js/vendor/happy.js')
+script(src='/js/vendor/happy.methods.js')
+script(src='/js/vendor/spin.js')
+
+//- Core
+script(src='/core.js')
+script(type='text/javascript')
+  var DNode      = require('dnode'),
+      middleware = require('backbone-dnode');
+
+//- Bootstrapped server settings
+script(type='text/javascript')
+  var port    = '!{locals.port}',
+      token   = '!{locals.token}';
+
+//- Helpers
+script(src='helpers.js')
+script(src='google.js')
+
+//- Initialize
+script(src='init.js')

@@ -1,0 +1,142 @@
+
+//- Main application
+script#application-template(type='text/template')
+  .wrapper
+    #header
+    #sidebar
+    #main-content
+    #footer
+  #spinner
+    #inner-spinner
+  #overlay
+
+//- Application statistics
+script#application-stats-template(type='text/template')
+  .stat.total-online
+    span.title Online
+    span.value {{ totalOnline }}
+  .stat.total-users
+    span.title Members
+    span.value {{ totalUsers }}
+  .stat.total-rooms
+    span.title Rooms
+    span.value {{ totalRooms }}
+  .stat.version
+    span.title Version
+    span.value {{ version }}
+
+//- Single message
+script#message-list-template(type='text/template')
+script#message-template(type='text/template')
+  span.small-avatar: img(src='{{ avatar }}')
+  a.username(href='#/users/{{ username }}') {{ displayName }}
+  span.data {{ text }}
+  abbr.created.timeago(title='{{ created }}') {{ created }}
+
+//- User listing
+script#user-list-template(type='text/template')
+  a(href='/#/users/{{ slug }}')
+    h3.name
+      span.username {{ username }}
+
+//- User profile
+script#user-template(type='text/template')
+
+//- Room
+script#room-template(type='text/template')
+  h1.name
+    span.headline {{ name }}
+    .controls
+      .icon#add-favorite(title='Add to Favorites', accesskey='W')&nbsp;
+      .icon#remove-favorite(title='Remove from Favorites', accesskey='Q')&nbsp;
+      .icon#leave-room(title='Leave Room', accesskey='X')&nbsp;
+      .admin-controls
+        button.delete-room.delete Delete Room
+        button.ban-user Ban User
+        button.invite-user Invite User
+      
+    p.description {{ description }}
+  .statistics.room-stats
+  
+  .users
+  .messages
+  .message-form
+    .icon#message-submit(title='Send Message')
+    span.input-wrap
+      input.create-message(type='text', name='message', placeholder='Say something...', length='255', accesskey='I')
+
+//- Room listing
+script#room-list-template(type='text/template')
+  a(href='/#/rooms/{{ slug }}')
+    h3.name(title='{{ description }}')
+      span {{ name }}
+      span.destroy
+    p.description {{ description }}
+  .statistics.room-stats
+
+//- Room statistics
+script#room-stats-template(type='text/template')
+  .stat.total-messages
+    span.title Messages
+    span.value {{ totalMessages }}
+
+//- Settings template
+script#settings-template(type='text/template')
+  #settings-form.dialog
+    .title
+      h3 Settings
+    .content
+      p
+        label(for='settings-username') ID: 
+        span.input-wrap
+          input#settings-id(type='text', name='id', disabled='disabled', value='{{ id }}')
+      p
+        label(for='settings-username') Username: 
+        span.input-wrap
+          input#settings-username(type='text', name='username', disabled='disabled', value='{{ username }}')
+      p
+        label(for='settings-displayname') Display Name: (optional)
+        span.input-wrap
+          input#settings-displayname(type='text', name='displayname', value='{{ displayName }}')
+      p
+        label(for='settings-email') Email: 
+        span.input-wrap
+          input#settings-email(type='text', name='email', value='{{ email }}')
+      p
+        label(for='settings-bio') Bio: 
+        span.input-wrap
+          textarea#settings-bio(name='bio', rows='3') {{ bio }}
+      p
+        label(for='settings-password') Password: 
+        span.input-wrap
+          input#settings-password(type='password', name='password')
+      p
+        label(for='settings-password-confirm') Confirm Password: 
+        span.input-wrap
+          input#settings-password-confirm(type='password', name='password_confirm')
+    .controls
+      button.submit#settings-submit Save
+      button.cancel Cancel
+
+//- Create new room
+script#create-room-template(type='text/template')
+  #create-room-form.dialog
+    .title
+      h3 Create a new room
+    .content
+      p
+        label(for='create-room-name') Name: 
+        span.input-wrap
+          input#create-room-name(type='text', name='room', placeholder='Room name')
+      p
+        label(for='create-room-description') Description:
+        span.input-wrap
+          textarea#create-room-description(type='text', name='description', placeholder='Description')
+      p
+        label(for='create-room-restricted') Private room:
+        span.input-wrap
+          input#create-room-restricted(type='checkbox', name='restricted')
+    .controls
+      button.submit#create-room-submit Create
+      button.cancel Cancel
+      
