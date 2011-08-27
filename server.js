@@ -19,6 +19,7 @@ var express      = require('express'),
     middleware   = require('backbone-dnode'),
     DNode        = require('dnode'),
     browserify   = require('browserify'),
+    canvas       = require('canvas'),
     stylus       = require('stylus'),
     nib          = require('nib'),
     app          = module.exports = express.createServer();
