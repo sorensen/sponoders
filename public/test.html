@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <script src="js/soundmanager2.js"></script>
+        <script src="js/vendor/jquery.min.js"></script>
+        <script>
+            soundManager.url = 'swf/';
+            soundManager.flashVersion = 9; // optional: shiny features (default = 8)
+            soundManager.useFlashBlock = true; // optionally, enable when you're ready to dive in
+            soundManager.useHTML5Audio = false;
+            soundManager.useHighPerformance = true;
+            soundManager.useFastPolling = true;
+            soundManager.debugMode = false;
+            
+            /*
+            * read up on HTML5 audio support, if you're feeling adventurous.
+            * iPad/iPhone and devices without flash installed will always attempt to use it.
+            */
+            soundManager.onready(function() {
+                soundManager.defaultOptions.autoLoad = true;
+                var sounds = ['clap', 'cymbal', 'hihat', 'kick2', 'kickdrum', 'metalclick', 'shaker']
+                for (var i = 0; i < sounds.length; i++) {
+                    soundManager.createSound(sounds[i], 'sounds/'+sounds[i]+'.mp3')
+                }
+                
+                var track = {
+                    '500': ['kick2'],
+                    '750': ['kick2'],
+                    '1000': ['kick2', 'clap'],
+                    '1500': ['kick2'],
+                    '2000': ['kick2', 'clap', 'cymbal', 'hihat', 'kickdrum'],
+                    '2500': ['kick2'],
+                    '2750': ['kick2'],
+                    '3000': ['kick2', 'clap', 'metalclick', 'shaker'],
+                    '3500': ['kick2'],
+                    '4000': ['kick2', 'clap', 'end'],
+                }
+
+                var playTrack = {
+                    position: 0,
+                    playing: false,
+                    paused: false,
+                    play: function(fn, pos) {
+                        var that = this;
+                        this.whilePlayingFN = fn;
+                        var pos = pos || 0;
+                        this.playing = true;
+                        this._play(pos);
+                        this.timer = setTimeout(function() {
+                            that.position += 250;
+                            that._play(that.position)
+                            that.whilePlaying();
+                            that.play(fn);
+                        }, 250)
+                    },
+                    stop: function() {
+                        this.playing = false;
+                        this.position = 0;
+                        clearTimeout(this.timer);
+                    },
+                    pause: function() {
+                        if (this.paused) {
+                            this.paused = false;
+                            this.play(this.whilePlayingFN, this.position)
+                            soundManager.resumeAll()
+                        } else {
+                            this.paused = true;
+                            soundManager.pauseAll()
+                            clearTimeout(this.timer);
+                        }
+                    },
+                    _play: function(position) {
+                        var that = this;
+                        if (track[''+position]) {
+                            for (var i = 0; i < track[''+position].length; i++) {
+                                var sound = track[''+position][i]
+                                if (sound === 'end') return that.position = 0;
+                                soundManager.play(sound);
+                            }
+                        }
+                    },
+                    whilePlaying: function() {
+                        this.whilePlayingFN(this.position)
+                    }
+                }
+
+                $('#play').click(function() {
+                    var pos = $('#pos');
+                    if (playTrack.playing === false) {
+                        playTrack.play(function(position) {
+                            var d = new Date()
+                            pos.html(parseInt(position/1000) + '<br>' + d.getMilliseconds())
+                        })
+                        $(this).text('Stop')
+                    } else {
+                        playTrack.stop()
+                        $(this).text('Play')
+                    }
+                })
+                $('#pause').click(function() {
+                    playTrack.pause()
+                })
+
+            });
+        </script>
+    </head>
+    <body>
+        <div id='play'>Play</div> <div id='pause'>Pause</div>
+        <div id='pos'></div>
+    </body>
+</html>
