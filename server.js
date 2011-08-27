@@ -9,6 +9,7 @@ require.paths.unshift(__dirname + '/lib');
 
 // Include all project dependencies
 var express      = require('express'),
+    Auth         = require('auth'),
     Mongo        = require('mongodb'),
     SessionStore = require('connect-mongodb'),
     Mongoose     = require('mongoose'),
@@ -147,7 +148,7 @@ app.configure(function() {
     app.use(express.session({
         cookie : {maxAge : cookieAge},
         secret : secret,
-        store  : session
+        //store  : session
     }));
 
     app.use(core);
@@ -160,46 +161,110 @@ Schemas.defineModels(Mongoose, function() {
     middleware.pubsub.config({
         publish   : pub,
         subscribe : sub,
-        database  : rdb
+        //database  : rdb
     });
+    Auth.config(database);
 });
 
 // Routes
 // ------
 
 // Main app
-app.get('/', function(req, res) {
-    req.session.regenerate(function () {
-
-        token = req.session.id;
-        res.render('index.jade', {
-            locals : {
-                port  : port,
-                token : token,
-                bootstrap : {
-                    user : {},
-                    users : [],
-                    rooms : []
-                }
+app.get('/', Auth.restricted, function(req, res) {
+    res.render('index.jade', {
+        locals : {
+            port  : port,
+            token : req.session.id,
+            bootstrap : {
+                user  : req.session.user,
+                users : [],
+                rooms : []
             }
-        });
+        }
     });
 });
 
 // Login
-app.get('/login', function(requ, res) {
+app.get('/login', function(req, res) {
+    error = req.session.err;
+    req.session.err = null;
 
+    res.render('login.jade', {
+        locals : {
+            error : error
+        }
+    });
 });
 
-// Logout
-app.get('/logout', function(requ, res) {
+app.post('/login', function(req, res) {
+    Auth.authenticate(req.body.username, req.body.password, function(err, user) {
+        
+        console.log('err', err, user);
 
+        if (user) {
+            req.session.regenerate(function() {
+                req.session.user = user;
+                res.redirect('home');
+            });
+        } else {
+            req.session.err = 'Authentication failed, please check your '
+                + ' username and password.';
+            res.redirect('back');
+        }
+        console.log('session', req.session);
+    });
+});
+
+// Register
+app.get('/register', function(req, res) {
+    error = req.session.err;
+    req.session.err = null;
+
+    res.render('register.jade', {
+        locals : {
+            error : error
+        }
+    });
+});
+
+app.post('/register', function(req, res) {
+    var data = {
+        username : req.body.username,
+        password : req.body.password,
+        email    : req.body.email
+    }
+    Auth.register(data, function(err, user) {
+        
+        console.log('err', err, user);
+        
+        if (user) {
+            req.session.regenerate(function() {
+                req.session.user = user;
+                res.redirect('home');
+            });
+        } else {
+            req.session.err = 'Registration failed, please check your '
+                + ' username and password.';
+            res.redirect('back');
+        }
+
+        console.log('session', req.session);
+    });
+})
+
+// Logout
+app.get('/logout', function(req, res) {
+    req.session.destroy(function() {
+        res.redirect('home');
+    });
 });
 
 // Initialize
 // ----------
 
 app.listen(port);
+//app.listen(parseInt(process.env.PORT) || 7777); 
+console.log('Listening on ' + app.address().port);
 
 // Attatch the DNode middleware and connect
 DNode()
