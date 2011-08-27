@@ -31,7 +31,6 @@
     "jade"            : "0.14.2",
     "node-uuid"       : "1.2.0",
     "uglify-js"       : "1.0.6",
-    "stylus"          : "0.15.1",
     "nib"             : "0.2.0"
   },
   "engines" : {
