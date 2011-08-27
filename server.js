@@ -21,6 +21,7 @@ var express      = require('express'),
     browserify   = require('browserify'),
     stylus       = require('stylus'),
     nib          = require('nib'),
+    nko          = require('nko')('GZaRxOX8YG3IsxAC'),
     app          = module.exports = express.createServer();
 
 // Settings
