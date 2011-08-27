@@ -1,17 +1,18 @@
 {
-  "name"        : "sponoders",
-  "description" : "",
-  "version"     : "0.0.1",
-  "homepage"    : "https://github.com/nko2/sponoders",
-  "repository" : {
-    "type" : "git",
-    "url"  : "https://github.com/nko2/sponoders.git"
+  "name": "sponoders",
+  "description": "Collaberative music track and beat maker.",
+  "version": "0.0.1",
+  "homepage": "https://github.com/nko2/sponoders",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nko2/sponoders.git"
   },
-  "directories" : {
-    "lib" : "."
+  "directories": {
+    "lib": "."
   },
-  "keywords" : [
-    "nko2", "sponoders"
+  "keywords": [
+    "nko2",
+    "sponoders"
   ],
   "main": "./server",
   "dependencies" : {
@@ -32,13 +33,15 @@
     "node-uuid"       : "1.2.0",
     "uglify-js"       : "1.0.6",
     "nib"             : "0.2.0",
-    "canvas"          : "0.7.1"
+    "canvas"          : "0.7.1",
+    "stylus"          : "0.15.1",
+    "nko"             : "~0.1.1"
   },
-  "engines" : {
-    "node" : ">= 0.4.1 < 0.5.0"
+  "engines": {
+    "node": ">= 0.4.1 < 0.5.0"
   },
-  "scripts" : {
-    "start" : "server.js"
+  "scripts": {
+    "start": "server.js"
   }
 }
 

@@ -22,6 +22,7 @@ var express      = require('express'),
     canvas       = require('canvas'),
     stylus       = require('stylus'),
     nib          = require('nib'),
+    nko          = require('nko')('GZaRxOX8YG3IsxAC'),
     app          = module.exports = express.createServer();
 
 // Settings
