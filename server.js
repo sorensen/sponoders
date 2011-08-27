@@ -20,6 +20,7 @@ var express      = require('express'),
     DNode        = require('dnode'),
     browserify   = require('browserify'),
     stylus       = require('stylus'),
+    nib          = require('nib'),
     app          = module.exports = express.createServer();
 
 // Settings
@@ -68,12 +69,12 @@ var core = browserify({
         __dirname + '/lib/models/user.model.js',
         __dirname + '/lib/models/app.model.js',
         __dirname + '/lib/models/room.model.js',
-        
+
         __dirname + '/lib/views/message.view.js',
         __dirname + '/lib/views/room.view.js',
         __dirname + '/lib/views/user.view.js',
         __dirname + '/lib/views/app.view.js',
-        
+
         __dirname + '/lib/routers/app.router.js',
 
         __dirname + '/public/js/google.js',
@@ -90,8 +91,8 @@ app.configure('development', function() {
     app.use(express.static(staticViews));
     app.use(express.static(__dirname + '/lib'));
     app.use(express.errorHandler({
-        dumpExceptions : true, 
-        showStack      : true 
+        dumpExceptions : true,
+        showStack      : true
     }));
 });
 
@@ -113,6 +114,14 @@ var pub = Redis.createClient(redisConfig.port, redisConfig.host, redisConfig.opt
     sub = Redis.createClient(redisConfig.port, redisConfig.host, redisConfig.options),
     rdb = Redis.createClient(redisConfig.port, redisConfig.host, redisConfig.options);
 
+// Stylus mixins (nib)
+function compile(str, path) {
+  return stylus(str)
+    .set('filename', path)
+    .set('compress', true)
+    .use(nib());
+}
+
 // General
 app.configure(function() {
     app.use(express.bodyParser());
@@ -120,7 +129,10 @@ app.configure(function() {
     app.use(express.methodOverride());
 
     app.set('view engine', 'jade');
-    app.use(stylus.middleware({src: staticViews}));
+    app.use(stylus.middleware({
+      src: staticViews,
+      compile: compile
+    }));
 
     app.use(express.session({
         cookie : {maxAge : cookieAge},
@@ -166,12 +178,12 @@ app.get('/', function(req, res) {
 
 // Login
 app.get('/login', function(requ, res) {
-    
+
 });
 
 // Logout
 app.get('/logout', function(requ, res) {
-    
+
 });
 
 // Initialize
@@ -184,3 +196,4 @@ DNode()
     .use(middleware.pubsub)
     .use(middleware.crud)
     .listen(app)
+
