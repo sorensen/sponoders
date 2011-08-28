@@ -91,7 +91,8 @@ script#user-template(type='text/template')
 
 //- Track
 script#track-template(type='text/template')
-  .grid
+  .grid-wrapper
+    .grid
   .controls
     .play
     .pause
@@ -183,11 +184,11 @@ script#settings-template(type='text/template')
       p.dialog
         label(for='settings-username') Username:
         span.input-wrap
-          input#settings-username(type='text', name='username', disabled='disabled', value='{{ username }}')
-      //p.dialog
-      //  label(for='settings-displayname') Display Name:
-      //  span.input-wrap
-      //    input#settings-displayname(type='text', name='displayname', value='{{ displayName }}')
+          input#settings-username(type='text', name='username', value='{{ username }}')
+      p.dialog
+        label(for='settings-displayname') Display Name:
+        span.input-wrap
+          input#settings-displayname(type='text', name='displayname', value='{{ displayName }}')
       p.dialog
         label(for='settings-email') Email:
         span.input-wrap
@@ -196,10 +197,10 @@ script#settings-template(type='text/template')
       //  label(for='settings-bio') Bio:
       //  span.input-wrap
       //    textarea#settings-bio(name='bio', rows='3') {{ bio }}
-      p.dialog
-        label(for='settings-password') Password:
-        span.input-wrap
-          input#settings-password(type='password', name='password')
+      //p.dialog
+      //  label(for='settings-password') Password:
+      //  span.input-wrap
+      //    input#settings-password(type='password', name='password')
       //p.dialog
       //  label(for='settings-password-confirm') Repeat Password:
       //  span.input-wrap
