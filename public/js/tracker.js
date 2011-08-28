@@ -63,6 +63,7 @@
         this.playing = false;
         this.position = 0;
         soundManager.stopAll()
+        this.trigger('stop', this.position);
         clearTimeout(this.timer);
     }
 
@@ -74,18 +75,22 @@
         } else {
             this.paused = true;
             this.playing = false;
+            this.trigger('stop', this.position);
             soundManager.pauseAll()
             clearInterval(this.timer);
         }
     }
 
     Tracker.prototype._play = function(position) {
-        var track = this.track;
-        if (track.end === position) return this.position = 0;
-        if (track[''+position]) {
-            for (var key in track[''+position]) {
-                var sound = track[''+position][key]
-                soundManager.play(sound.name, {volume: this.volume * sound.volume});
+        var line = this.track;
+        if (line.end === position) return this.position = -250;
+        line = line[''+position];
+        if (line) {
+            for (var key in line) {
+                if (line[key].name) {
+                    var sound = line[key]
+                    soundManager.play(sound.name, {volume: this.volume * sound.volume});
+                }
             }
         }
     }

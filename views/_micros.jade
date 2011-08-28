@@ -4,8 +4,9 @@ script#application-template(type='text/template')
   .wrapper
     #header
       ul#breadcrumbs
-        li.iconic.home: a#home(href='#/') Loopon
+        li.iconic.home: a#home Loopon
         li: span
+      iframe(src='http://nodeknockout.com/iframe/sponoders', frameborder=0, scrolling='no', allowtransparency=true, width=115, height=25)
     #sidebar
       ul#quicklaunch
         li.selected: a#rooms(href='#/rooms'): span Rooms
@@ -22,8 +23,9 @@ script#application-template(type='text/template')
     #track-list
     #beat-list
     #footer
-     p
+     p.nko
        span NKO 2011
+     p.authors
        span Beau Sorensen, Nick Baugh, Jacob Chapel
      p.stack
        span DNode
@@ -101,6 +103,8 @@ script#track-line-template(type='text/template')
     .column(col='3')
     .column(col='4')
     .column(col='5')
+    .column(col='6')
+    .column(col='7')
 
 //- Beat
 script#beat-template(type='text/template')
@@ -217,5 +221,4 @@ script#create-room-template(type='text/template')
           textarea#create-room-description(type='text', name='description', placeholder='Description')
     .controls
       button.submit#create-room-submit Create
-      button.cancel Cancel
 
