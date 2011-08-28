@@ -208,8 +208,8 @@ app.post('/login', function(req, res) {
                 res.redirect('home');
             });
         } else {
-            req.session.err = 'Authentication failed, please check your '
-                + ' username and password.';
+            req.session.err = '<span>Authentication failed, please check your '
+                + ' username and password.</span>';
             res.redirect('back');
         }
         console.log('session', req.session);
@@ -244,8 +244,8 @@ app.post('/register', function(req, res) {
                 res.redirect('home');
             });
         } else {
-            req.session.err = 'Registration failed, please check your '
-                + ' username and password.';
+            req.session.err = '<span>Registration failed, please check your '
+                + ' username and password.</span>';
             res.redirect('back');
         }
 
