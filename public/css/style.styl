@@ -46,13 +46,11 @@ html
 
 body
   margin: 0
-  font-size: 13px
-  line-height: 1.231
-  font-family: sans-serif
+  font 13px/1.5 Helvetica Neue,Arial,Helvetica,'Liberation Sans',FreeSans,sans-serif
   color: #222
 
 button, input, select, textarea
-  font-family: sans-serif
+  font-family Helvetica Neue,Arial,Helvetica,'Liberation Sans',FreeSans,sans-serif
   color: #222
 
 /*
@@ -335,15 +333,44 @@ horizontal-list-item()
   float: left
 
 /* =============================================================================
- * Disco Teen '66
- * http://www.colourlovers.com/palette/3097/Disco_Teen_66
+ * Color Variables
  * ==========================================================================
  */
-disco_black  = #070304
-disco_green  = #21AC37
-disco_yellow = #E5BA2F
-disco_pink   = #F1227D
-disco_blue   = #4E95CD
+
+bg_fill               = #e3e3e3
+
+/*dk_gradient_top     = #cecece
+dk_gradient_bottom    = #a6a6a6
+dk_border             = #515151
+dk_inset              = #e2e2e2*/
+
+lt_gradient_top       = #e6e6e6
+lt_gradient_bottom    = #b2b2b2
+lt_border             = #808080
+lt_inset              = #adadad
+
+breadcrumb_fill       = #40404a
+
+sidebar_normal_fill   = #444444
+sidebar_over_fill     = #323232
+
+button_top            = #4587be
+button_bottom         = #33649a
+button_inset          = #5ea1d8
+button_border         = #1a1a1a
+button_text_inset     = #1f3d59 // top
+dark_button           = button_bottom - 10%
+
+message_wrapper_fill  = #343434
+
+message_fill          = #2f2f2f
+message_border_bottom = #454545
+message_inset_tlr     = #252525
+message_inset_bottom  = #454545
+message_p             = white
+message_span          = #888888
+message_text_inset    = #171717 // top
+
 
 /* ==|== primary styles =====================================================
  * Author: sponoders
@@ -351,75 +378,185 @@ disco_blue   = #4E95CD
  */
 @import 'nib'
 
-h1, h2, h3, h4, h5, h6
+h1, h2, h3, h4, h5, h6, ul, li
   margin 0
   padding 0
 
+button
+  -reset()
+  height 30px
+  background: button_top
+  background: linear-gradient(30px top, button_top, button_bottom)
+  border: 1px solid button_border
+  border-radius(5px)
+  box-shadow(inset 0 1px 0 0 button_inset)
+  font-size: 14px
+  font-weight: bold
+  line-height: 1
+  padding: 7px 15px 8px 15px
+  text-align: center
+  text-shadow(0 -1px 0 button_text_inset)
+  color: #fff
+  &:hover, &.hover
+    background: dark_button
+    background: linear-gradient(30px top, button_top, dark_button)
+    cursor: pointer
+  &:active, &.active
+    background: linear-gradient(30px top, button_bottom, button_top)
+    box-shadow(inset 0 -1px 0 0 button_inset)
+  &:focus, &.focus
+    outline: none
+    background: linear-gradient(30px top, button_bottom, button_top)
+    box-shadow(0 0 5px 1px black)
 #application
   absolute()
   top 0
   left 0
   bottom 0
   right 0
-  background disco_black url('/img/bg/carbon_fibre.png') repeat
+  background bg_fill url('/img/concrete_wall_3.png') repeat
   .wrapper
     #header
       absolute()
       left 0
       right 0
       z-index 3
-      height 30px
-      background linear-gradient(30px top, disco_blue, darken(disco_blue, 25%))
-      h1
-        height 30px
-        line-height 30px
-        font-size 15px
-        margin 0
-        margin-left: 25px
-        padding 0
-        text-transform uppercase
-        color white
+      height 32px
+      border-bottom 1px solid lt_border
+      box-shadow(inset 0 1px 0 lt_inset)
+      background linear-gradient(32px top, lt_gradient_top, lt_gradient_bottom)
+      ul, li
+        height 32px
+        line-height 32px
+      ul
+        margin-left 32px
+        li
+          font-size 12px
+          horizontal-list-item()
+          span
+            display inline-block
+            width: 22px
+            height 32px
+            background url('/img/separator.png') no-repeat
+            background-position center
+          a
+            display inline-block
+            color breadcrumb_fill
+    #message_wrapper
+      absolute()
+      top: 32px
+      left: 80px
+      right: 0
+      height: 90px
+      z-index: 2
+      background-color message_wrapper_fill
+      #message
+        margin 0 auto
+        margin-top 15px
+        width 700px
+        height 60px
+        background-color message_fill
+        box-shadow(inset 0 1px 0 message_inset_tlr, inset 1px 1px 0 message_inset_tlr, inset 0 1px 1px message_inset_tlr, inset 0 -1px 0 message_inset_bottom)
+        border-bottom 1px solid message_border_bottom
+        border-radius(10px)
+        .container
+          float left
+          width 400px
+          p, span
+            float left
+          p, span
+            line-height 1
+            font-size 14px
+            font-weight bold
+            text-shadow(0 -1px 0 message_text_inset)
+          p
+            margin 0
+            padding 0
+            margin-top 15px
+            color message_p
+          span
+            margin-top 6px
+            display block
+            color message_span
+          p, span
+            margin-left 15px
+        button
+          float left
+          margin-top 15px
+          width 200px
+          margin-left 25px
     #footer
       absolute()
       bottom 0
       left 0
       right 0
       z-index 3
-      height 30px
-      background linear-gradient(30px top, disco_blue, darken(disco_blue, 25%))
+      height 32px
+      border-top 1px solid lt_border
+      box-shadow(inset 0 -1px 0 lt_inset)
+      background linear-gradient(32px top, lt_gradient_top, lt_gradient_bottom)
     #sidebar
       absolute()
-      top 0
+      top 32px
+      left 0px
+      width 80px
       bottom 0
       z-index 2
-      width 100px
-      background-color disco_black
-      nav#navigation
-        absolute(bottom 55px left 0)
-        width 100px
-        button
-          smooth-button(disco_blue)
-          width 100%
-          &#create-room
-            margin-bottom 10px
+      border-right 1px solid #222222
+      background sidebar_normal_fill url('/img/sidebar-normal.png') repeat
+      box-shadow(inset 0 0 25px black)
       ul#quicklaunch
-        absolute(top 75px left 25px)
         margin 0
         padding 0
+        li, a
+          height 80px
+          width 80px
         li
           no-bullet()
-          margin-top 10px
+          border-bottom: 1px solid #2e2e2e
+          relative()
+          &:hover
+            background sidebar_over_fill url('/img/sidebar-over.png') repeat
+            box-shadow(inset 0 0 25px black)
+            a
+              opacity(0.5)
+          &.selected
+            background sidebar_over_fill url('/img/sidebar-over.png') repeat
+            box-shadow(inset 0 0 25px black)
+            a
+              opacity(1.0)
+              &:before
+                content: ""
+                absolute()
+                top 30.50px
+                right -1px
+                z-index 3
+                width 10px
+                height 19px
+                margin 0
+                padding 0
+                background url('/img/selected.png') no-repeat
           a
+            display block
             color white
             cursor pointer
+            text-decoration none
+            background transparent url('/img/avatar.png') no-repeat
+            background-position 50% 16px
+            font-size 14px
+            text-align center
+            opacity(0.5)
+            span
+              display inline-block
+              margin-top 50px
             &:hover
-              text-decoration underline
+              opacity(1.0)
     #main-wrapper
       z-index 1
       color white
       absolute()
-      top 30px
-      left 100px
+      top 33px
+      left 81px
       right 0
       bottom 30px
       #main-content
@@ -429,17 +566,13 @@ h1, h2, h3, h4, h5, h6
         right 0
         bottom 0
         overflow-y auto
+        background color_bg url('/img/concrete_wall_3.png') repeat
         #user-track
           width 250px
-          border-left: 1px solid disco_blue
-          border-right: 1px solid disco_blue
-          background-color disco_black
-          p
-            margin 0
-            padding 0
+          border-right: 1px solid gray
           .tracker
             width 250px
-            background-color disco_blue
+            background-color gray
             height 5px
           h1
             absolute(bottom 0px)
@@ -451,7 +584,7 @@ h1, h2, h3, h4, h5, h6
             font-size 18px
             width 250px
             text-align center
-            background-color disco_black
+            background-color black
 
 .extras
   position absolute
