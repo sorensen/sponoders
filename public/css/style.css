@@ -1096,6 +1096,17 @@ button.focus {
 }
 
 /* line 671 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+.chat .messages .message .timeago {
+  float: right;
+  padding: 0 5px 0 10px;
+}
+
+/* line 675 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+.chat .messages .message .username {
+  padding: 0 10px 0 0;
+}
+
+/* line 678 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .library,
 .chat {
   left: 0;
@@ -1106,7 +1117,7 @@ button.focus {
   border: 1px solid #008000;
 }
 
-/* line 679 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 686 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .sound {
   z-index: 9;
   list-style: none outside;
@@ -1117,13 +1128,13 @@ button.focus {
   border: 1px solid #fff;
 }
 
-/* line 688 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 695 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .beat {
   border: 1px solid #008000;
   position: relative;
 }
 
-/* line 692 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 699 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .beat .remove {
   display: block;
   position: absolute;
@@ -1134,7 +1145,7 @@ button.focus {
   z-index: 10;
 }
 
-/* line 701 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 708 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .main-room h1.name {
   display: block;
   clear: both;
@@ -1148,7 +1159,7 @@ button.focus {
   overflow: hidden;
 }
 
-/* line 711 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 718 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .main-room h1.name .headline {
   float: left;
   margin: 0 10px;
@@ -1157,7 +1168,7 @@ button.focus {
   color: #111;
 }
 
-/* line 718 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 725 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .main-room h1.name .description {
   line-height: 30px;
   margin: 0 10px;
@@ -1167,7 +1178,7 @@ button.focus {
   text-shadow: 1px 1px 1px #fff;
 }
 
-/* line 726 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 733 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .dialog-wrapper,
 #spinner,
 #overlay {
@@ -1179,7 +1190,7 @@ button.focus {
   display: none;
 }
 
-/* line 734 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 741 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #spinner {
   background: #c8c8c8;
   opacity: 0.8;
@@ -1188,7 +1199,7 @@ button.focus {
   z-index: 1002;
 }
 
-/* line 740 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 747 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #inner-spinner {
   background: #5d5d5d;
   color: #fff;
@@ -1210,7 +1221,7 @@ button.focus {
   filter: Alpha(90);
 }
 
-/* line 757 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 764 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #overlay {
   background: #666;
   opacity: 0.5;
@@ -1219,7 +1230,7 @@ button.focus {
   z-index: 1001;
 }
 
-/* line 764 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 771 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* ==|== media queries ======================================================
  * PLACEHOLDER Media Queries for Responsive Design.
  * These override the primary ('mobile first') styles
@@ -1227,24 +1238,24 @@ button.focus {
  * ==========================================================================
  */
 
-/* line 770 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 777 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 @media only screen and (min-width: 480px) {
 }
 
-/* line 773 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 780 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 @media only screen and (min-width: 768px) {
 }
 
-/* line 776 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 783 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* ==|== non-semantic helper classes ========================================
  * Please define your styles before this section.
  * ==========================================================================
  */
 
-/* line 780 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 787 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* For image replacement */
 
-/* line 782 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 789 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .ir {
   display: block;
   border: 0;
@@ -1256,24 +1267,24 @@ button.focus {
   direction: ltr;
 }
 
-/* line 791 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 798 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .ir br {
   display: none;
 }
 
-/* line 794 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 801 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* Hide from both screenreaders and browsers: h5bp.com/u */
 
-/* line 796 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 803 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .hidden {
   display: none !important;
   visibility: hidden;
 }
 
-/* line 800 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 807 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* Hide only visually, but have it available for screenreaders: h5bp.com/v */
 
-/* line 802 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 809 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -1285,9 +1296,9 @@ button.focus {
   width: 1px;
 }
 
-/* line 811 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 818 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 
-/* line 812 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 819 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -1298,49 +1309,49 @@ button.focus {
   width: auto;
 }
 
-/* line 820 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 827 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
 
-/* line 822 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 829 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* Hide visually and from screenreaders, but maintain layout */
 
-/* line 824 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 831 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .invisible {
   visibility: hidden;
 }
 
-/* line 827 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 834 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* Contain floats: h5bp.com/q */
 
-/* line 829 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 836 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .clearfix {
   *zoom: 1;
 }
 
-/* line 830 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 837 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .clearfix:before {
   content: "";
   display: table;
 }
 
-/* line 833 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 840 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .clearfix:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 839 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 846 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* ==|== print styles =======================================================
  * Print styles.
  * Inlined to avoid required HTTP connection: h5bp.com/r
  * ==========================================================================
  */
 
-/* line 844 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 851 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 @media print {
 
-/* line 845 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 852 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -1349,68 +1360,68 @@ button.focus {
     -ms-filter: none !important;
   }
 
-/* line 852 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 859 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   a {
     text-decoration: underline;
   }
 
-/* line 854 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 861 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   a:visited {
     text-decoration: underline;
   }
 
-/* line 856 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 863 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-/* line 858 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 865 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
 
-/* line 860 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 867 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   .ir a:after {
     content: "";
   }
 
-/* line 862 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 869 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 
-/* line 863 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 870 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-/* line 866 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 873 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-/* line 869 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 876 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   thead {
     display: table-header-group;
   }
 
-/* line 872 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 879 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   tr {
     page-break-inside: avoid;
   }
 
-/* line 874 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 881 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   img {
     page-break-inside: avoid;
     max-width: 100% !important;
   }
 
-/* line 877 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 884 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   @page {
     margin: 0.5cm;
   }
 
-/* line 880 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 887 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   p,
   h2,
   h3 {
@@ -1418,7 +1429,7 @@ button.focus {
     widows: 3;
   }
 
-/* line 883 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 890 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   h2,
   h3 {
     page-break-after: avoid;
