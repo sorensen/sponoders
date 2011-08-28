@@ -111,7 +111,6 @@ script#track-line-template(type='text/template')
 
 //- Beat
 script#beat-template(type='text/template')
-
   .beat-controls
     .remove X
   .name(class='{{ type }}') {{ name }}
@@ -122,6 +121,7 @@ script#library-template(type='text/template')
     {{#sounds}}
     .sound(class='{{ type }}')
       .name {{ name }}
+      .type {{ type }}
     {{/sounds}}
 
 
