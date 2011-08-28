@@ -398,6 +398,8 @@ button, .button
   text-align: center
   text-shadow 0 -1px 1px #444
   color: #fff
+  margin-right 10px
+
   &:hover, &.hover
     background: dark_button
     background: linear-gradient(30px top, button_top, dark_button)
@@ -801,13 +803,11 @@ a.button
       width 40px
       height 40px
       padding 5px
-      border-top 3px solid black
-      border-bottom 3px solid black
-      border-left 1px solid black
-      border-right 1px solid black
+      border 1px solid #ccc
+      border-top 2px solid #aaa
       float left
       //background #eff2f5 url('/img/drop-area.png') no-repeat
-      background linear-gradient(50px top, lighten(#DBDBDB, 10%), lighten(#DBDBDB, 25%))
+      background linear-gradient(50px top, lighten(#ffffff, 10%), lighten(#DBDBDB, 25%))
 
 .chat
   display none
@@ -904,6 +904,8 @@ a.button
   background-position: right center
   border-top 1px solid #fff
   color black
+  float left
+  overflow hidden
 
 .synth
     background: #de0040
@@ -931,17 +933,23 @@ a.button
   color black
   width 34px
   height 34px
+  overflow hidden
 
   .remove
     display block
     position absolute
-    background white
-    color red
     top 0
     right 0
     z-index 10
     height 5px
     width 5px
+    padding 3px
+    background-color #900
+    color white
+    border-radius(10px)
+    font-size 7px
+    line-height 4px
+    font-weight bold
 
 .main-room
   display block
