@@ -4,12 +4,18 @@ script#application-template(type='text/template')
   .wrapper
     #header
       ul#breadcrumbs
-        li.iconic.home: a#home(href='/#') Tracker.io
+        li.iconic.home: a#home Tracker.io
         li: span
+    #message_wrapper
+      #message
+        .container
+          p You haven't joined a room yet
+          span Select a room to join or create your own for free.
+        button#create-room(accesskey='C') Create a new room
     #sidebar
       ul#quicklaunch
-        li.selected: a#rooms(href='#/rooms'): span Rooms
-        li: a#settings(href='#/settings'): span Settings
+        li.selected: a#rooms: span Rooms
+        li: a#settings: span Settings
         li: a#library: span Library
         li: a#beats: span Beats
         li: a#logout(accesskey='L', href='/logout'): span Logout
@@ -36,15 +42,6 @@ script#application-template(type='text/template')
     #inner-spinner
   #overlay
   .dialog-wrapper#create-room-dialog
-
-//- Home page
-script#home-template(type='text/template')
-    #message_wrapper
-      #message
-        .container
-          p You haven't joined a room yet
-          span Select a room to join or create your own for free.
-        a.button#create-room(href='#/create-room', accesskey='C') Create a new room
 
 //- Application statistics
 script#application-stats-template(type='text/template')
