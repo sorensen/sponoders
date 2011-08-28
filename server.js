@@ -11,7 +11,7 @@ require.paths.unshift(__dirname + '/lib');
 var express      = require('express'),
     Auth         = require('auth'),
     Mongo        = require('mongodb'),
-    SessionStore = require('connect-mongodb'),
+    SessionStore = require('connect-mongo'),
     Mongoose     = require('mongoose'),
     Redis        = require('redis'),
     Schemas      = require('schemas'),
@@ -49,7 +49,7 @@ var token        = '',
     sessionConfig = {
         host     : 'localhost',
         port     : 27017,
-        name     : 'sponoders',
+        name     : 'db',
         username : '',
         password : ''
     };
@@ -109,9 +109,9 @@ app.configure('production', function() {
 });
 
 // Session
-var mongoConfig = new Mongo.Server(sessionConfig.host, sessionConfig.post, sessionConfig.options),
-    mongoDb     = new Mongo.Db(sessionConfig.name, mongoConfig, {}),
-    session     = new SessionStore({db : mongoDb});
+var session = new SessionStore({
+    db : 'db'
+});
 
 // Redis
 var pub = Redis.createClient(redisConfig.port, redisConfig.host, redisConfig.options),
@@ -149,7 +149,7 @@ app.configure(function() {
     app.use(express.session({
         cookie : {maxAge : cookieAge},
         secret : secret,
-        //store  : session
+        store  : session
     }));
 
     app.use(core);
