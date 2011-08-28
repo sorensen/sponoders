@@ -576,10 +576,12 @@ ul,
 li {
   margin: 0;
   padding: 0;
+  color: #2d2d2d;
 }
 
-/* line 385 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
-button {
+/* line 386 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+button,
+.button {
   margin: 0;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -608,9 +610,11 @@ button {
   color: #fff;
 }
 
-/* line 400 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 401 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 button:hover,
-button.hover {
+.button:hover,
+button.hover,
+.button.hover {
   background: #2e5a8b;
   background: url(gradient-data-uri(create-gradient-image(30px, top)));
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4587be), color-stop(1, #2e5a8b));
@@ -620,9 +624,11 @@ button.hover {
   cursor: pointer;
 }
 
-/* line 404 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 405 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 button:active,
-button.active {
+.button:active,
+button.active,
+.button.active {
   background: url(gradient-data-uri(create-gradient-image(30px, top)));
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #33649a), color-stop(1, #4587be));
   background: -webkit-linear-gradient(top, #33649a 0%, #4587be 100%);
@@ -633,9 +639,11 @@ button.active {
   box-shadow: inset 0 -1px 0 0 #5ea1d8;
 }
 
-/* line 407 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 408 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 button:focus,
-button.focus {
+.button:focus,
+button.focus,
+.button.focus {
   outline: none;
   background: url(gradient-data-uri(create-gradient-image(30px, top)));
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #33649a), color-stop(1, #4587be));
@@ -647,7 +655,15 @@ button.focus {
   box-shadow: 0 0 5px 1px #000;
 }
 
-/* line 411 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 412 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+a.button {
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 30px;
+  color: #fff;
+}
+
+/* line 417 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #application {
   position: absolute;
   ((null)): 0;
@@ -656,12 +672,12 @@ button.focus {
   left: 0;
   bottom: 0;
   right: 0;
-  background: #e3e3e3 url("/img/concrete_wall_3.png") repeat;
+  background: #dbdbdb url("/img/concrete_wall_3.png") repeat;
 }
 
-/* line 418 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 424 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 
-/* line 419 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 425 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #application .wrapper #header {
   position: absolute;
   ((null)): 0;
@@ -681,19 +697,19 @@ button.focus {
   background: linear-gradient(top, #e6e6e6 0%, #b2b2b2 100%);
 }
 
-/* line 428 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 434 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #application .wrapper #header ul,
 #application .wrapper #header li {
   height: 32px;
   line-height: 32px;
 }
 
-/* line 431 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 437 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #application .wrapper #header ul {
   margin-left: 32px;
 }
 
-/* line 433 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 439 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #application .wrapper #header ul li {
   font-size: 12px;
   list-style-image: none;
@@ -703,7 +719,7 @@ button.focus {
   float: left;
 }
 
-/* line 436 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 442 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #application .wrapper #header ul li span {
   display: inline-block;
   width: 22px;
@@ -712,29 +728,28 @@ button.focus {
   background-position: center;
 }
 
-/* line 442 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 448 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #application .wrapper #header ul li a {
   display: inline-block;
   color: #40404a;
 }
 
-/* line 445 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 451 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #application .wrapper #message_wrapper {
-  position: absolute;
-  ((null)): 0;
-  ((null)): 0;
-  top: 32px;
-  left: 80px;
-  right: 0;
   height: 90px;
   z-index: 2;
   background-color: #343434;
 }
 
-/* line 453 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 455 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #application .wrapper #message_wrapper #message {
+  position: absolute;
+  ((null)): 0;
+  ((null)): 0;
+  top: 15px;
+  left: 0;
+  right: 0;
   margin: 0 auto;
-  margin-top: 15px;
   width: 700px;
   height: 60px;
   background-color: #2f2f2f;
@@ -747,19 +762,19 @@ button.focus {
   border-radius: 10px;
 }
 
-/* line 462 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 467 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #application .wrapper #message_wrapper #message .container {
   float: left;
   width: 400px;
 }
 
-/* line 465 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 470 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #application .wrapper #message_wrapper #message .container p,
 #application .wrapper #message_wrapper #message .container span {
   float: left;
 }
 
-/* line 467 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 472 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #application .wrapper #message_wrapper #message .container p,
 #application .wrapper #message_wrapper #message .container span {
   line-height: 1;
@@ -767,7 +782,7 @@ button.focus {
   font-weight: bold;
 }
 
-/* line 472 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 477 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #application .wrapper #message_wrapper #message .container p {
   margin: 0;
   padding: 0;
@@ -775,28 +790,29 @@ button.focus {
   color: #fff;
 }
 
-/* line 477 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 482 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #application .wrapper #message_wrapper #message .container span {
   margin-top: 6px;
   display: block;
   color: #888;
 }
 
-/* line 481 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 486 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #application .wrapper #message_wrapper #message .container p,
 #application .wrapper #message_wrapper #message .container span {
   margin-left: 15px;
 }
 
-/* line 483 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
-#application .wrapper #message_wrapper #message button {
+/* line 488 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+#application .wrapper #message_wrapper #message button,
+#application .wrapper #message_wrapper #message a.button {
   float: left;
   margin-top: 15px;
   width: 200px;
   margin-left: 25px;
 }
 
-/* line 488 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 493 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #application .wrapper #footer {
   position: absolute;
   ((null)): 0;
@@ -817,7 +833,7 @@ button.focus {
   background: linear-gradient(top, #e6e6e6 0%, #b2b2b2 100%);
 }
 
-/* line 498 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 503 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #application .wrapper #sidebar {
   position: absolute;
   ((null)): 0;
@@ -834,20 +850,20 @@ button.focus {
   box-shadow: inset 0 0 25px #000;
 }
 
-/* line 508 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 513 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #application .wrapper #sidebar ul#quicklaunch {
   margin: 0;
   padding: 0;
 }
 
-/* line 511 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 516 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #application .wrapper #sidebar ul#quicklaunch li,
 #application .wrapper #sidebar ul#quicklaunch a {
   height: 80px;
   width: 80px;
 }
 
-/* line 514 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 519 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #application .wrapper #sidebar ul#quicklaunch li {
   list-style-image: none;
   list-style-type: none;
@@ -858,7 +874,7 @@ button.focus {
   ((null)): 0;
 }
 
-/* line 518 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 523 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #application .wrapper #sidebar ul#quicklaunch li:hover {
   background: #323232 url("/img/sidebar-over.png") repeat;
   -webkit-box-shadow: inset 0 0 25px #000;
@@ -866,13 +882,13 @@ button.focus {
   box-shadow: inset 0 0 25px #000;
 }
 
-/* line 521 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 526 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #application .wrapper #sidebar ul#quicklaunch li:hover a {
   opacity: 0.5;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
 }
 
-/* line 523 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 528 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #application .wrapper #sidebar ul#quicklaunch li.selected {
   background: #323232 url("/img/sidebar-over.png") repeat;
   -webkit-box-shadow: inset 0 0 25px #000;
@@ -880,13 +896,13 @@ button.focus {
   box-shadow: inset 0 0 25px #000;
 }
 
-/* line 526 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 531 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #application .wrapper #sidebar ul#quicklaunch li.selected a {
   opacity: 1;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 }
 
-/* line 528 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 533 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #application .wrapper #sidebar ul#quicklaunch li.selected a:before {
   content: "";
   position: absolute;
@@ -902,7 +918,7 @@ button.focus {
   background: url("/img/selected.png") no-repeat;
 }
 
-/* line 539 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 544 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #application .wrapper #sidebar ul#quicklaunch li a {
   display: block;
   color: #fff;
@@ -916,19 +932,19 @@ button.focus {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
 }
 
-/* line 549 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 554 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #application .wrapper #sidebar ul#quicklaunch li a span {
   display: inline-block;
   margin-top: 50px;
 }
 
-/* line 552 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 557 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #application .wrapper #sidebar ul#quicklaunch li a:hover {
   opacity: 1;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 }
 
-/* line 554 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 559 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #application .wrapper #main-wrapper {
   z-index: 1;
   color: #fff;
@@ -941,7 +957,7 @@ button.focus {
   bottom: 30px;
 }
 
-/* line 562 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 567 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #application .wrapper #main-wrapper #main-content {
   position: absolute;
   ((null)): 0;
@@ -950,24 +966,127 @@ button.focus {
   left: 0;
   right: 0;
   bottom: 0;
-  overflow: auto;
-  background: color_bg url("/img/concrete_wall_3.png") repeat;
+  overflow-y: auto;
+  background-color: #dbdbdb;
 }
 
-/* line 570 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 578 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+#application .wrapper #main-wrapper #main-content .room {
+  position: relative;
+  ((null)): 0;
+  ((null)): 0;
+  margin: 10px;
+  border: 1px solid #bababa;
+  -webkit-box-shadow: inset 0 1px 0 #fcfcfc;
+  -moz-box-shadow: inset 0 1px 0 #fcfcfc;
+  box-shadow: inset 0 1px 0 #fcfcfc;
+  height: 60px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  margin-bottom: 0;
+  background: url(gradient-data-uri(create-gradient-image(60px, top)));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f6f6f6), color-stop(1, #e7e7e7));
+  background: -webkit-linear-gradient(top, #f6f6f6 0%, #e7e7e7 100%);
+  background: -moz-linear-gradient(top, #f6f6f6 0%, #e7e7e7 100%);
+  background: linear-gradient(top, #f6f6f6 0%, #e7e7e7 100%);
+}
+
+/* line 587 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+#application .wrapper #main-wrapper #main-content .room:hover,
+#application .wrapper #main-wrapper #main-content .room.hover {
+  background: url(gradient-data-uri(create-gradient-image(60px, top)));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f6f6f6), color-stop(1, #d0d0d0));
+  background: -webkit-linear-gradient(top, #f6f6f6 0%, #d0d0d0 100%);
+  background: -moz-linear-gradient(top, #f6f6f6 0%, #d0d0d0 100%);
+  background: linear-gradient(top, #f6f6f6 0%, #d0d0d0 100%);
+  cursor: pointer;
+}
+
+/* line 590 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+#application .wrapper #main-wrapper #main-content .room:active,
+#application .wrapper #main-wrapper #main-content .room.active {
+  -webkit-box-shadow: inset 0 -1px 0 0 #d0d0d0;
+  -moz-box-shadow: inset 0 -1px 0 0 #d0d0d0;
+  box-shadow: inset 0 -1px 0 0 #d0d0d0;
+  background: url(gradient-data-uri(create-gradient-image(60px, top)));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e7e7e7), color-stop(1, #f6f6f6));
+  background: -webkit-linear-gradient(top, #e7e7e7 0%, #f6f6f6 100%);
+  background: -moz-linear-gradient(top, #e7e7e7 0%, #f6f6f6 100%);
+  background: linear-gradient(top, #e7e7e7 0%, #f6f6f6 100%);
+}
+
+/* line 593 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+#application .wrapper #main-wrapper #main-content .room:focus,
+#application .wrapper #main-wrapper #main-content .room.focus {
+  outline: none;
+  background: url(gradient-data-uri(create-gradient-image(60px, top)));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e7e7e7), color-stop(1, #f6f6f6));
+  background: -webkit-linear-gradient(top, #e7e7e7 0%, #f6f6f6 100%);
+  background: -moz-linear-gradient(top, #e7e7e7 0%, #f6f6f6 100%);
+  background: linear-gradient(top, #e7e7e7 0%, #f6f6f6 100%);
+}
+
+/* line 596 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+#application .wrapper #main-wrapper #main-content .room a {
+  position: absolute;
+  ((null)): 0;
+  ((null)): 0;
+  left: 0;
+  right: 25%;
+  display: block;
+  text-decoration: none;
+}
+
+/* line 602 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+#application .wrapper #main-wrapper #main-content .room a h3,
+#application .wrapper #main-wrapper #main-content .room a p {
+  line-height: 20px;
+  font-size: 13px;
+}
+
+/* line 606 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+#application .wrapper #main-wrapper #main-content .room a h3 {
+  margin-top: 10px;
+  color: #2d2d2d;
+  margin-left: 20px;
+}
+
+/* line 610 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+#application .wrapper #main-wrapper #main-content .room a p.description {
+  color: #5d5d5d;
+  margin: 0;
+  margin-left: 20px;
+  padding: 0;
+}
+
+/* line 615 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+#application .wrapper #main-wrapper #main-content .room div.statistics {
+  position: absolute;
+  ((null)): 0;
+  ((null)): 0;
+  left: 75%;
+  right: 0;
+  color: #4d4d4d;
+  height: 60px;
+  line-height: 60px;
+  font-size: 12px;
+}
+
+/* line 623 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #application .wrapper #main-wrapper #main-content #user-track {
   width: 250px;
   border-right: 1px solid #808080;
 }
 
-/* line 573 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 626 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #application .wrapper #main-wrapper #main-content #user-track .tracker {
   width: 250px;
   background-color: #808080;
   height: 5px;
 }
 
-/* line 577 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 630 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #application .wrapper #main-wrapper #main-content #user-track h1 {
   position: absolute;
   bottom: 0px;
@@ -983,7 +1102,130 @@ button.focus {
   background-color: #000;
 }
 
-/* line 589 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 642 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+
+/* line 643 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+.title h3 {
+  font-size: 24px;
+  line-height: 48px;
+  height: 48px;
+  margin-left: 10px;
+}
+
+/* line 648 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+
+/* line 649 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+.content .dialog {
+  height: 53px;
+}
+
+/* line 651 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+.content .description {
+  height: 73px;
+}
+
+/* line 653 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+.content .dialog {
+  margin: 10px;
+  margin-top: 0;
+  border: 1px solid #bababa;
+  -webkit-box-shadow: inset 0 1px 0 #fcfcfc;
+  -moz-box-shadow: inset 0 1px 0 #fcfcfc;
+  box-shadow: inset 0 1px 0 #fcfcfc;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  background: url(gradient-data-uri(create-gradient-image(60px, top)));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f6f6f6), color-stop(1, #e7e7e7));
+  background: -webkit-linear-gradient(top, #f6f6f6 0%, #e7e7e7 100%);
+  background: -moz-linear-gradient(top, #f6f6f6 0%, #e7e7e7 100%);
+  background: linear-gradient(top, #f6f6f6 0%, #e7e7e7 100%);
+}
+
+/* line 660 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+.content .dialog p,
+.content .dialog .controls {
+  position: relative;
+  ((null)): 0;
+  ((null)): 0;
+  margin: 10px;
+}
+
+/* line 663 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+.content .dialog .controls .submit {
+  margin-right: 10px;
+}
+
+/* line 665 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+.content .dialog input,
+.content .dialog select,
+.content .dialog label,
+.content .dialog textarea {
+  font-size: 13px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 670 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+.content .dialog label {
+  margin-left: 10px;
+  margin-top: 12px;
+  width: 100px;
+  height: 28px;
+  line-height: 28px;
+  color: #2d2d2d;
+  font-weight: bold;
+}
+
+/* line 678 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+.content .dialog input,
+.content .dialog select,
+.content .dialog textarea {
+  position: absolute;
+  ((null)): 0;
+  ((null)): 0;
+  left: 120px;
+  right: 20px;
+  margin-top: 12px;
+  padding: 3px;
+  line-height: 20px;
+  border: 1px solid #aaa;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  background: url(gradient-data-uri(create-gradient-image(26px, top)));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #eee), color-stop(1, #fff));
+  background: -webkit-linear-gradient(top, #eee 0%, #fff 100%);
+  background: -moz-linear-gradient(top, #eee 0%, #fff 100%);
+  background: linear-gradient(top, #eee 0%, #fff 100%);
+}
+
+/* line 689 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+.content .dialog input,
+.content .dialog select {
+  height: 20px;
+}
+
+/* line 691 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+.content .dialog textarea {
+  height: 40px;
+}
+
+/* line 693 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+.controls {
+  margin-left: 10px;
+}
+
+/* line 695 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+.controls .submit {
+  margin-right: 10px;
+}
+
+/* line 698 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .extras {
   position: absolute;
   right: 10px;
@@ -992,18 +1234,18 @@ button.focus {
   left: 420px;
 }
 
-/* line 596 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 705 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .extras .controls {
   border: 1px solid #ffc0cb;
   overflow: hidden;
 }
 
-/* line 600 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 709 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .extras .controls div {
   float: left;
 }
 
-/* line 603 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 712 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .track-wrapper {
   position: absolute;
   overflow-y: auto;
@@ -1013,30 +1255,30 @@ button.focus {
   width: 400px;
 }
 
-/* line 611 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 720 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .track-wrapper .track {
   overflow: hidden;
   border: 1px solid #fff;
 }
 
-/* line 615 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 724 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .track-wrapper .track .controls {
   overflow: hidden;
 }
 
-/* line 618 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 727 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .track-wrapper .track .controls div {
   float: left;
   margin: 5px;
   border: 1px solid #f00;
 }
 
-/* line 623 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 732 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .track-wrapper .track .row {
   overflow: hidden;
 }
 
-/* line 626 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 735 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .track-wrapper .track .column {
   width: 40px;
   height: 40px;
@@ -1046,12 +1288,12 @@ button.focus {
   background-color: #222;
 }
 
-/* line 634 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 743 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .chat {
   display: none;
 }
 
-/* line 637 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 746 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .chat .message-form {
   position: absolute;
   bottom: 0;
@@ -1060,7 +1302,7 @@ button.focus {
   height: 30px;
 }
 
-/* line 644 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 753 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .chat .messages {
   position: absolute;
   top: 0;
@@ -1070,7 +1312,7 @@ button.focus {
   overflow-y: auto;
 }
 
-/* line 652 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 761 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .chat .messages .message {
   list-style: none outside;
   padding: 10px 15px;
@@ -1078,7 +1320,7 @@ button.focus {
   overflow: hidden;
 }
 
-/* line 658 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 767 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .chat .messages .message .small-avatar {
   float: left;
   margin-top: 3px;
@@ -1089,24 +1331,24 @@ button.focus {
   margin: 0 10px 0 0;
 }
 
-/* line 667 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 776 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .chat .messages .message .small-avatar img {
   height: 30px;
   width: 30px;
 }
 
-/* line 671 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 780 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .chat .messages .message .timeago {
   float: right;
   padding: 0 5px 0 10px;
 }
 
-/* line 675 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 784 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .chat .messages .message .username {
   padding: 0 10px 0 0;
 }
 
-/* line 678 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 787 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .library,
 .chat {
   left: 0;
@@ -1117,7 +1359,7 @@ button.focus {
   border: 1px solid #008000;
 }
 
-/* line 686 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 795 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .sound {
   z-index: 9;
   list-style: none outside;
@@ -1128,13 +1370,13 @@ button.focus {
   border: 1px solid #fff;
 }
 
-/* line 695 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 804 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .beat {
   border: 1px solid #008000;
   position: relative;
 }
 
-/* line 699 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 808 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .beat .remove {
   display: block;
   position: absolute;
@@ -1145,7 +1387,7 @@ button.focus {
   z-index: 10;
 }
 
-/* line 708 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 817 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .main-room h1.name {
   display: block;
   clear: both;
@@ -1159,7 +1401,7 @@ button.focus {
   overflow: hidden;
 }
 
-/* line 718 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 827 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .main-room h1.name .headline {
   float: left;
   margin: 0 10px;
@@ -1168,7 +1410,7 @@ button.focus {
   color: #111;
 }
 
-/* line 725 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 834 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .main-room h1.name .description {
   line-height: 30px;
   margin: 0 10px;
@@ -1178,7 +1420,7 @@ button.focus {
   text-shadow: 1px 1px 1px #fff;
 }
 
-/* line 733 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 842 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .dialog-wrapper,
 #spinner,
 #overlay {
@@ -1190,7 +1432,7 @@ button.focus {
   display: none;
 }
 
-/* line 741 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 850 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #spinner {
   background: #c8c8c8;
   opacity: 0.8;
@@ -1199,7 +1441,7 @@ button.focus {
   z-index: 1002;
 }
 
-/* line 747 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 856 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #inner-spinner {
   background: #5d5d5d;
   color: #fff;
@@ -1221,7 +1463,7 @@ button.focus {
   filter: Alpha(90);
 }
 
-/* line 764 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 873 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #overlay {
   background: #666;
   opacity: 0.5;
@@ -1230,7 +1472,7 @@ button.focus {
   z-index: 1001;
 }
 
-/* line 771 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 880 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* ==|== media queries ======================================================
  * PLACEHOLDER Media Queries for Responsive Design.
  * These override the primary ('mobile first') styles
@@ -1238,24 +1480,24 @@ button.focus {
  * ==========================================================================
  */
 
-/* line 777 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 886 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 @media only screen and (min-width: 480px) {
 }
 
-/* line 780 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 889 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 @media only screen and (min-width: 768px) {
 }
 
-/* line 783 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 892 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* ==|== non-semantic helper classes ========================================
  * Please define your styles before this section.
  * ==========================================================================
  */
 
-/* line 787 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 896 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* For image replacement */
 
-/* line 789 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 898 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .ir {
   display: block;
   border: 0;
@@ -1267,24 +1509,24 @@ button.focus {
   direction: ltr;
 }
 
-/* line 798 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 907 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .ir br {
   display: none;
 }
 
-/* line 801 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 910 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* Hide from both screenreaders and browsers: h5bp.com/u */
 
-/* line 803 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 912 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .hidden {
   display: none !important;
   visibility: hidden;
 }
 
-/* line 807 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 916 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* Hide only visually, but have it available for screenreaders: h5bp.com/v */
 
-/* line 809 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 918 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -1296,9 +1538,9 @@ button.focus {
   width: 1px;
 }
 
-/* line 818 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 927 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 
-/* line 819 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 928 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -1309,49 +1551,49 @@ button.focus {
   width: auto;
 }
 
-/* line 827 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 936 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
 
-/* line 829 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 938 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* Hide visually and from screenreaders, but maintain layout */
 
-/* line 831 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 940 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .invisible {
   visibility: hidden;
 }
 
-/* line 834 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 943 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* Contain floats: h5bp.com/q */
 
-/* line 836 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 945 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .clearfix {
   *zoom: 1;
 }
 
-/* line 837 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 946 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .clearfix:before {
   content: "";
   display: table;
 }
 
-/* line 840 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 949 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .clearfix:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 846 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 955 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* ==|== print styles =======================================================
  * Print styles.
  * Inlined to avoid required HTTP connection: h5bp.com/r
  * ==========================================================================
  */
 
-/* line 851 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 960 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 @media print {
 
-/* line 852 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 961 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -1360,68 +1602,68 @@ button.focus {
     -ms-filter: none !important;
   }
 
-/* line 859 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 968 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   a {
     text-decoration: underline;
   }
 
-/* line 861 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 970 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   a:visited {
     text-decoration: underline;
   }
 
-/* line 863 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 972 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-/* line 865 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 974 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
 
-/* line 867 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 976 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   .ir a:after {
     content: "";
   }
 
-/* line 869 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 978 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 
-/* line 870 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 979 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-/* line 873 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 982 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-/* line 876 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 985 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   thead {
     display: table-header-group;
   }
 
-/* line 879 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 988 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   tr {
     page-break-inside: avoid;
   }
 
-/* line 881 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 990 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   img {
     page-break-inside: avoid;
     max-width: 100% !important;
   }
 
-/* line 884 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 993 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   @page {
     margin: 0.5cm;
   }
 
-/* line 887 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 996 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   p,
   h2,
   h3 {
@@ -1429,7 +1671,7 @@ button.focus {
     widows: 3;
   }
 
-/* line 890 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 999 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   h2,
   h3 {
     page-break-after: avoid;
