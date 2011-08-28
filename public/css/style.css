@@ -1,5 +1,5 @@
 
-/* line 6 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 6 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /*
  * HTML5 ✰ Boilerplate
  *
@@ -12,13 +12,13 @@
  * ==|== normalize ==========================================================
  */
 
-/* line 13 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 13 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* =============================================================================
  * HTML5 display definitions
  * ==========================================================================
  */
 
-/* line 18 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 18 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 article,
 aside,
 details,
@@ -32,7 +32,7 @@ section {
   display: block;
 }
 
-/* line 21 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 21 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 audio,
 canvas,
 video {
@@ -41,26 +41,26 @@ video {
   *zoom: 1;
 }
 
-/* line 26 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 26 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 audio:not([controls]),
 [hidden] {
   display: none;
 }
 
-/* line 29 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 29 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* =============================================================================
  * Base
  * ==========================================================================
  */
 
-/* line 34 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 34 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /*
  * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
  * 2. Force vertical scrollbar in non-IE
  * 3. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
  */
 
-/* line 40 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 40 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 html {
   font-size: 100%;
   overflow: hidden;
@@ -68,7 +68,7 @@ html {
   -ms-text-size-adjust: 100%;
 }
 
-/* line 47 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 47 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 body {
   margin: 0;
   font-size: 13px;
@@ -77,7 +77,7 @@ body {
   color: #222;
 }
 
-/* line 54 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 54 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 button,
 input,
 select,
@@ -86,14 +86,14 @@ textarea {
   color: #222;
 }
 
-/* line 58 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 58 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection declarations have to be separate
  * Also: hot pink! (or customize the background color to match your design)
  */
 
-/* line 63 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 63 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 ::selection,
 ::-moz-selection,
 ::-webkit-selection {
@@ -102,76 +102,76 @@ textarea {
   text-shadow: none;
 }
 
-/* line 67 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 67 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 ::-moz-selection {
   background: #fe57a1;
   color: #fff;
   text-shadow: none;
 }
 
-/* line 72 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 72 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* =============================================================================
  * Links
  * ==========================================================================
  */
 
-/* line 76 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 76 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 a {
   color: #00e;
 }
 
-/* line 78 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 78 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 a:visited {
   color: #551a8b;
 }
 
-/* line 80 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 80 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 a:hover {
   color: #06e;
 }
 
-/* line 82 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 82 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 a:focus {
   outline: thin dotted;
 }
 
-/* line 84 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 84 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 a:hover,
 a:active {
   outline: 0;
 }
 
-/* line 87 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 87 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* Improve readability when focused and hovered in all browsers: h5bp.com/h */
 
-/* line 89 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 89 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* =============================================================================
  * Typography
  * ==========================================================================
  */
 
-/* line 93 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 93 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 abbr[title] {
   border-bottom: 1px dotted;
 }
 
-/* line 96 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 96 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 b,
 strong {
   font-weight: bold;
 }
 
-/* line 99 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 99 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 blockquote {
   margin: 1em 40px;
 }
 
-/* line 102 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 102 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 dfn {
   font-style: italic;
 }
 
-/* line 105 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 105 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 hr {
   display: block;
   height: 1px;
@@ -181,14 +181,14 @@ hr {
   padding: 0;
 }
 
-/* line 113 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 113 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 ins {
   background: #ff9;
   color: #000;
   text-decoration: none;
 }
 
-/* line 118 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 118 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 mark {
   background: #ff0;
   color: #000;
@@ -196,10 +196,10 @@ mark {
   font-weight: bold;
 }
 
-/* line 124 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 124 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* Redeclare monospace font family: h5bp.com/j */
 
-/* line 126 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 126 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 pre,
 code,
 kbd,
@@ -209,37 +209,37 @@ samp {
   font-size: 1em;
 }
 
-/* line 131 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 131 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* Improve readability of pre-formatted text in all browsers */
 
-/* line 133 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 133 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 pre {
   white-space: pre;
   white-space: pre-wrap;
   word-wrap: break-word;
 }
 
-/* line 138 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 138 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 q {
   quotes: none;
 }
 
-/* line 140 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 140 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 q:before,
 q:after {
   content: "";
   content: none;
 }
 
-/* line 144 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 144 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 small {
   font-size: 85%;
 }
 
-/* line 147 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 147 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* Position subscript and superscript content without affecting line-height: h5bp.com/k */
 
-/* line 149 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 149 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 sub {
   font-size: 75%;
   line-height: 0;
@@ -247,7 +247,7 @@ sub {
   vertical-align: baseline;
 }
 
-/* line 155 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 155 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 sup {
   font-size: 75%;
   line-height: 0;
@@ -256,32 +256,32 @@ sup {
   top: -0.5em;
 }
 
-/* line 162 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 162 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 sub {
   bottom: -0.25em;
 }
 
-/* line 165 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 165 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* =============================================================================
  * Lists
  * ==========================================================================
  */
 
-/* line 170 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 170 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 ul,
 ol {
   margin: 1em 0;
   padding: 0 0 0 40px;
 }
 
-/* line 174 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 174 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 dd {
   margin: 0 0 0 40px;
 }
 
-/* line 177 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 177 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 
-/* line 178 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 178 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 nav ul,
 nav ol {
   list-style: none;
@@ -290,89 +290,89 @@ nav ol {
   padding: 0;
 }
 
-/* line 184 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 184 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* =============================================================================
  * Embedded content
  * ==========================================================================
  */
 
-/* line 189 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 189 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /*
  * 1. Improve image quality when scaled in IE7: h5bp.com/d
  * 2. Remove the gap between images and borders on image containers: h5bp.com/e
  */
 
-/* line 194 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 194 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 img {
   border: 0;
   -ms-interpolation-mode: bicubic;
   vertical-align: middle;
 }
 
-/* line 199 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 199 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /*
  * Correct overflow not hidden in IE9
  */
 
-/* line 202 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 202 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 svg:not(:root) {
   overflow: hidden;
 }
 
-/* line 205 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 205 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* =============================================================================
  * Figures
  * ==========================================================================
  */
 
-/* line 210 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 210 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 figure,
 form {
   margin: 0;
 }
 
-/* line 213 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 213 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* =============================================================================
  * Forms
  * ==========================================================================
  */
 
-/* line 218 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 218 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 fieldset {
   border: 0;
   margin: 0;
   padding: 0;
 }
 
-/* line 223 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 223 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* Indicate that 'label' will shift focus to the associated form element */
 
-/* line 225 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 225 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 label {
   cursor: pointer;
 }
 
-/* line 228 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 228 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /*
  * 1. Correct color not inheriting in IE6/7/8/9
  * 2. Correct alignment displayed oddly in IE6/7
  */
 
-/* line 232 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 232 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 legend {
   border: 0;
   *margin-left: -7px;
   padding: 0;
 }
 
-/* line 237 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 237 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /*
  * 1. Correct font-size not inheriting in all browsers
  * 2. Remove margins in FF3/4 S5 Chrome
  * 3. Define consistent vertical alignment display in all browsers
  */
 
-/* line 243 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 243 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 button,
 input,
 select,
@@ -383,47 +383,47 @@ textarea {
   *vertical-align: middle;
 }
 
-/* line 249 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 249 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /*
  * 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
  * 2. Correct inner spacing displayed oddly in IE6/7
  */
 
-/* line 254 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 254 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 button,
 input {
   line-height: normal;
   *overflow: visible;
 }
 
-/* line 258 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 258 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /*
  * Reintroduce inner spacing in 'table' to avoid overlap and whitespace issues in IE6/7
  */
 
-/* line 261 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 261 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 
-/* line 262 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 262 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 table button,
 table input {
   *overflow: auto;
 }
 
-/* line 265 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 265 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /*
  * 1. Display hand cursor for clickable form elements
  * 2. Allow styling of clickable form elements in iOS
  */
 
-/* line 269 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 269 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 button {
   cursor: pointer;
   -webkit-appearance: button;
 }
 
-/* line 273 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 273 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 
-/* line 274 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 274 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
@@ -431,14 +431,14 @@ input[type="submit"] {
   -webkit-appearance: button;
 }
 
-/* line 277 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 277 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
 }
 
-/* line 280 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 280 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 input[type="search"] {
   -webkit-appearance: textfield;
   -moz-box-sizing: content-box;
@@ -446,45 +446,45 @@ input[type="search"] {
   box-sizing: content-box;
 }
 
-/* line 285 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 285 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-/* line 288 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 288 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /*
  * Consistent box sizing and appearance
  */
 
-/* line 291 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 291 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /*
  * Remove inner padding and border in FF3/4: h5bp.com/l
  */
 
-/* line 294 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 294 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
-/* line 298 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 298 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /*
  * 1. Remove default vertical scrollbar in IE6/7/8/9
  * 2. Allow only vertical resizing
  */
 
-/* line 302 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 302 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 textarea {
   overflow: auto;
   vertical-align: top;
   resize: vertical;
 }
 
-/* line 307 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 307 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* Colors for form validity */
 
-/* line 309 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 309 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 input:valid,
 textarea:valid,
 input:invalid,
@@ -492,77 +492,77 @@ textarea:invalid {
   background-color: #f0dddd;
 }
 
-/* line 314 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 314 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* =============================================================================
  * Tables
  * ==========================================================================
  */
 
-/* line 318 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 318 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 322 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 322 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 td {
   vertical-align: top;
 }
 
-/* line 337 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 337 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* =============================================================================
  * Disco Teen '66
  * http://www.colourlovers.com/palette/3097/Disco_Teen_66
  * ==========================================================================
  */
 
-/* line 348 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 348 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* ==|== primary styles =====================================================
  * Author: sponoders
  * ==========================================================================
  */
 
-/* line 12 : /home/nbaugh/Public/sponoders/node_modules/nib/lib/nib/index.styl */
+/* line 12 : /Users/sorensen/dev/projects/sponoders/node_modules/nib/lib/nib/index.styl */
 
-/* line 338 : /home/nbaugh/Public/sponoders/node_modules/nib/lib/nib/vendor.styl */
+/* line 338 : /Users/sorensen/dev/projects/sponoders/node_modules/nib/lib/nib/vendor.styl */
 
-/* line 2 : /home/nbaugh/Public/sponoders/node_modules/nib/lib/nib/config.styl */
+/* line 2 : /Users/sorensen/dev/projects/sponoders/node_modules/nib/lib/nib/config.styl */
 
-/* line 5 : /home/nbaugh/Public/sponoders/node_modules/nib/lib/nib/text/index.styl */
+/* line 5 : /Users/sorensen/dev/projects/sponoders/node_modules/nib/lib/nib/text/index.styl */
 
-/* line 2 : /home/nbaugh/Public/sponoders/node_modules/nib/lib/nib/text/aliases.styl */
+/* line 2 : /Users/sorensen/dev/projects/sponoders/node_modules/nib/lib/nib/text/aliases.styl */
 
-/* line 2 : /home/nbaugh/Public/sponoders/node_modules/nib/lib/nib/text/ellipsis.styl */
+/* line 2 : /Users/sorensen/dev/projects/sponoders/node_modules/nib/lib/nib/text/ellipsis.styl */
 
-/* line 11 : /home/nbaugh/Public/sponoders/node_modules/nib/lib/nib/text/hide-text.styl */
+/* line 11 : /Users/sorensen/dev/projects/sponoders/node_modules/nib/lib/nib/text/hide-text.styl */
 
-/* line 3 : /home/nbaugh/Public/sponoders/node_modules/nib/lib/nib/reset.styl */
+/* line 3 : /Users/sorensen/dev/projects/sponoders/node_modules/nib/lib/nib/reset.styl */
 
-/* line 4 : /home/nbaugh/Public/sponoders/node_modules/nib/lib/nib/positions.styl */
+/* line 4 : /Users/sorensen/dev/projects/sponoders/node_modules/nib/lib/nib/positions.styl */
 
-/* line 2 : /home/nbaugh/Public/sponoders/node_modules/nib/lib/nib/clearfix.styl */
+/* line 2 : /Users/sorensen/dev/projects/sponoders/node_modules/nib/lib/nib/clearfix.styl */
 
-/* line 2 : /home/nbaugh/Public/sponoders/node_modules/nib/lib/nib/iconic.styl */
+/* line 2 : /Users/sorensen/dev/projects/sponoders/node_modules/nib/lib/nib/iconic.styl */
 
-/* line 147 : /home/nbaugh/Public/sponoders/node_modules/nib/lib/nib/gradients.styl */
+/* line 147 : /Users/sorensen/dev/projects/sponoders/node_modules/nib/lib/nib/gradients.styl */
 
-/* line 2 : /home/nbaugh/Public/sponoders/node_modules/nib/lib/nib/config.styl */
+/* line 2 : /Users/sorensen/dev/projects/sponoders/node_modules/nib/lib/nib/config.styl */
 
-/* line 187 : /home/nbaugh/Public/sponoders/node_modules/nib/lib/nib/buttons.styl */
+/* line 187 : /Users/sorensen/dev/projects/sponoders/node_modules/nib/lib/nib/buttons.styl */
 
-/* line 338 : /home/nbaugh/Public/sponoders/node_modules/nib/lib/nib/vendor.styl */
+/* line 338 : /Users/sorensen/dev/projects/sponoders/node_modules/nib/lib/nib/vendor.styl */
 
-/* line 2 : /home/nbaugh/Public/sponoders/node_modules/nib/lib/nib/config.styl */
+/* line 2 : /Users/sorensen/dev/projects/sponoders/node_modules/nib/lib/nib/config.styl */
 
-/* line 147 : /home/nbaugh/Public/sponoders/node_modules/nib/lib/nib/gradients.styl */
+/* line 147 : /Users/sorensen/dev/projects/sponoders/node_modules/nib/lib/nib/gradients.styl */
 
-/* line 2 : /home/nbaugh/Public/sponoders/node_modules/nib/lib/nib/config.styl */
+/* line 2 : /Users/sorensen/dev/projects/sponoders/node_modules/nib/lib/nib/config.styl */
 
-/* line 13 : /home/nbaugh/Public/sponoders/node_modules/nib/lib/nib/box.styl */
+/* line 13 : /Users/sorensen/dev/projects/sponoders/node_modules/nib/lib/nib/box.styl */
 
-/* line 2 : /home/nbaugh/Public/sponoders/node_modules/nib/lib/nib/color-image.styl */
+/* line 2 : /Users/sorensen/dev/projects/sponoders/node_modules/nib/lib/nib/color-image.styl */
 
-/* line 354 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 354 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 h1,
 h2,
 h3,
@@ -573,7 +573,7 @@ h6 {
   padding: 0;
 }
 
-/* line 358 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 358 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #application {
   position: absolute;
   ((null)): 0;
@@ -585,9 +585,9 @@ h6 {
   background: #070304 url("/img/bg/carbon_fibre.png") repeat;
 }
 
-/* line 365 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 365 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 
-/* line 366 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 366 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #application .wrapper #header {
   position: absolute;
   ((null)): 0;
@@ -603,7 +603,7 @@ h6 {
   background: linear-gradient(top, #4e95cd 0%, #2f71a5 100%);
 }
 
-/* line 373 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 373 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #application .wrapper #header h1 {
   height: 30px;
   line-height: 30px;
@@ -615,7 +615,7 @@ h6 {
   color: #fff;
 }
 
-/* line 382 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 382 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #application .wrapper #footer {
   position: absolute;
   ((null)): 0;
@@ -632,7 +632,7 @@ h6 {
   background: linear-gradient(top, #4e95cd 0%, #2f71a5 100%);
 }
 
-/* line 390 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 390 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #application .wrapper #sidebar {
   position: absolute;
   ((null)): 0;
@@ -644,7 +644,7 @@ h6 {
   background-color: #070304;
 }
 
-/* line 397 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 397 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #application .wrapper #sidebar nav#navigation {
   position: absolute;
   bottom: 55px;
@@ -652,7 +652,7 @@ h6 {
   width: 100px;
 }
 
-/* line 400 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 400 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #application .wrapper #sidebar nav#navigation button {
   margin: 0;
   -webkit-user-select: none;
@@ -685,7 +685,7 @@ h6 {
   width: 100%;
 }
 
-/* line 69 : /home/nbaugh/Public/sponoders/node_modules/nib/lib/nib/buttons.styl */
+/* line 69 : /Users/sorensen/dev/projects/sponoders/node_modules/nib/lib/nib/buttons.styl */
 #application .wrapper #sidebar nav#navigation button:hover,
 #application .wrapper #sidebar nav#navigation button.hover {
 #3581bd
@@ -698,7 +698,7 @@ h6 {
   cursor: pointer;
 }
 
-/* line 76 : /home/nbaugh/Public/sponoders/node_modules/nib/lib/nib/buttons.styl */
+/* line 76 : /Users/sorensen/dev/projects/sponoders/node_modules/nib/lib/nib/buttons.styl */
 #application .wrapper #sidebar nav#navigation button:active,
 #application .wrapper #sidebar nav#navigation button.active {
 #3581bd
@@ -714,12 +714,12 @@ h6 {
   box-shadow: inset 0 0 8px 4px rgba(0,0,0,0.15), 0 1px 0 0 #eee;
 }
 
-/* line 403 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 403 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #application .wrapper #sidebar nav#navigation button#create-room {
   margin-bottom: 10px;
 }
 
-/* line 405 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 405 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #application .wrapper #sidebar ul#quicklaunch {
   position: absolute;
   top: 75px;
@@ -728,7 +728,7 @@ h6 {
   padding: 0;
 }
 
-/* line 409 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 409 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #application .wrapper #sidebar ul#quicklaunch li {
   list-style-image: none;
   list-style-type: none;
@@ -736,18 +736,18 @@ h6 {
   margin-top: 10px;
 }
 
-/* line 412 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 412 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #application .wrapper #sidebar ul#quicklaunch li a {
   color: #fff;
   cursor: pointer;
 }
 
-/* line 415 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 415 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #application .wrapper #sidebar ul#quicklaunch li a:hover {
   text-decoration: underline;
 }
 
-/* line 417 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 417 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #application .wrapper #main-wrapper {
   z-index: 1;
   color: #fff;
@@ -760,7 +760,7 @@ h6 {
   bottom: 30px;
 }
 
-/* line 425 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 425 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #application .wrapper #main-wrapper #main-content {
   position: absolute;
   ((null)): 0;
@@ -772,7 +772,7 @@ h6 {
   overflow-y: auto;
 }
 
-/* line 432 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 432 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #application .wrapper #main-wrapper #main-content #user-track {
   width: 250px;
   border-left: 1px solid #4e95cd;
@@ -780,20 +780,20 @@ h6 {
   background-color: #070304;
 }
 
-/* line 437 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 437 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #application .wrapper #main-wrapper #main-content #user-track p {
   margin: 0;
   padding: 0;
 }
 
-/* line 440 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 440 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #application .wrapper #main-wrapper #main-content #user-track .tracker {
   width: 250px;
   background-color: #4e95cd;
   height: 5px;
 }
 
-/* line 444 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 444 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #application .wrapper #main-wrapper #main-content #user-track h1 {
   position: absolute;
   bottom: 0px;
@@ -809,7 +809,104 @@ h6 {
   background-color: #070304;
 }
 
-/* line 456 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 456 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+.extras {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 400px;
+}
+
+/* line 463 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+.track {
+  min-width: 400px;
+  overflow: hidden;
+  border: 1px solid #fff;
+}
+
+/* line 468 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+.row {
+  overflow: hidden;
+}
+
+/* line 471 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+.column {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  border: 1px solid #fff;
+  float: left;
+  background-color: #222;
+}
+
+/* line 479 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+.messages {
+  height: 300px;
+  overflow-y: auto;
+}
+
+/* line 483 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+.message {
+  list-style: none outside;
+  padding: 10px 15px;
+  border-top: 1px solid #fff;
+  overflow: hidden;
+}
+
+/* line 489 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+.message .small-avatar {
+  float: left;
+  margin-top: 3px;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  display: block;
+  margin: 0 10px 0 0;
+}
+
+/* line 498 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+.message .small-avatar img {
+  height: 30px;
+  width: 30px;
+}
+
+/* line 502 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+.library {
+  left: 0;
+  right: 0;
+  height: 300px;
+}
+
+/* line 507 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+.sound {
+  z-index: 9;
+  list-style: none outside;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  margin: 5px;
+  border: 1px solid #fff;
+}
+
+/* line 516 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+.beat {
+  border: 1px solid #008000;
+  position: relative;
+}
+
+/* line 520 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+.beat .remove {
+  display: block;
+  position: absolute;
+  background: #fff;
+  color: #f00;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+
+/* line 529 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* ==|== media queries ======================================================
  * PLACEHOLDER Media Queries for Responsive Design.
  * These override the primary ('mobile first') styles
@@ -817,24 +914,24 @@ h6 {
  * ==========================================================================
  */
 
-/* line 462 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 535 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 @media only screen and (min-width: 480px) {
 }
 
-/* line 465 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 538 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 @media only screen and (min-width: 768px) {
 }
 
-/* line 468 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 541 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* ==|== non-semantic helper classes ========================================
  * Please define your styles before this section.
  * ==========================================================================
  */
 
-/* line 472 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 545 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* For image replacement */
 
-/* line 474 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 547 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .ir {
   display: block;
   border: 0;
@@ -846,24 +943,24 @@ h6 {
   direction: ltr;
 }
 
-/* line 483 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 556 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .ir br {
   display: none;
 }
 
-/* line 486 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 559 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* Hide from both screenreaders and browsers: h5bp.com/u */
 
-/* line 488 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 561 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .hidden {
   display: none !important;
   visibility: hidden;
 }
 
-/* line 492 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 565 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* Hide only visually, but have it available for screenreaders: h5bp.com/v */
 
-/* line 494 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 567 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -875,9 +972,9 @@ h6 {
   width: 1px;
 }
 
-/* line 503 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 576 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 
-/* line 504 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 577 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -888,49 +985,49 @@ h6 {
   width: auto;
 }
 
-/* line 512 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 585 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
 
-/* line 514 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 587 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* Hide visually and from screenreaders, but maintain layout */
 
-/* line 516 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 589 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .invisible {
   visibility: hidden;
 }
 
-/* line 519 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 592 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* Contain floats: h5bp.com/q */
 
-/* line 521 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 594 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .clearfix {
   *zoom: 1;
 }
 
-/* line 522 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 595 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .clearfix:before {
   content: "";
   display: table;
 }
 
-/* line 525 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 598 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .clearfix:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 531 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 604 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* ==|== print styles =======================================================
  * Print styles.
  * Inlined to avoid required HTTP connection: h5bp.com/r
  * ==========================================================================
  */
 
-/* line 536 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 609 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 @media print {
 
-/* line 537 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 610 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -939,68 +1036,68 @@ h6 {
     -ms-filter: none !important;
   }
 
-/* line 544 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 617 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   a {
     text-decoration: underline;
   }
 
-/* line 546 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 619 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   a:visited {
     text-decoration: underline;
   }
 
-/* line 548 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 621 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-/* line 550 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 623 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
 
-/* line 552 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 625 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   .ir a:after {
     content: "";
   }
 
-/* line 554 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 627 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 
-/* line 555 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 628 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-/* line 558 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 631 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-/* line 561 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 634 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   thead {
     display: table-header-group;
   }
 
-/* line 564 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 637 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   tr {
     page-break-inside: avoid;
   }
 
-/* line 566 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 639 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   img {
     page-break-inside: avoid;
     max-width: 100% !important;
   }
 
-/* line 569 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 642 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   @page {
     margin: 0.5cm;
   }
 
-/* line 572 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 645 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   p,
   h2,
   h3 {
@@ -1008,7 +1105,7 @@ h6 {
     widows: 3;
   }
 
-/* line 575 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* line 648 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   h2,
   h3 {
     page-break-after: avoid;
