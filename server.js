@@ -101,7 +101,7 @@ app.configure('development', function() {
 });
 
 // Production
-app.configure('PRODUCTION', function() {
+app.configure('production', function() {
     port = 80;
     app.use(express.static(staticViews, {maxAge: cacheAge}));
     app.use(express.static(__dirname + '/lib', {maxAge: cacheAge}));
