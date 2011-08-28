@@ -113,17 +113,14 @@ script#beat-template(type='text/template')
 
   .beat-controls
     .remove X
-  .name {{ name }}
-  .img {{ img }}
-  .type {{ type }}
+  .name(class='{{ type }}') {{ name }}
 
 //- Library
 script#library-template(type='text/template')
   .lib
     {{#sounds}}
-    .sound
+    .sound(class='{{ type }}')
       .name {{ name }}
-      .type {{ type }}
     {{/sounds}}
 
 
