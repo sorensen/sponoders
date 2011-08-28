@@ -101,7 +101,7 @@ app.configure('development', function() {
 });
 
 // Production
-app.configure('production', function() {
+app.configure('PRODUCTION', function() {
     port = 80;
     app.use(express.static(staticViews, {maxAge: cacheAge}));
     app.use(express.static(__dirname + '/lib', {maxAge: cacheAge}));
@@ -264,7 +264,7 @@ app.get('/logout', function(req, res) {
 // ----------
 
 app.listen(process.env.NODE_ENV === 'production' ? 80 : 3000);
-//app.listen(parseInt(process.env.PORT) || 7777); 
+//app.listen(parseInt(process.env.PORT) || 7777); http://74.207.240.185/
 console.log('Listening on ' + app.address().port);
 
 // Attatch the DNode middleware and connect
