@@ -223,22 +223,18 @@ script#settings-template(type='text/template')
 
 //- Create new room
 script#create-room-template(type='text/template')
-  #create-room-form.dialog
+  #create-room-form
     .title
       h3 Create a new room
     .content
-      p
+      p.dialog
         label(for='create-room-name') Name:
         span.input-wrap
           input#create-room-name(type='text', name='room', placeholder='Room name')
-      p
+      p.dialog.description
         label(for='create-room-description') Description:
         span.input-wrap
           textarea#create-room-description(type='text', name='description', placeholder='Description')
-      p
-        label(for='create-room-restricted') Private room:
-        span.input-wrap
-          input#create-room-restricted(type='checkbox', name='restricted')
     .controls
       button.submit#create-room-submit Create
       button.cancel Cancel

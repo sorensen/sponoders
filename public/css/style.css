@@ -1,149 +1,1668 @@
-article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block}
-audio,canvas,video{display:inline-block;*display:inline;*zoom:1}
-audio:not([controls]),[hidden]{display:none}
-html{font-size:100%;overflow:hidden;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
-body{margin:0;font:13px/1.5 Helvetica Neue,Arial,Helvetica,"Liberation Sans",FreeSans,sans-serif;color:#222}
-button,input,select,textarea{font-family:Helvetica Neue,Arial,Helvetica,"Liberation Sans",FreeSans,sans-serif;color:#222}
-::selection,::-moz-selection,::-webkit-selection{background:#fe57a1;color:#fff;text-shadow:none}
-::-moz-selection{background:#fe57a1;color:#fff;text-shadow:none}
-a{color:#00e;}
-a:visited{color:#551a8b}
-a:hover{color:#06e}
-a:focus{outline:thin dotted}
-a:hover,a:active{outline:0}
-abbr[title]{border-bottom:1px dotted}
-b,strong{font-weight:bold}
-blockquote{margin:1em 40px}
-dfn{font-style:italic}
-hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
-ins{background:#ff9;color:#000;text-decoration:none}
-mark{background:#ff0;color:#000;font-style:italic;font-weight:bold}
-pre,code,kbd,samp{font-family:monospace,serif;_font-family:"courier new",monospace;font-size:1em}
-pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word}
-q{quotes:none;}
-q:before,q:after{content:"";content:none}
-small{font-size:85%}
-sub{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
-sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;top:-.5em}
-sub{bottom:-.25em}
-ul,ol{margin:1em 0;padding:0 0 0 40px}
-dd{margin:0 0 0 40px}
-nav ul,nav ol{list-style:none;list-style-image:none;margin:0;padding:0}
-img{border:0;-ms-interpolation-mode:bicubic;vertical-align:middle}
-svg:not(:root){overflow:hidden}
-figure,form{margin:0}
-fieldset{border:0;margin:0;padding:0}
-label{cursor:pointer}
-legend{border:0;*margin-left:-7px;padding:0}
-button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline;*vertical-align:middle}
-button,input{line-height:normal;*overflow:visible}
-table button,table input{*overflow:auto}
-button{cursor:pointer;-webkit-appearance:button}
-input[type="button"],input[type="reset"],input[type="submit"]{cursor:pointer;-webkit-appearance:button}
-input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}
-input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}
-input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}
-button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
-textarea{overflow:auto;vertical-align:top;resize:vertical}
-input:valid,textarea:valid,input:invalid,textarea:invalid{background-color:#f0dddd}
-table{border-collapse:collapse;border-spacing:0}
-td{vertical-align:top}
-h1,h2,h3,h4,h5,h6,ul,li{margin:0;padding:0}
-button,.button{margin:0;-webkit-user-select:none;-moz-user-select:none;user-select:none;display:inline-block;text-decoration:none;height:30px;background:#4587be;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #4587be), color-stop(1, #33649a));background:-webkit-linear-gradient(top, #4587be 0%, #33649a 100%);background:-moz-linear-gradient(top, #4587be 0%, #33649a 100%);background:linear-gradient(top, #4587be 0%, #33649a 100%);border:1px solid #1a1a1a;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;-webkit-box-shadow:inset 0 1px 0 0 #5ea1d8;-moz-box-shadow:inset 0 1px 0 0 #5ea1d8;box-shadow:inset 0 1px 0 0 #5ea1d8;font-size:14px;font-weight:bold;line-height:1;padding:7px 15px 8px 15px;text-align:center;color:#fff;}
-button:hover,.button:hover,button.hover,.button.hover{background:#2e5a8b;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #4587be), color-stop(1, #2e5a8b));background:-webkit-linear-gradient(top, #4587be 0%, #2e5a8b 100%);background:-moz-linear-gradient(top, #4587be 0%, #2e5a8b 100%);background:linear-gradient(top, #4587be 0%, #2e5a8b 100%);cursor:pointer}
-button:active,.button:active,button.active,.button.active{background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #33649a), color-stop(1, #4587be));background:-webkit-linear-gradient(top, #33649a 0%, #4587be 100%);background:-moz-linear-gradient(top, #33649a 0%, #4587be 100%);background:linear-gradient(top, #33649a 0%, #4587be 100%);-webkit-box-shadow:inset 0 -1px 0 0 #5ea1d8;-moz-box-shadow:inset 0 -1px 0 0 #5ea1d8;box-shadow:inset 0 -1px 0 0 #5ea1d8}
-button:focus,.button:focus,button.focus,.button.focus{outline:none;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #33649a), color-stop(1, #4587be));background:-webkit-linear-gradient(top, #33649a 0%, #4587be 100%);background:-moz-linear-gradient(top, #33649a 0%, #4587be 100%);background:linear-gradient(top, #33649a 0%, #4587be 100%);-webkit-box-shadow:0 0 5px 1px #000;-moz-box-shadow:0 0 5px 1px #000;box-shadow:0 0 5px 1px #000}
-a.button{padding-top:0;padding-bottom:0;line-height:30px;color:#fff}
-#application{position:absolute;((null)):0;((null)):0;top:0;left:0;bottom:0;right:0;background:#dbdbdb url("/img/concrete_wall_3.png") repeat;}
-#application .wrapper #header{position:absolute;((null)):0;((null)):0;left:0;right:0;z-index:3;height:32px;border-bottom:1px solid #808080;-webkit-box-shadow:inset 0 1px 0 #adadad;-moz-box-shadow:inset 0 1px 0 #adadad;box-shadow:inset 0 1px 0 #adadad;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #e6e6e6), color-stop(1, #b2b2b2));background:-webkit-linear-gradient(top, #e6e6e6 0%, #b2b2b2 100%);background:-moz-linear-gradient(top, #e6e6e6 0%, #b2b2b2 100%);background:linear-gradient(top, #e6e6e6 0%, #b2b2b2 100%);}
-#application .wrapper #header ul,#application .wrapper #header li{height:32px;line-height:32px}
-#application .wrapper #header ul{margin-left:32px;}
-#application .wrapper #header ul li{font-size:12px;list-style-image:none;list-style-type:none;margin-left:0;white-space:nowrap;float:left;}
-#application .wrapper #header ul li span{display:inline-block;width:22px;height:32px;background:url("/img/separator.png") no-repeat;background-position:center}
-#application .wrapper #header ul li a{display:inline-block;color:#40404a}
-#application .wrapper #message_wrapper{height:90px;z-index:2;background-color:#343434;}
-#application .wrapper #message_wrapper #message{position:absolute;((null)):0;((null)):0;top:15px;left:0;right:0;margin:0 auto;width:700px;height:60px;background-color:#2f2f2f;-webkit-box-shadow:inset 0 1px 0 #252525 inset 1px 1px 0 #252525 inset 0 1px 1px #252525 inset 0 -1px 0 #454545;-moz-box-shadow:inset 0 1px 0 #252525 inset 1px 1px 0 #252525 inset 0 1px 1px #252525 inset 0 -1px 0 #454545;box-shadow:inset 0 1px 0 #252525 inset 1px 1px 0 #252525 inset 0 1px 1px #252525 inset 0 -1px 0 #454545;border-bottom:1px solid #454545;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;}
-#application .wrapper #message_wrapper #message .container{float:left;width:400px;}
-#application .wrapper #message_wrapper #message .container p,#application .wrapper #message_wrapper #message .container span{float:left}
-#application .wrapper #message_wrapper #message .container p,#application .wrapper #message_wrapper #message .container span{line-height:1;font-size:14px;font-weight:bold;}
-#application .wrapper #message_wrapper #message .container p{margin:0;padding:0;margin-top:15px;color:#fff}
-#application .wrapper #message_wrapper #message .container span{margin-top:6px;display:block;color:#888}
-#application .wrapper #message_wrapper #message .container p,#application .wrapper #message_wrapper #message .container span{margin-left:15px}
-#application .wrapper #message_wrapper #message button,#application .wrapper #message_wrapper #message a.button{float:left;margin-top:15px;width:200px;margin-left:25px}
-#application .wrapper #footer{position:absolute;((null)):0;((null)):0;bottom:0;left:0;right:0;z-index:3;height:32px;border-top:1px solid #808080;-webkit-box-shadow:inset 0 -1px 0 #adadad;-moz-box-shadow:inset 0 -1px 0 #adadad;box-shadow:inset 0 -1px 0 #adadad;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #e6e6e6), color-stop(1, #b2b2b2));background:-webkit-linear-gradient(top, #e6e6e6 0%, #b2b2b2 100%);background:-moz-linear-gradient(top, #e6e6e6 0%, #b2b2b2 100%);background:linear-gradient(top, #e6e6e6 0%, #b2b2b2 100%)}
-#application .wrapper #sidebar{position:absolute;((null)):0;((null)):0;top:32px;left:0;width:80px;bottom:0;z-index:2;border-right:1px solid #222;background:#444 url("/img/sidebar-normal.png") repeat;-webkit-box-shadow:inset 0 0 25px #000;-moz-box-shadow:inset 0 0 25px #000;box-shadow:inset 0 0 25px #000;}
-#application .wrapper #sidebar ul#quicklaunch{margin:0;padding:0;}
-#application .wrapper #sidebar ul#quicklaunch li,#application .wrapper #sidebar ul#quicklaunch a{height:80px;width:80px}
-#application .wrapper #sidebar ul#quicklaunch li{list-style-image:none;list-style-type:none;margin-left:0;border-bottom:1px solid #2e2e2e;position:relative;((null)):0;((null)):0;}
-#application .wrapper #sidebar ul#quicklaunch li:hover{background:#323232 url("/img/sidebar-over.png") repeat;-webkit-box-shadow:inset 0 0 25px #000;-moz-box-shadow:inset 0 0 25px #000;box-shadow:inset 0 0 25px #000;}
-#application .wrapper #sidebar ul#quicklaunch li:hover a{opacity:.5;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=50)}
-#application .wrapper #sidebar ul#quicklaunch li.selected{background:#323232 url("/img/sidebar-over.png") repeat;-webkit-box-shadow:inset 0 0 25px #000;-moz-box-shadow:inset 0 0 25px #000;box-shadow:inset 0 0 25px #000;}
-#application .wrapper #sidebar ul#quicklaunch li.selected a{opacity:1;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);}
-#application .wrapper #sidebar ul#quicklaunch li.selected a:before{content:"";position:absolute;((null)):0;((null)):0;top:30.5px;right:-1px;z-index:3;width:10px;height:19px;margin:0;padding:0;background:url("/img/selected.png") no-repeat}
-#application .wrapper #sidebar ul#quicklaunch li a{display:block;color:#fff;cursor:pointer;text-decoration:none;background:transparent url("/img/avatar.png") no-repeat;background-position:50% 16px;font-size:14px;text-align:center;opacity:.5;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=50);}
-#application .wrapper #sidebar ul#quicklaunch li a span{display:inline-block;margin-top:50px}
-#application .wrapper #sidebar ul#quicklaunch li a:hover{opacity:1;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100)}
-#application .wrapper #main-wrapper{z-index:1;color:#fff;position:absolute;((null)):0;((null)):0;top:33px;left:81px;right:0;bottom:30px;}
-#application .wrapper #main-wrapper #main-content{position:absolute;((null)):0;((null)):0;top:0;left:0;right:0;bottom:0;overflow-y:auto;background-color:#dbdbdb;}
-#application .wrapper #main-wrapper #main-content .room{position:relative;((null)):0;((null)):0;margin:10px;border:1px solid #bababa;-webkit-box-shadow:inset 0 1px 0 #fcfcfc;-moz-box-shadow:inset 0 1px 0 #fcfcfc;box-shadow:inset 0 1px 0 #fcfcfc;height:60px;-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;margin-bottom:0;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #f6f6f6), color-stop(1, #e7e7e7));background:-webkit-linear-gradient(top, #f6f6f6 0%, #e7e7e7 100%);background:-moz-linear-gradient(top, #f6f6f6 0%, #e7e7e7 100%);background:linear-gradient(top, #f6f6f6 0%, #e7e7e7 100%);}
-#application .wrapper #main-wrapper #main-content .room:hover,#application .wrapper #main-wrapper #main-content .room.hover{background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #f6f6f6), color-stop(1, #d0d0d0));background:-webkit-linear-gradient(top, #f6f6f6 0%, #d0d0d0 100%);background:-moz-linear-gradient(top, #f6f6f6 0%, #d0d0d0 100%);background:linear-gradient(top, #f6f6f6 0%, #d0d0d0 100%);cursor:pointer}
-#application .wrapper #main-wrapper #main-content .room:active,#application .wrapper #main-wrapper #main-content .room.active{-webkit-box-shadow:inset 0 -1px 0 0 #d0d0d0;-moz-box-shadow:inset 0 -1px 0 0 #d0d0d0;box-shadow:inset 0 -1px 0 0 #d0d0d0;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #e7e7e7), color-stop(1, #f6f6f6));background:-webkit-linear-gradient(top, #e7e7e7 0%, #f6f6f6 100%);background:-moz-linear-gradient(top, #e7e7e7 0%, #f6f6f6 100%);background:linear-gradient(top, #e7e7e7 0%, #f6f6f6 100%)}
-#application .wrapper #main-wrapper #main-content .room:focus,#application .wrapper #main-wrapper #main-content .room.focus{outline:none;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #e7e7e7), color-stop(1, #f6f6f6));background:-webkit-linear-gradient(top, #e7e7e7 0%, #f6f6f6 100%);background:-moz-linear-gradient(top, #e7e7e7 0%, #f6f6f6 100%);background:linear-gradient(top, #e7e7e7 0%, #f6f6f6 100%)}
-#application .wrapper #main-wrapper #main-content .room a{position:absolute;((null)):0;((null)):0;left:0;right:25%;display:block;text-decoration:none;}
-#application .wrapper #main-wrapper #main-content .room a h3,#application .wrapper #main-wrapper #main-content .room a p{line-height:20px;font-size:13px}
-#application .wrapper #main-wrapper #main-content .room a h3{margin-top:10px;color:#2d2d2d;margin-left:20px}
-#application .wrapper #main-wrapper #main-content .room a p.description{color:#5d5d5d;margin:0;margin-left:20px;padding:0}
-#application .wrapper #main-wrapper #main-content .room div.statistics{position:absolute;((null)):0;((null)):0;left:75%;right:0;color:#4d4d4d;height:60px;line-height:60px;font-size:12px}
-#application .wrapper #main-wrapper #main-content #user-track{width:250px;border-right:1px solid #808080;}
-#application .wrapper #main-wrapper #main-content #user-track .tracker{width:250px;background-color:#808080;height:5px}
-#application .wrapper #main-wrapper #main-content #user-track h1{position:absolute;bottom:0;((null)):0;z-index:2;margin:0;padding:0;height:36px;line-height:36px;font-size:18px;width:250px;text-align:center;background-color:#000}
-.extras{position:absolute;right:10px;top:40px;bottom:10px;left:420px;}
-.extras .controls{border:1px solid #ffc0cb;overflow:hidden;}
-.extras .controls div{float:left}
-.track-wrapper{position:absolute;overflow-y:auto;left:10px;top:40px;bottom:10px;width:400px;}
-.track-wrapper .track{overflow:hidden;border:1px solid #fff;}
-.track-wrapper .track .controls{overflow:hidden;}
-.track-wrapper .track .controls div{float:left;margin:5px;border:1px solid #f00}
-.track-wrapper .track .row{overflow:hidden}
-.track-wrapper .track .column{width:40px;height:40px;padding:5px;border:1px solid #fff;float:left;background-color:#222}
-.chat{display:none;}
-.chat .message-form{position:absolute;bottom:0;left:0;right:0;height:30px}
-.chat .messages{position:absolute;top:0;bottom:30px;left:0;right:0;overflow-y:auto;}
-.chat .messages .message{list-style:none outside;padding:10px 15px;border-top:1px solid #fff;overflow:hidden;}
-.chat .messages .message .small-avatar{float:left;margin-top:3px;width:30px;height:30px;overflow:hidden;display:block;margin:0 10px 0 0}
-.chat .messages .message .small-avatar img{height:30px;width:30px}
-.library,.chat{left:0;right:0;bottom:0;top:40px;position:absolute;border:1px solid #008000}
-.sound{z-index:9;list-style:none outside;display:inline-block;height:50px;width:50px;margin:5px;border:1px solid #fff}
-.beat{border:1px solid #008000;position:relative;}
-.beat .remove{display:block;position:absolute;background:#fff;color:#f00;top:0;right:0;z-index:10}
-.main-room h1.name{display:block;clear:both;background:#ccc;margin:5px;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;border:#c1c1c1;height:30px;overflow:hidden;}
-.main-room h1.name .headline{float:left;margin:0 10px;line-height:30px;font-size:16px;color:#111}
-.main-room h1.name .description{line-height:30px;margin:0 10px;float:left;font-size:12px;color:#444;text-shadow:1px 1px 1px #fff}
-.dialog-wrapper,#spinner,#overlay{position:absolute;top:0;left:0;right:0;bottom:0;display:none}
-#spinner{background:#c8c8c8;opacity:.8;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80);filter:Alpha(80);z-index:1002}
-#inner-spinner{background:#5d5d5d;color:#fff;float:left;width:160px;height:160px;-webkit-border-radius:15px;-moz-border-radius:15px;-webkit-border-radius:15px;-moz-border-radius:15px;border-radius:15px;top:50%;left:50%;margin-top:-80px;margin-left:-80px;position:absolute;opacity:.9;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=90);filter:Alpha(90)}
-#overlay{background:#666;opacity:.5;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=50);filter:Alpha(50);z-index:1001}
-@media only screen and (min-width: 480px){}@media only screen and (min-width: 768px){}.ir{display:block;border:0;text-indent:-999em;overflow:hidden;background-color:transparent;background-repeat:no-repeat;text-align:left;direction:ltr;}
-.ir br{display:none}
-.hidden{display:none !important;visibility:hidden}
-.visuallyhidden{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;}
-.visuallyhidden.focusable:active,.visuallyhidden.focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}
-.invisible{visibility:hidden}
-.clearfix{*zoom:1}
-.clearfix:before{content:"";display:table}
-.clearfix:after{content:"";display:table;clear:both}
-@media print{*{background:transparent !important;color:#000 !important;text-shadow:none !important;filter:none !important;-ms-filter:none !important}
-a{text-decoration:underline;}
-a:visited{text-decoration:underline}
-a[href]:after{content:" (" attr(href) ")"}
-abbr[title]:after{content:" (" attr(title) ")"}
-.ir a:after{content:""}
-a[href^="javascript:"]:after,a[href^="#"]:after{content:""}
-pre,blockquote{border:1px solid #999;page-break-inside:avoid}
-thead{display:table-header-group}
-tr{page-break-inside:avoid}
-img{page-break-inside:avoid;max-width:100% !important}
-@page{margin:.5cm}
-p,h2,h3{orphans:3;widows:3}
-h2,h3{page-break-after:avoid}
+
+/* line 6 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/*
+ * HTML5 ✰ Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ *
+ * Detailed information about this CSS: h5bp.com/css
+ *
+ * ==|== normalize ==========================================================
+ */
+
+/* line 13 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* =============================================================================
+ * HTML5 display definitions
+ * ==========================================================================
+ */
+
+/* line 18 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+
+/* line 21 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/* line 26 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+audio:not([controls]),
+[hidden] {
+  display: none;
+}
+
+/* line 29 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* =============================================================================
+ * Base
+ * ==========================================================================
+ */
+
+/* line 34 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/*
+ * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
+ * 2. Force vertical scrollbar in non-IE
+ * 3. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
+ */
+
+/* line 40 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+html {
+  font-size: 100%;
+  overflow: hidden;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 47 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+body {
+  margin: 0;
+  font: 13px/1.5 Helvetica Neue, Arial, Helvetica, "Liberation Sans", FreeSans, sans-serif;
+  color: #222;
+}
+
+/* line 52 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+button,
+input,
+select,
+textarea {
+  font-family: Helvetica Neue, Arial, Helvetica, "Liberation Sans", FreeSans, sans-serif;
+  color: #222;
+}
+
+/* line 56 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate
+ * Also: hot pink! (or customize the background color to match your design)
+ */
+
+/* line 61 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+::selection,
+::-moz-selection,
+::-webkit-selection {
+  background: #fe57a1;
+  color: #fff;
+  text-shadow: none;
+}
+
+/* line 65 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+::-moz-selection {
+  background: #fe57a1;
+  color: #fff;
+  text-shadow: none;
+}
+
+/* line 70 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* =============================================================================
+ * Links
+ * ==========================================================================
+ */
+
+/* line 74 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+a {
+  color: #00e;
+}
+
+/* line 76 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+a:visited {
+  color: #551a8b;
+}
+
+/* line 78 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+a:hover {
+  color: #06e;
+}
+
+/* line 80 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+a:focus {
+  outline: thin dotted;
+}
+
+/* line 82 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+a:hover,
+a:active {
+  outline: 0;
+}
+
+/* line 85 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* Improve readability when focused and hovered in all browsers: h5bp.com/h */
+
+/* line 87 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* =============================================================================
+ * Typography
+ * ==========================================================================
+ */
+
+/* line 91 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 94 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 97 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+blockquote {
+  margin: 1em 40px;
+}
+
+/* line 100 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+dfn {
+  font-style: italic;
+}
+
+/* line 103 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 111 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+ins {
+  background: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 116 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 122 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* Redeclare monospace font family: h5bp.com/j */
+
+/* line 124 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, serif;
+  _font-family: "courier new", monospace;
+  font-size: 1em;
+}
+
+/* line 129 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* Improve readability of pre-formatted text in all browsers */
+
+/* line 131 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* line 136 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+q {
+  quotes: none;
+}
+
+/* line 138 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+/* line 142 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+small {
+  font-size: 85%;
+}
+
+/* line 145 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* Position subscript and superscript content without affecting line-height: h5bp.com/k */
+
+/* line 147 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+sub {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 153 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.5em;
+}
+
+/* line 160 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 163 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* =============================================================================
+ * Lists
+ * ==========================================================================
+ */
+
+/* line 168 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+ul,
+ol {
+  margin: 1em 0;
+  padding: 0 0 0 40px;
+}
+
+/* line 172 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+dd {
+  margin: 0 0 0 40px;
+}
+
+/* line 175 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+
+/* line 176 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 182 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* =============================================================================
+ * Embedded content
+ * ==========================================================================
+ */
+
+/* line 187 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/*
+ * 1. Improve image quality when scaled in IE7: h5bp.com/d
+ * 2. Remove the gap between images and borders on image containers: h5bp.com/e
+ */
+
+/* line 192 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
+}
+
+/* line 197 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/*
+ * Correct overflow not hidden in IE9
+ */
+
+/* line 200 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 203 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* =============================================================================
+ * Figures
+ * ==========================================================================
+ */
+
+/* line 208 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+figure,
+form {
+  margin: 0;
+}
+
+/* line 211 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* =============================================================================
+ * Forms
+ * ==========================================================================
+ */
+
+/* line 216 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 221 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* Indicate that 'label' will shift focus to the associated form element */
+
+/* line 223 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+label {
+  cursor: pointer;
+}
+
+/* line 226 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/*
+ * 1. Correct color not inheriting in IE6/7/8/9
+ * 2. Correct alignment displayed oddly in IE6/7
+ */
+
+/* line 230 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+legend {
+  border: 0;
+  *margin-left: -7px;
+  padding: 0;
+}
+
+/* line 235 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/*
+ * 1. Correct font-size not inheriting in all browsers
+ * 2. Remove margins in FF3/4 S5 Chrome
+ * 3. Define consistent vertical alignment display in all browsers
+ */
+
+/* line 241 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+/* line 247 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/*
+ * 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
+ * 2. Correct inner spacing displayed oddly in IE6/7
+ */
+
+/* line 252 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+button,
+input {
+  line-height: normal;
+  *overflow: visible;
+}
+
+/* line 256 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/*
+ * Reintroduce inner spacing in 'table' to avoid overlap and whitespace issues in IE6/7
+ */
+
+/* line 259 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+
+/* line 260 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+table button,
+table input {
+  *overflow: auto;
+}
+
+/* line 263 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/*
+ * 1. Display hand cursor for clickable form elements
+ * 2. Allow styling of clickable form elements in iOS
+ */
+
+/* line 267 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+button {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+
+/* line 271 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+
+/* line 272 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+
+/* line 275 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 278 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 283 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 286 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/*
+ * Consistent box sizing and appearance
+ */
+
+/* line 289 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/*
+ * Remove inner padding and border in FF3/4: h5bp.com/l
+ */
+
+/* line 292 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 296 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/*
+ * 1. Remove default vertical scrollbar in IE6/7/8/9
+ * 2. Allow only vertical resizing
+ */
+
+/* line 300 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
+/* line 305 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* Colors for form validity */
+
+/* line 307 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+input:valid,
+textarea:valid,
+input:invalid,
+textarea:invalid {
+  background-color: #f0dddd;
+}
+
+/* line 312 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* =============================================================================
+ * Tables
+ * ==========================================================================
+ */
+
+/* line 316 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 320 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+td {
+  vertical-align: top;
+}
+
+/* line 335 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* =============================================================================
+ * Color Variables
+ * ==========================================================================
+ */
+
+/* line 342 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/*dk_gradient_top     = #cecece
+dk_gradient_bottom    = #a6a6a6
+dk_border             = #515151
+dk_inset              = #e2e2e2*/
+
+/* line 375 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* ==|== primary styles =====================================================
+ * Author: sponoders
+ * ==========================================================================
+ */
+
+/* line 12 : /home/nbaugh/Public/sponoders/node_modules/nib/lib/nib/index.styl */
+
+/* line 338 : /home/nbaugh/Public/sponoders/node_modules/nib/lib/nib/vendor.styl */
+
+/* line 2 : /home/nbaugh/Public/sponoders/node_modules/nib/lib/nib/config.styl */
+
+/* line 5 : /home/nbaugh/Public/sponoders/node_modules/nib/lib/nib/text/index.styl */
+
+/* line 2 : /home/nbaugh/Public/sponoders/node_modules/nib/lib/nib/text/aliases.styl */
+
+/* line 2 : /home/nbaugh/Public/sponoders/node_modules/nib/lib/nib/text/ellipsis.styl */
+
+/* line 11 : /home/nbaugh/Public/sponoders/node_modules/nib/lib/nib/text/hide-text.styl */
+
+/* line 3 : /home/nbaugh/Public/sponoders/node_modules/nib/lib/nib/reset.styl */
+
+/* line 4 : /home/nbaugh/Public/sponoders/node_modules/nib/lib/nib/positions.styl */
+
+/* line 2 : /home/nbaugh/Public/sponoders/node_modules/nib/lib/nib/clearfix.styl */
+
+/* line 2 : /home/nbaugh/Public/sponoders/node_modules/nib/lib/nib/iconic.styl */
+
+/* line 147 : /home/nbaugh/Public/sponoders/node_modules/nib/lib/nib/gradients.styl */
+
+/* line 2 : /home/nbaugh/Public/sponoders/node_modules/nib/lib/nib/config.styl */
+
+/* line 187 : /home/nbaugh/Public/sponoders/node_modules/nib/lib/nib/buttons.styl */
+
+/* line 338 : /home/nbaugh/Public/sponoders/node_modules/nib/lib/nib/vendor.styl */
+
+/* line 2 : /home/nbaugh/Public/sponoders/node_modules/nib/lib/nib/config.styl */
+
+/* line 147 : /home/nbaugh/Public/sponoders/node_modules/nib/lib/nib/gradients.styl */
+
+/* line 2 : /home/nbaugh/Public/sponoders/node_modules/nib/lib/nib/config.styl */
+
+/* line 13 : /home/nbaugh/Public/sponoders/node_modules/nib/lib/nib/box.styl */
+
+/* line 2 : /home/nbaugh/Public/sponoders/node_modules/nib/lib/nib/color-image.styl */
+
+/* line 381 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  color: #2d2d2d;
+}
+
+/* line 386 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+button,
+.button {
+  margin: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  display: inline-block;
+  text-decoration: none;
+  height: 30px;
+  background: #4587be;
+  background: url(gradient-data-uri(create-gradient-image(30px, top)));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4587be), color-stop(1, #33649a));
+  background: -webkit-linear-gradient(top, #4587be 0%, #33649a 100%);
+  background: -moz-linear-gradient(top, #4587be 0%, #33649a 100%);
+  background: linear-gradient(top, #4587be 0%, #33649a 100%);
+  border: 1px solid #1a1a1a;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 1px 0 0 #5ea1d8;
+  -moz-box-shadow: inset 0 1px 0 0 #5ea1d8;
+  box-shadow: inset 0 1px 0 0 #5ea1d8;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1;
+  padding: 7px 15px 8px 15px;
+  text-align: center;
+  color: #fff;
+}
+
+/* line 401 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+button:hover,
+.button:hover,
+button.hover,
+.button.hover {
+  background: #2e5a8b;
+  background: url(gradient-data-uri(create-gradient-image(30px, top)));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4587be), color-stop(1, #2e5a8b));
+  background: -webkit-linear-gradient(top, #4587be 0%, #2e5a8b 100%);
+  background: -moz-linear-gradient(top, #4587be 0%, #2e5a8b 100%);
+  background: linear-gradient(top, #4587be 0%, #2e5a8b 100%);
+  cursor: pointer;
+}
+
+/* line 405 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+button:active,
+.button:active,
+button.active,
+.button.active {
+  background: url(gradient-data-uri(create-gradient-image(30px, top)));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #33649a), color-stop(1, #4587be));
+  background: -webkit-linear-gradient(top, #33649a 0%, #4587be 100%);
+  background: -moz-linear-gradient(top, #33649a 0%, #4587be 100%);
+  background: linear-gradient(top, #33649a 0%, #4587be 100%);
+  -webkit-box-shadow: inset 0 -1px 0 0 #5ea1d8;
+  -moz-box-shadow: inset 0 -1px 0 0 #5ea1d8;
+  box-shadow: inset 0 -1px 0 0 #5ea1d8;
+}
+
+/* line 408 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+button:focus,
+.button:focus,
+button.focus,
+.button.focus {
+  outline: none;
+  background: url(gradient-data-uri(create-gradient-image(30px, top)));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #33649a), color-stop(1, #4587be));
+  background: -webkit-linear-gradient(top, #33649a 0%, #4587be 100%);
+  background: -moz-linear-gradient(top, #33649a 0%, #4587be 100%);
+  background: linear-gradient(top, #33649a 0%, #4587be 100%);
+  -webkit-box-shadow: 0 0 5px 1px #000;
+  -moz-box-shadow: 0 0 5px 1px #000;
+  box-shadow: 0 0 5px 1px #000;
+}
+
+/* line 412 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+a.button {
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 30px;
+  color: #fff;
+}
+
+/* line 417 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+#application {
+  position: absolute;
+  ((null)): 0;
+  ((null)): 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #dbdbdb url("/img/concrete_wall_3.png") repeat;
+}
+
+/* line 424 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+
+/* line 425 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+#application .wrapper #header {
+  position: absolute;
+  ((null)): 0;
+  ((null)): 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  height: 32px;
+  border-bottom: 1px solid #808080;
+  -webkit-box-shadow: inset 0 1px 0 #adadad;
+  -moz-box-shadow: inset 0 1px 0 #adadad;
+  box-shadow: inset 0 1px 0 #adadad;
+  background: url(gradient-data-uri(create-gradient-image(32px, top)));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e6e6e6), color-stop(1, #b2b2b2));
+  background: -webkit-linear-gradient(top, #e6e6e6 0%, #b2b2b2 100%);
+  background: -moz-linear-gradient(top, #e6e6e6 0%, #b2b2b2 100%);
+  background: linear-gradient(top, #e6e6e6 0%, #b2b2b2 100%);
+}
+
+/* line 434 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+#application .wrapper #header ul,
+#application .wrapper #header li {
+  height: 32px;
+  line-height: 32px;
+}
+
+/* line 437 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+#application .wrapper #header ul {
+  margin-left: 32px;
+}
+
+/* line 439 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+#application .wrapper #header ul li {
+  font-size: 12px;
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0px;
+  white-space: nowrap;
+  float: left;
+}
+
+/* line 442 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+#application .wrapper #header ul li span {
+  display: inline-block;
+  width: 22px;
+  height: 32px;
+  background: url("/img/separator.png") no-repeat;
+  background-position: center;
+}
+
+/* line 448 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+#application .wrapper #header ul li a {
+  display: inline-block;
+  color: #40404a;
+}
+
+/* line 451 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+#application .wrapper #message_wrapper {
+  height: 90px;
+  z-index: 2;
+  background-color: #343434;
+}
+
+/* line 455 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+#application .wrapper #message_wrapper #message {
+  position: absolute;
+  ((null)): 0;
+  ((null)): 0;
+  top: 15px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 700px;
+  height: 60px;
+  background-color: #2f2f2f;
+  -webkit-box-shadow: inset 0 1px 0 #252525 inset 1px 1px 0 #252525 inset 0 1px 1px #252525 inset 0 -1px 0 #454545;
+  -moz-box-shadow: inset 0 1px 0 #252525 inset 1px 1px 0 #252525 inset 0 1px 1px #252525 inset 0 -1px 0 #454545;
+  box-shadow: inset 0 1px 0 #252525 inset 1px 1px 0 #252525 inset 0 1px 1px #252525 inset 0 -1px 0 #454545;
+  border-bottom: 1px solid #454545;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* line 467 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+#application .wrapper #message_wrapper #message .container {
+  float: left;
+  width: 400px;
+}
+
+/* line 470 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+#application .wrapper #message_wrapper #message .container p,
+#application .wrapper #message_wrapper #message .container span {
+  float: left;
+}
+
+/* line 472 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+#application .wrapper #message_wrapper #message .container p,
+#application .wrapper #message_wrapper #message .container span {
+  line-height: 1;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* line 477 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+#application .wrapper #message_wrapper #message .container p {
+  margin: 0;
+  padding: 0;
+  margin-top: 15px;
+  color: #fff;
+}
+
+/* line 482 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+#application .wrapper #message_wrapper #message .container span {
+  margin-top: 6px;
+  display: block;
+  color: #888;
+}
+
+/* line 486 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+#application .wrapper #message_wrapper #message .container p,
+#application .wrapper #message_wrapper #message .container span {
+  margin-left: 15px;
+}
+
+/* line 488 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+#application .wrapper #message_wrapper #message button,
+#application .wrapper #message_wrapper #message a.button {
+  float: left;
+  margin-top: 15px;
+  width: 200px;
+  margin-left: 25px;
+}
+
+/* line 493 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+#application .wrapper #footer {
+  position: absolute;
+  ((null)): 0;
+  ((null)): 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  height: 32px;
+  border-top: 1px solid #808080;
+  -webkit-box-shadow: inset 0 -1px 0 #adadad;
+  -moz-box-shadow: inset 0 -1px 0 #adadad;
+  box-shadow: inset 0 -1px 0 #adadad;
+  background: url(gradient-data-uri(create-gradient-image(32px, top)));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e6e6e6), color-stop(1, #b2b2b2));
+  background: -webkit-linear-gradient(top, #e6e6e6 0%, #b2b2b2 100%);
+  background: -moz-linear-gradient(top, #e6e6e6 0%, #b2b2b2 100%);
+  background: linear-gradient(top, #e6e6e6 0%, #b2b2b2 100%);
+}
+
+/* line 503 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+#application .wrapper #sidebar {
+  position: absolute;
+  ((null)): 0;
+  ((null)): 0;
+  top: 32px;
+  left: 0px;
+  width: 80px;
+  bottom: 0;
+  z-index: 2;
+  border-right: 1px solid #222;
+  background: #444 url("/img/sidebar-normal.png") repeat;
+  -webkit-box-shadow: inset 0 0 25px #000;
+  -moz-box-shadow: inset 0 0 25px #000;
+  box-shadow: inset 0 0 25px #000;
+}
+
+/* line 513 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+#application .wrapper #sidebar ul#quicklaunch {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 516 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+#application .wrapper #sidebar ul#quicklaunch li,
+#application .wrapper #sidebar ul#quicklaunch a {
+  height: 80px;
+  width: 80px;
+}
+
+/* line 519 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+#application .wrapper #sidebar ul#quicklaunch li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0px;
+  border-bottom: 1px solid #2e2e2e;
+  position: relative;
+  ((null)): 0;
+  ((null)): 0;
+}
+
+/* line 523 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+#application .wrapper #sidebar ul#quicklaunch li:hover {
+  background: #323232 url("/img/sidebar-over.png") repeat;
+  -webkit-box-shadow: inset 0 0 25px #000;
+  -moz-box-shadow: inset 0 0 25px #000;
+  box-shadow: inset 0 0 25px #000;
+}
+
+/* line 526 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+#application .wrapper #sidebar ul#quicklaunch li:hover a {
+  opacity: 0.5;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+}
+
+/* line 528 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+#application .wrapper #sidebar ul#quicklaunch li.selected {
+  background: #323232 url("/img/sidebar-over.png") repeat;
+  -webkit-box-shadow: inset 0 0 25px #000;
+  -moz-box-shadow: inset 0 0 25px #000;
+  box-shadow: inset 0 0 25px #000;
+}
+
+/* line 531 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+#application .wrapper #sidebar ul#quicklaunch li.selected a {
+  opacity: 1;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+}
+
+/* line 533 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+#application .wrapper #sidebar ul#quicklaunch li.selected a:before {
+  content: "";
+  position: absolute;
+  ((null)): 0;
+  ((null)): 0;
+  top: 30.5px;
+  right: -1px;
+  z-index: 3;
+  width: 10px;
+  height: 19px;
+  margin: 0;
+  padding: 0;
+  background: url("/img/selected.png") no-repeat;
+}
+
+/* line 544 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+#application .wrapper #sidebar ul#quicklaunch li a {
+  display: block;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  background: transparent url("/img/avatar.png") no-repeat;
+  background-position: 50% 16px;
+  font-size: 14px;
+  text-align: center;
+  opacity: 0.5;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+}
+
+/* line 554 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+#application .wrapper #sidebar ul#quicklaunch li a span {
+  display: inline-block;
+  margin-top: 50px;
+}
+
+/* line 557 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+#application .wrapper #sidebar ul#quicklaunch li a:hover {
+  opacity: 1;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+}
+
+/* line 559 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+#application .wrapper #main-wrapper {
+  z-index: 1;
+  color: #fff;
+  position: absolute;
+  ((null)): 0;
+  ((null)): 0;
+  top: 33px;
+  left: 81px;
+  right: 0;
+  bottom: 30px;
+}
+
+/* line 567 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+#application .wrapper #main-wrapper #main-content {
+  position: absolute;
+  ((null)): 0;
+  ((null)): 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  background-color: #dbdbdb;
+}
+
+/* line 578 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+#application .wrapper #main-wrapper #main-content .room {
+  position: relative;
+  ((null)): 0;
+  ((null)): 0;
+  margin: 10px;
+  border: 1px solid #bababa;
+  -webkit-box-shadow: inset 0 1px 0 #fcfcfc;
+  -moz-box-shadow: inset 0 1px 0 #fcfcfc;
+  box-shadow: inset 0 1px 0 #fcfcfc;
+  height: 60px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  margin-bottom: 0;
+  background: url(gradient-data-uri(create-gradient-image(60px, top)));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f6f6f6), color-stop(1, #e7e7e7));
+  background: -webkit-linear-gradient(top, #f6f6f6 0%, #e7e7e7 100%);
+  background: -moz-linear-gradient(top, #f6f6f6 0%, #e7e7e7 100%);
+  background: linear-gradient(top, #f6f6f6 0%, #e7e7e7 100%);
+}
+
+/* line 587 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+#application .wrapper #main-wrapper #main-content .room:hover,
+#application .wrapper #main-wrapper #main-content .room.hover {
+  background: url(gradient-data-uri(create-gradient-image(60px, top)));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f6f6f6), color-stop(1, #d0d0d0));
+  background: -webkit-linear-gradient(top, #f6f6f6 0%, #d0d0d0 100%);
+  background: -moz-linear-gradient(top, #f6f6f6 0%, #d0d0d0 100%);
+  background: linear-gradient(top, #f6f6f6 0%, #d0d0d0 100%);
+  cursor: pointer;
+}
+
+/* line 590 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+#application .wrapper #main-wrapper #main-content .room:active,
+#application .wrapper #main-wrapper #main-content .room.active {
+  -webkit-box-shadow: inset 0 -1px 0 0 #d0d0d0;
+  -moz-box-shadow: inset 0 -1px 0 0 #d0d0d0;
+  box-shadow: inset 0 -1px 0 0 #d0d0d0;
+  background: url(gradient-data-uri(create-gradient-image(60px, top)));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e7e7e7), color-stop(1, #f6f6f6));
+  background: -webkit-linear-gradient(top, #e7e7e7 0%, #f6f6f6 100%);
+  background: -moz-linear-gradient(top, #e7e7e7 0%, #f6f6f6 100%);
+  background: linear-gradient(top, #e7e7e7 0%, #f6f6f6 100%);
+}
+
+/* line 593 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+#application .wrapper #main-wrapper #main-content .room:focus,
+#application .wrapper #main-wrapper #main-content .room.focus {
+  outline: none;
+  background: url(gradient-data-uri(create-gradient-image(60px, top)));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e7e7e7), color-stop(1, #f6f6f6));
+  background: -webkit-linear-gradient(top, #e7e7e7 0%, #f6f6f6 100%);
+  background: -moz-linear-gradient(top, #e7e7e7 0%, #f6f6f6 100%);
+  background: linear-gradient(top, #e7e7e7 0%, #f6f6f6 100%);
+}
+
+/* line 596 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+#application .wrapper #main-wrapper #main-content .room a {
+  position: absolute;
+  ((null)): 0;
+  ((null)): 0;
+  left: 0;
+  right: 25%;
+  display: block;
+  text-decoration: none;
+}
+
+/* line 602 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+#application .wrapper #main-wrapper #main-content .room a h3,
+#application .wrapper #main-wrapper #main-content .room a p {
+  line-height: 20px;
+  font-size: 13px;
+}
+
+/* line 606 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+#application .wrapper #main-wrapper #main-content .room a h3 {
+  margin-top: 10px;
+  color: #2d2d2d;
+  margin-left: 20px;
+}
+
+/* line 610 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+#application .wrapper #main-wrapper #main-content .room a p.description {
+  color: #5d5d5d;
+  margin: 0;
+  margin-left: 20px;
+  padding: 0;
+}
+
+/* line 615 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+#application .wrapper #main-wrapper #main-content .room div.statistics {
+  position: absolute;
+  ((null)): 0;
+  ((null)): 0;
+  left: 75%;
+  right: 0;
+  color: #4d4d4d;
+  height: 60px;
+  line-height: 60px;
+  font-size: 12px;
+}
+
+/* line 623 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+#application .wrapper #main-wrapper #main-content #user-track {
+  width: 250px;
+  border-right: 1px solid #808080;
+}
+
+/* line 626 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+#application .wrapper #main-wrapper #main-content #user-track .tracker {
+  width: 250px;
+  background-color: #808080;
+  height: 5px;
+}
+
+/* line 630 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+#application .wrapper #main-wrapper #main-content #user-track h1 {
+  position: absolute;
+  bottom: 0px;
+  ((null)): 0;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+  height: 36px;
+  line-height: 36px;
+  font-size: 18px;
+  width: 250px;
+  text-align: center;
+  background-color: #000;
+}
+
+/* line 642 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+
+/* line 643 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+.title h3 {
+  font-size: 24px;
+  line-height: 48px;
+  height: 48px;
+  margin-left: 10px;
+}
+
+/* line 648 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+
+/* line 649 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+.content .dialog {
+  height: 53px;
+}
+
+/* line 651 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+.content .description {
+  height: 73px;
+}
+
+/* line 653 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+.content .dialog {
+  margin: 10px;
+  margin-top: 0;
+  border: 1px solid #bababa;
+  -webkit-box-shadow: inset 0 1px 0 #fcfcfc;
+  -moz-box-shadow: inset 0 1px 0 #fcfcfc;
+  box-shadow: inset 0 1px 0 #fcfcfc;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  background: url(gradient-data-uri(create-gradient-image(60px, top)));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f6f6f6), color-stop(1, #e7e7e7));
+  background: -webkit-linear-gradient(top, #f6f6f6 0%, #e7e7e7 100%);
+  background: -moz-linear-gradient(top, #f6f6f6 0%, #e7e7e7 100%);
+  background: linear-gradient(top, #f6f6f6 0%, #e7e7e7 100%);
+}
+
+/* line 660 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+.content .dialog p,
+.content .dialog .controls {
+  position: relative;
+  ((null)): 0;
+  ((null)): 0;
+  margin: 10px;
+}
+
+/* line 663 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+.content .dialog .controls .submit {
+  margin-right: 10px;
+}
+
+/* line 665 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+.content .dialog input,
+.content .dialog select,
+.content .dialog label,
+.content .dialog textarea {
+  font-size: 13px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 670 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+.content .dialog label {
+  margin-left: 10px;
+  margin-top: 12px;
+  width: 100px;
+  height: 28px;
+  line-height: 28px;
+  color: #2d2d2d;
+  font-weight: bold;
+}
+
+/* line 678 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+.content .dialog input,
+.content .dialog select,
+.content .dialog textarea {
+  position: absolute;
+  ((null)): 0;
+  ((null)): 0;
+  left: 120px;
+  right: 20px;
+  margin-top: 12px;
+  padding: 3px;
+  line-height: 20px;
+  border: 1px solid #aaa;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  background: url(gradient-data-uri(create-gradient-image(26px, top)));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #eee), color-stop(1, #fff));
+  background: -webkit-linear-gradient(top, #eee 0%, #fff 100%);
+  background: -moz-linear-gradient(top, #eee 0%, #fff 100%);
+  background: linear-gradient(top, #eee 0%, #fff 100%);
+}
+
+/* line 689 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+.content .dialog input,
+.content .dialog select {
+  height: 20px;
+}
+
+/* line 691 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+.content .dialog textarea {
+  height: 40px;
+}
+
+/* line 693 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+.controls {
+  margin-left: 10px;
+}
+
+/* line 695 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+.controls .submit {
+  margin-right: 10px;
+}
+
+/* line 698 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+.extras {
+  position: absolute;
+  right: 10px;
+  top: 40px;
+  bottom: 10px;
+  left: 420px;
+}
+
+/* line 705 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+.extras .controls {
+  border: 1px solid #ffc0cb;
+  overflow: hidden;
+}
+
+/* line 709 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+.extras .controls div {
+  float: left;
+}
+
+/* line 712 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+.track-wrapper {
+  position: absolute;
+  overflow-y: auto;
+  left: 10px;
+  top: 40px;
+  bottom: 10px;
+  width: 400px;
+}
+
+/* line 720 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+.track-wrapper .track {
+  overflow: hidden;
+  border: 1px solid #fff;
+}
+
+/* line 724 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+.track-wrapper .track .controls {
+  overflow: hidden;
+}
+
+/* line 727 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+.track-wrapper .track .controls div {
+  float: left;
+  margin: 5px;
+  border: 1px solid #f00;
+}
+
+/* line 732 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+.track-wrapper .track .row {
+  overflow: hidden;
+}
+
+/* line 735 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+.track-wrapper .track .column {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  border: 1px solid #fff;
+  float: left;
+  background-color: #222;
+}
+
+/* line 743 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+.chat {
+  display: none;
+}
+
+/* line 746 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+.chat .message-form {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+}
+
+/* line 753 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+.chat .messages {
+  position: absolute;
+  top: 0;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  overflow-y: auto;
+}
+
+/* line 761 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+.chat .messages .message {
+  list-style: none outside;
+  padding: 10px 15px;
+  border-top: 1px solid #fff;
+  overflow: hidden;
+}
+
+/* line 767 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+.chat .messages .message .small-avatar {
+  float: left;
+  margin-top: 3px;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  display: block;
+  margin: 0 10px 0 0;
+}
+
+/* line 776 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+.chat .messages .message .small-avatar img {
+  height: 30px;
+  width: 30px;
+}
+
+/* line 780 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+.library,
+.chat {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 40px;
+  position: absolute;
+  border: 1px solid #008000;
+}
+
+/* line 788 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+.sound {
+  z-index: 9;
+  list-style: none outside;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  margin: 5px;
+  border: 1px solid #fff;
+}
+
+/* line 797 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+.beat {
+  border: 1px solid #008000;
+  position: relative;
+}
+
+/* line 801 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+.beat .remove {
+  display: block;
+  position: absolute;
+  background: #fff;
+  color: #f00;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+
+/* line 810 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+.main-room h1.name {
+  display: block;
+  clear: both;
+  background: #ccc;
+  margin: 5px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border: #c1c1c1;
+  height: 30px;
+  overflow: hidden;
+}
+
+/* line 820 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+.main-room h1.name .headline {
+  float: left;
+  margin: 0 10px;
+  line-height: 30px;
+  font-size: 16px;
+  color: #111;
+}
+
+/* line 827 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+.main-room h1.name .description {
+  line-height: 30px;
+  margin: 0 10px;
+  float: left;
+  font-size: 12px;
+  color: #444;
+  text-shadow: 1px 1px 1px #fff;
+}
+
+/* line 835 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+.dialog-wrapper,
+#spinner,
+#overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+
+/* line 843 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+#spinner {
+  background: #c8c8c8;
+  opacity: 0.8;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  filter: Alpha(80);
+  z-index: 1002;
+}
+
+/* line 849 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+#inner-spinner {
+  background: #5d5d5d;
+  color: #fff;
+  float: left;
+  width: 160px;
+  height: 160px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  top: 50%;
+  left: 50%;
+  margin-top: -80px;
+  margin-left: -80px;
+  position: absolute;
+  opacity: 0.9;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  filter: Alpha(90);
+}
+
+/* line 866 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+#overlay {
+  background: #666;
+  opacity: 0.5;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  filter: Alpha(50);
+  z-index: 1001;
+}
+
+/* line 873 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* ==|== media queries ======================================================
+ * PLACEHOLDER Media Queries for Responsive Design.
+ * These override the primary ('mobile first') styles
+ * Modify as content requires.
+ * ==========================================================================
+ */
+
+/* line 879 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+@media only screen and (min-width: 480px) {
+}
+
+/* line 882 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+@media only screen and (min-width: 768px) {
+}
+
+/* line 885 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* ==|== non-semantic helper classes ========================================
+ * Please define your styles before this section.
+ * ==========================================================================
+ */
+
+/* line 889 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* For image replacement */
+
+/* line 891 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+.ir {
+  display: block;
+  border: 0;
+  text-indent: -999em;
+  overflow: hidden;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+}
+
+/* line 900 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+.ir br {
+  display: none;
+}
+
+/* line 903 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+
+/* line 905 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/* line 909 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+
+/* line 911 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* line 920 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+
+/* line 921 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/* line 929 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+
+/* line 931 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* Hide visually and from screenreaders, but maintain layout */
+
+/* line 933 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+.invisible {
+  visibility: hidden;
+}
+
+/* line 936 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* Contain floats: h5bp.com/q */
+
+/* line 938 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+.clearfix {
+  *zoom: 1;
+}
+
+/* line 939 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+.clearfix:before {
+  content: "";
+  display: table;
+}
+
+/* line 942 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 948 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+/* ==|== print styles =======================================================
+ * Print styles.
+ * Inlined to avoid required HTTP connection: h5bp.com/r
+ * ==========================================================================
+ */
+
+/* line 953 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+@media print {
+
+/* line 954 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important;
+  }
+
+/* line 961 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+  a {
+    text-decoration: underline;
+  }
+
+/* line 963 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+  a:visited {
+    text-decoration: underline;
+  }
+
+/* line 965 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+/* line 967 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+/* line 969 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+  .ir a:after {
+    content: "";
+  }
+
+/* line 971 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+
+/* line 972 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+/* line 975 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+/* line 978 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+  thead {
+    display: table-header-group;
+  }
+
+/* line 981 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+  tr {
+    page-break-inside: avoid;
+  }
+
+/* line 983 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+  img {
+    page-break-inside: avoid;
+    max-width: 100% !important;
+  }
+
+/* line 986 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+  @page {
+    margin: 0.5cm;
+  }
+
+/* line 989 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+/* line 992 : /home/nbaugh/Public/sponoders/public/css/style.styl */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
 }
