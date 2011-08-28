@@ -121,6 +121,8 @@ script#library-template(type='text/template')
   .lib
     {{#sounds}}
     .sound(class='{{ type }}')
+      .sound-controls
+        .playSound(style="display:none;") Play
       .name {{ name }}
       .type {{ type }}
     {{/sounds}}
