@@ -120,18 +120,23 @@ script#library-template(type='text/template')
 script#room-template(type='text/template')
   h1.name
     span.headline {{ name }}
-  .controls
-    .icon#add-favorite(title='Add to Favorites', accesskey='W')&nbsp;
-    .icon#remove-favorite(title='Remove from Favorites', accesskey='Q')&nbsp;
-    .icon#leave-room(title='Leave Room', accesskey='X')&nbsp;
-    .admin-controls
-      button.delete-room.delete Delete Room
+    //.controls
+    //  .icon#add-favorite(title='Add to Favorites', accesskey='W')&nbsp;
+    //  .icon#remove-favorite(title='Remove from Favorites', accesskey='Q')&nbsp;
+    //  .icon#leave-room(title='Leave Room', accesskey='X')&nbsp;
+    //  .admin-controls
+    //    button.delete-room.delete Delete Room
 
     p.description {{ description }}
   .statistics.room-stats
-  .track
+  .track-wrapper
+    .track
   .users
   .extras
+    .controls
+      button#show-library Library
+      button#show-chat Chat
+    
     .library
     .chat
       .messages
