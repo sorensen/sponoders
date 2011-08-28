@@ -32,7 +32,7 @@ var express      = require('express'),
 
 var token        = '',
     staticViews  = __dirname + '/public',
-    staticAge    = 60000 * 60 * 24 * 365,
+    cacheAge    = 60000 * 60 * 24 * 365,
     cookieAge    = 60000 * 60 * 1,
     port         = 3000,
     secret       = 'abcdefg',
