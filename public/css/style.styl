@@ -929,21 +929,48 @@ a.button
   color black
   float left
   overflow hidden
+  text-align center
+  .name
+    font-size 12px
+  .type
+    font-size 11px
+    text-transform uppercase
+    font-weight bold
+
+synth = #A2C3DE
+bass = #BBB
+horn = #D1D166
+drums = #D8807E
+dk_synth = synth - 25%
+dk_bass = bass - 25%
+dk_horn = horn - 25%
+dk_drums = drums - 25%
 
 .synth, .beat.synth
-  background linear-gradient(60px top, #A2C3DE, #6A9FCB)
+  background linear-gradient(50px top, synth, dk_synth)
 
 .bass, .beat.bass
-  background linear-gradient(60px top, #bbb, #e7e7e7)
+  background linear-gradient(50px top, bass, dk_bass)
 
 .drums, .beat.drums
-  background linear-gradient(60px top, #D880A3, #C94D7E)
+  background linear-gradient(50px top, drums, dk_drums)
 
 .horn, .beat.horn
-  background linear-gradient(60px top, #D1D166, #C1C133)
+  background linear-gradient(50px top, horn, dk_horn)
 
 .type
     display:none;
+
+.sound, .beat
+  cursor pointer
+
+.playSound
+  text-indent: -9999px
+  background transparent url('/img/preview.png') no-repeat
+  background-position center center
+  display block
+  height 50px
+  width 50px
 
 .beat
   border 1px solid green
@@ -960,6 +987,9 @@ a.button
   width 34px
   height 34px
   overflow hidden
+  .name
+    font-size 10px
+    text-align center
 
   .remove
     display block
@@ -992,9 +1022,8 @@ a.button
   box-shadow(inset 0 1px 0 #555)
   border-radius(6px)
   background linear-gradient(60px top, #444, #222)
-  margin 5px
+  margin 10px
   height 30px
-
   h3
     margin 0 10px
     font-size 18px
