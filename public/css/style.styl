@@ -913,17 +913,20 @@ a.button
   float left
   overflow hidden
 
-.synth
-    background: #de0040
+.synth, .beat.synth
+  background linear-gradient(60px top, blue, #e7e7e7)
 
-.bass
-    background: #777
+.bass, .beat.bass
+  background linear-gradient(60px top, #777, #e7e7e7)
 
-.drums
-    background: #888
+.drums, .beat.drums
+  background linear-gradient(60px top, brown, #e7e7e7)
 
-.horns
-    background: #343
+.horn, .beat.horn
+  background linear-gradient(60px top, gold, #e7e7e7)
+
+.type
+    display:none;
 
 .beat
   border 1px solid green
