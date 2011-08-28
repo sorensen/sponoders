@@ -22,6 +22,7 @@
         this.volume = 100
         this.playing = false;
         this._paused = false;
+        this.muted = false;
         this.sounds = [
             {name: 'clap', type: 'percussion'},
             {name: 'cymbal', type: 'percussion'}, 
@@ -86,6 +87,16 @@
                 var sound = track[''+position][key]
                 soundManager.play(sound.name, {volume: this.volume * sound.volume});
             }
+        }
+    }
+
+    Tracker.prototype.mute = function() {
+        if (!this.muted) {
+            this.muted = true;
+            soundManager.mute();
+        } else {
+            this.muted = false;
+            soundManager.unmute();
         }
     }
 
