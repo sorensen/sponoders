@@ -1,5 +1,9 @@
 
+<<<<<<< HEAD
 /* line undefined : /home/nbaugh/Public/sponoders/public/css/jquery.cssemoticons.styl */
+=======
+/* line undefined : /Users/sorensen/dev/projects/sponoders/public/css/jquery.cssemoticons.styl */
+>>>>>>> 9aab3929e53426cfa1867f97415bf8fdc29d5d7a
 /*
  * jQuery CSSEmoticons plugin 0.2.9
  *
@@ -12,10 +16,10 @@
  * Date: Sun Oct 22 1:00:00 2010 -0500
  */
 
-/* line 12 : /home/nbaugh/Public/sponoders/public/css/jquery.cssemoticons.styl */
+/* line 12 : /Users/sorensen/dev/projects/sponoders/public/css/jquery.cssemoticons.styl */
 /* Basic styles for emoticons */
 
-/* line 14 : /home/nbaugh/Public/sponoders/public/css/jquery.cssemoticons.styl */
+/* line 14 : /Users/sorensen/dev/projects/sponoders/public/css/jquery.cssemoticons.styl */
 span.css-emoticon {
   font-family: "Trebuchet MS";
 /* seems to give the best and most consistent emoticon appearance */
@@ -51,14 +55,14 @@ span.css-emoticon {
   -webkit-transition-timing-function: linear, ease-in;
 }
 
-/* line 47 : /home/nbaugh/Public/sponoders/public/css/jquery.cssemoticons.styl */
+/* line 47 : /Users/sorensen/dev/projects/sponoders/public/css/jquery.cssemoticons.styl */
 span.css-emoticon.spaced-emoticon {
   padding-left: 0.2em;
   width: 1.34em;
   letter-spacing: 0.2em;
 }
 
-/* line 51 : /home/nbaugh/Public/sponoders/public/css/jquery.cssemoticons.styl */
+/* line 51 : /Users/sorensen/dev/projects/sponoders/public/css/jquery.cssemoticons.styl */
 span.css-emoticon.small-emoticon {
   font-size: 0.85em;
   width: 1.82em;
@@ -69,28 +73,28 @@ span.css-emoticon.small-emoticon {
   border-radius: 1.82em;
 }
 
-/* line 59 : /home/nbaugh/Public/sponoders/public/css/jquery.cssemoticons.styl */
+/* line 59 : /Users/sorensen/dev/projects/sponoders/public/css/jquery.cssemoticons.styl */
 span.css-emoticon.small-emoticon.spaced-emoticon {
   padding-left: 0;
   width: 1.82em;
   letter-spacing: 0.1em;
 }
 
-/* line 63 : /home/nbaugh/Public/sponoders/public/css/jquery.cssemoticons.styl */
+/* line 63 : /Users/sorensen/dev/projects/sponoders/public/css/jquery.cssemoticons.styl */
 span.css-emoticon.red-emoticon {
   background-color: #eb0542;
   background-image: -webkit-gradient(linear, right top, left top, color-stop(0.41, #eb0542), color-stop(0.56, #eb265a), color-stop(1, #fa376e));
   background-image: -moz-linear-gradient(center right, #eb0542 41%, #eb265a 56%, #fa376e 100%);
 }
 
-/* line 67 : /home/nbaugh/Public/sponoders/public/css/jquery.cssemoticons.styl */
+/* line 67 : /Users/sorensen/dev/projects/sponoders/public/css/jquery.cssemoticons.styl */
 span.css-emoticon.pink-emoticon {
   background-color: #ff8fd4;
   background-image: -webkit-gradient(linear, right top, left top, color-stop(0.41, #ff8fd4), color-stop(0.56, #ff99d8), color-stop(1, #ffade1));
   background-image: -moz-linear-gradient(center right, #ff8fd4 41%, #ff99d8 56%, #ffade1 100%);
 }
 
-/* line 71 : /home/nbaugh/Public/sponoders/public/css/jquery.cssemoticons.styl */
+/* line 71 : /Users/sorensen/dev/projects/sponoders/public/css/jquery.cssemoticons.styl */
 span.css-emoticon.no-rotate {
   transform: rotate(0deg);
   -webkit-transform: rotate(0deg);
@@ -112,19 +116,19 @@ span.css-emoticon.no-rotate {
   background-image: -moz-linear-gradient(center bottom, #fc0 41%, #fd5 56%, #fea 100%);
 }
 
-/* line 90 : /home/nbaugh/Public/sponoders/public/css/jquery.cssemoticons.styl */
+/* line 90 : /Users/sorensen/dev/projects/sponoders/public/css/jquery.cssemoticons.styl */
 span.css-emoticon.no-rotate.red-emoticon {
   background-image: -webkit-gradient(linear, right bottom, right top, color-stop(0.41, #eb0542), color-stop(0.56, #eb265a), color-stop(1, #fa376e));
   background-image: -moz-linear-gradient(center bottom, #eb0542 41%, #eb265a 56%, #fa376e 100%);
 }
 
-/* line 93 : /home/nbaugh/Public/sponoders/public/css/jquery.cssemoticons.styl */
+/* line 93 : /Users/sorensen/dev/projects/sponoders/public/css/jquery.cssemoticons.styl */
 span.css-emoticon.no-rotate.pink-emoticon {
   background-image: -webkit-gradient(linear, right bottom, right top, color-stop(0.41, #ff8fd4), color-stop(0.56, #ff99d8), color-stop(1, #ffade1));
   background-image: -moz-linear-gradient(center bottom, #ff8fd4 41%, #ff99d8 56%, #ffade1 100%);
 }
 
-/* line 96 : /home/nbaugh/Public/sponoders/public/css/jquery.cssemoticons.styl */
+/* line 96 : /Users/sorensen/dev/projects/sponoders/public/css/jquery.cssemoticons.styl */
 span.css-emoticon.counter-rotated {
   transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
@@ -137,19 +141,19 @@ span.css-emoticon.counter-rotated {
   background-image: -moz-linear-gradient(center left, #fc0 41%, #fd5 56%, #fea 100%);
 }
 
-/* line 106 : /home/nbaugh/Public/sponoders/public/css/jquery.cssemoticons.styl */
+/* line 106 : /Users/sorensen/dev/projects/sponoders/public/css/jquery.cssemoticons.styl */
 span.css-emoticon.counter-rotated.red-emoticon {
   background-image: -webkit-gradient(linear, left top, right top, color-stop(0.41, #eb0542), color-stop(0.56, #eb265a), color-stop(1, #fa376e));
   background-image: -moz-linear-gradient(center left, #eb0542 41%, #eb265a 56%, #fa376e 100%);
 }
 
-/* line 109 : /home/nbaugh/Public/sponoders/public/css/jquery.cssemoticons.styl */
+/* line 109 : /Users/sorensen/dev/projects/sponoders/public/css/jquery.cssemoticons.styl */
 span.css-emoticon.counter-rotated.pink-emoticon {
   background-image: -webkit-gradient(linear, left top, right top, color-stop(0.41, #ff8fd4), color-stop(0.56, #ff99d8), color-stop(1, #ffade1));
   background-image: -moz-linear-gradient(center left, #ff8fd4 41%, #ff99d8 56%, #ffade1 100%);
 }
 
-/* line 112 : /home/nbaugh/Public/sponoders/public/css/jquery.cssemoticons.styl */
+/* line 112 : /Users/sorensen/dev/projects/sponoders/public/css/jquery.cssemoticons.styl */
 span.css-emoticon.un-transformed-emoticon,
 span.css-emoticon.animated-emoticon:hover {
 /* font-size: inherit;
@@ -173,7 +177,7 @@ span.css-emoticon.animated-emoticon:hover {
   border-color: transparent;
 }
 
-/* line 132 : /home/nbaugh/Public/sponoders/public/css/jquery.cssemoticons.styl */
+/* line 132 : /Users/sorensen/dev/projects/sponoders/public/css/jquery.cssemoticons.styl */
 span.css-emoticon.nintendo-controller {
   font-size: 0.8em;
   height: 1.2em;
@@ -187,34 +191,34 @@ span.css-emoticon.nintendo-controller {
   background: -moz-linear-gradient(center bottom, #74798c 9%, #a5aabd 55%);
 }
 
-/* line 144 : /home/nbaugh/Public/sponoders/public/css/jquery.cssemoticons.styl */
+/* line 144 : /Users/sorensen/dev/projects/sponoders/public/css/jquery.cssemoticons.styl */
 /* Styles for two-character emoticons that need more letter-spacing for proportionality */
 
-/* line 146 : /home/nbaugh/Public/sponoders/public/css/jquery.cssemoticons.styl */
+/* line 146 : /Users/sorensen/dev/projects/sponoders/public/css/jquery.cssemoticons.styl */
 /* This is a dirty dirty hack, because webkit doesn't properly do the padding+width=total-width as it should
  * I think the width of the border may be throwing things off, because it's more noticable for small icons
  */
 
-/* line 149 : /home/nbaugh/Public/sponoders/public/css/jquery.cssemoticons.styl */
+/* line 149 : /Users/sorensen/dev/projects/sponoders/public/css/jquery.cssemoticons.styl */
 @media screen and (-webkit-min-device-pixel-ratio:0) {
 
-/* line 150 : /home/nbaugh/Public/sponoders/public/css/jquery.cssemoticons.styl */
+/* line 150 : /Users/sorensen/dev/projects/sponoders/public/css/jquery.cssemoticons.styl */
   span.css-emoticon.spaced-emoticon {
     width: 1.4em;
   }
 }
 
-/* line 153 : /home/nbaugh/Public/sponoders/public/css/jquery.cssemoticons.styl */
+/* line 153 : /Users/sorensen/dev/projects/sponoders/public/css/jquery.cssemoticons.styl */
 /* Styles for emoticons that need to have smaller characters to fit inside the circle */
 
-/* line 155 : /home/nbaugh/Public/sponoders/public/css/jquery.cssemoticons.styl */
+/* line 155 : /Users/sorensen/dev/projects/sponoders/public/css/jquery.cssemoticons.styl */
 /* Styles for additional colors */
 
-/* line 157 : /home/nbaugh/Public/sponoders/public/css/jquery.cssemoticons.styl */
+/* line 157 : /Users/sorensen/dev/projects/sponoders/public/css/jquery.cssemoticons.styl */
 /* styles for emoticons that need no rotation, like O_o */
 
-/* line 159 : /home/nbaugh/Public/sponoders/public/css/jquery.cssemoticons.styl */
+/* line 159 : /Users/sorensen/dev/projects/sponoders/public/css/jquery.cssemoticons.styl */
 /* Styles for emoticons that need to be rotated counter-clockwise, like <3 */
 
-/* line 161 : /home/nbaugh/Public/sponoders/public/css/jquery.cssemoticons.styl */
+/* line 161 : /Users/sorensen/dev/projects/sponoders/public/css/jquery.cssemoticons.styl */
 /* Styles for animated states */

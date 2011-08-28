@@ -1,0 +1,19 @@
+#login
+  form(action='/login', method='POST')
+    .title
+      h3 Login
+    .content
+      p.error!= error
+      p
+        label(for='login-username') Username: 
+        span.input-wrap
+          input#login-username(type='text', name='username')
+      p
+        label(for='login-password') Password: 
+        span.input-wrap
+          input#login-password(type='password', name='password')
+    .controls
+      button.submit#login-submit Login
+      button.cancel Cancel
+    
+    p: a(href='/register') Register

@@ -1,0 +1,27 @@
+#register
+  form(action='/register', method='POST')
+    .title
+      h3 Signup
+    .content
+      p.error!= error
+      p
+        label(for='signup-username') Username: 
+        span.input-wrap
+          input#signup-username(type='text', name='username')
+      p
+        label(for='signup-displayname') Display Name: (optional)
+        span.input-wrap
+          input#signup-displayname(type='text', name='displayname')
+      p
+        label(for='signup-email') Email: 
+        span.input-wrap
+          input#signup-email(type='text', name='email')
+      p
+        label(for='signup-password') Password: 
+        span.input-wrap
+          input#signup-password(type='password', name='password')
+    .controls
+      button.submit#signup-submit Signup
+      button.cancel Cancel
+
+    p: a(href='/login') Login

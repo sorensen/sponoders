@@ -18,8 +18,6 @@ script(src='/js/vendor/happy.js')
 script(src='/js/vendor/happy.methods.js')
 script(src='/js/vendor/spin.js')
 
-script(src='/routers/app.router.js')
-
 //- Core
 script(src='/core.js')
 script(type='text/javascript')
@@ -31,6 +29,8 @@ script(type='text/javascript')
   var port      = '!{locals.port}',
       token     = '!{locals.token}',
       bootstrap = !{JSON.stringify(bootstrap)};
+
+script(src='/routers/app.router.js')
 
 script(src='/models/app.model.js')
 script(src='/models/message.model.js')

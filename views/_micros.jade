@@ -77,18 +77,41 @@ script#user-template(type='text/template')
 
 //- Track
 script#track-template(type='text/template')
+  .controls
+    .back Back
+    .play Play
+    .pause Pause
+    .stop Stop
+    .foward Forward
+  .grid
 
 //- Track line item
 script#track-line-template(type='text/template')
   .row
-    .column.col_1
-    .column.col_2
-    .column.col_3
-    .column.col_4
-    .column.col_5
+    .column(col='1')
+    .column(col='2')
+    .column(col='3')
+    .column(col='4')
+    .column(col='5')
 
 //- Beat
 script#beat-template(type='text/template')
+  .beat
+    .controls
+      .remove X
+    .name {{ name }}
+    .img {{ img }}
+    .type {{ type }}
+
+//- Library
+script#library-template(type='text/template')
+  .lib
+    {{#sounds}}
+    .sound
+      .name {{ name }}
+      .type {{ type }}
+    {{/sounds}}
+
 
 //- Room
 script#room-template(type='text/template')
@@ -100,18 +123,19 @@ script#room-template(type='text/template')
     .icon#leave-room(title='Leave Room', accesskey='X')&nbsp;
     .admin-controls
       button.delete-room.delete Delete Room
-      button.ban-user Ban User
-      button.invite-user Invite User
 
     p.description {{ description }}
   .statistics.room-stats
   .track
   .users
-  .messages
-  .message-form
-    .icon#message-submit(title='Send Message')
-    span.input-wrap
-      input.create-message(type='text', name='message', placeholder='Say something...', length='255', accesskey='I')
+  .extras
+    .library
+    .chat
+      .messages
+      .message-form
+        .icon#message-submit(title='Send Message')
+        span.input-wrap
+          input.create-message(type='text', name='message', placeholder='Say something...', length='255', accesskey='I')
 
 //- Room listing
 script#room-list-template(type='text/template')
@@ -137,7 +161,7 @@ script#settings-template(type='text/template')
       p
         label(for='settings-username') ID:
         span.input-wrap
-          input#settings-id(type='text', name='id', disabled='disabled', value='{{ id }}')
+          input#settings-id(type='text', name='id', disabled='disabled', value='{{ _id }}')
       p
         label(for='settings-username') Username:
         span.input-wrap
