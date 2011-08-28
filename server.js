@@ -32,7 +32,7 @@ var express      = require('express'),
 
 var token        = '',
     staticViews  = __dirname + '/public',
-    staticAge    = 60000 * 60 * 24 * 365,
+    cacheAge    = 60000 * 60 * 24 * 365,
     cookieAge    = 60000 * 60 * 1,
     port         = 3000,
     secret       = 'abcdefg',
@@ -81,7 +81,7 @@ var core = browserify({
 
         __dirname + '/lib/routers/app.router.js',
 
-        __dirname + '/public/js/google.js',
+        __dirname + '/public/js/google.js',http://74.207.240.185:3000/#/
         __dirname + '/public/js/helpers.js',
         __dirname + '/public/js/init.js'
         **/
@@ -101,7 +101,7 @@ app.configure('development', function() {
 });
 
 // Production
-app.configure('production', function() {
+app.configure('PRODUCTION', function() {
     port = 80;
     app.use(express.static(staticViews, {maxAge: cacheAge}));
     app.use(express.static(__dirname + '/lib', {maxAge: cacheAge}));
@@ -263,8 +263,8 @@ app.get('/logout', function(req, res) {
 // Initialize
 // ----------
 
-app.listen(port);
-//app.listen(parseInt(process.env.PORT) || 7777); 
+app.listen(process.env.NODE_ENV === 'production' ? 80 : 3000);
+//app.listen(parseInt(process.env.PORT) || 7777); http://74.207.240.185/
 console.log('Listening on ' + app.address().port);
 
 // Attatch the DNode middleware and connect
