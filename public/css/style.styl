@@ -420,7 +420,7 @@ a.button
   left 0
   bottom 0
   right 0
-  background bg_fill url('/img/concrete_wall_3.png') repeat
+  background bg_fill
   .wrapper
     #header
       absolute()
@@ -449,12 +449,17 @@ a.button
             display inline-block
             color breadcrumb_fill
     #message_wrapper
-      height: 90px
+      absolute()
+      top 10px
+      bottom 10px
+      left: 10px
+      right 10px
       z-index: 2
+      border-radius(6px)
       background-color message_wrapper_fill
       #message
         absolute()
-        top: 15px
+        top: 25%
         left: 0
         right: 0
         margin 0 auto
@@ -500,6 +505,14 @@ a.button
       border-top 1px solid lt_border
       box-shadow(inset 0 -1px 0 lt_inset)
       background linear-gradient(32px top, lt_gradient_top, lt_gradient_bottom)
+      p
+        margin 0 auto
+        padding 0
+        line-height 32px
+        font-size 12px
+        color #333
+      span
+        margin-left 32px
     #sidebar
       absolute()
       top 32px
@@ -508,8 +521,9 @@ a.button
       bottom 0
       z-index 2
       border-right 1px solid #222222
-      background sidebar_normal_fill url('/img/sidebar-normal.png') repeat
+      background sidebar_normal_fill
       box-shadow(inset 0 0 25px black)
+      // http://www.iconfinder.com/search/3/?q=iconset%3Abrightmix
       ul#quicklaunch
         margin 0
         padding 0
@@ -521,12 +535,12 @@ a.button
           border-bottom: 1px solid #2e2e2e
           relative()
           &:hover
-            background sidebar_over_fill url('/img/sidebar-over.png') repeat
+            background sidebar_over_fill
             box-shadow(inset 0 0 25px black)
             a
               opacity(0.5)
           &.selected
-            background sidebar_over_fill url('/img/sidebar-over.png') repeat
+            background sidebar_over_fill
             box-shadow(inset 0 0 25px black)
             a
               opacity(1.0)
@@ -546,11 +560,33 @@ a.button
             color white
             cursor pointer
             text-decoration none
-            background transparent url('/img/avatar.png') no-repeat
-            background-position 50% 16px
             font-size 14px
             text-align center
             opacity(0.5)
+            &#rooms:after, &#settings:after, &#credits:after, &#logout:after
+              content: ""
+              absolute()
+              top: 12px
+              left 0
+              right 0
+              margin 0 auto
+              background transparent url('/img/sidebar/sprite.png') no-repeat
+            &#rooms:after
+              width 35px
+              height 36px
+              background-position 0px 0px
+            &#settings:after
+              width 35px
+              height 35px
+              background-position -35px 0px
+            &#credits:after
+              width 35px
+              height 36px
+              background-position -70px 0px
+            &#logout:after
+              width 36px
+              height 36px
+              background-position -105px 0px
             span
               display inline-block
               margin-top 50px
@@ -572,8 +608,6 @@ a.button
         bottom 0
         overflow-y auto
         background-color bg_fill
-        //background color_bg url('/img/concrete_wall_3.png') repeat
-        // TODO: .dialog
         room_darken = #e7e7e7 - 10%
         .room
           relative()
@@ -584,9 +618,21 @@ a.button
           border-radius(6px)
           margin-bottom: 0
           background linear-gradient(60px top, #f6f6f6, #e7e7e7)
+          background-position: right center
+          &:after
+            content: ""
+            absolute()
+            top: 18px
+            right 20px
+            width 24px
+            height 24px
+            background transparent url('/img/next.png') no-repeat
+            opacity(0.25)
           &:hover, &.hover
             background linear-gradient(60px top, #f6f6f6, room_darken)
             cursor: pointer
+            &:after
+              opacity(1.0)
           &:active, &.active
             box-shadow(inset 0 -1px 0 0 room_darken)
             background: linear-gradient(60px top, #e7e7e7, #f6f6f6)
@@ -638,12 +684,12 @@ a.button
             width 250px
             text-align center
             background-color black
-
 .title
   h3
-    font-size 24px
-    line-height 48px
-    height 48px
+    font-size 18px
+    line-height 38px
+    height 38px
+    margin-top 10px
     margin-left 10px
 .content
   .dialog
@@ -670,14 +716,14 @@ a.button
     label
       margin-left 10px
       margin-top 12px
-      width 100px
+      width 120px
       height 28px
       line-height 28px
       color #2d2d2d
       font-weight bold
     input, select, textarea
       absolute()
-      left 120px
+      left 140px
       right 20px
       margin-top 12px
       padding 3px
@@ -690,55 +736,65 @@ a.button
       height 20px
     textarea
       height 40px
+
 .controls
   margin-left 10px
   .submit
     margin-right 10px
 
 .extras
-  position absolute
-  right 10px
-  top 40px
-  bottom 10px
+  absolute()
   left 420px
-
+  top 153px
+  bottom 10px
   .controls
-    border 1px solid pink
     overflow hidden
-
     div
       float left
 
 .track-wrapper
-  position absolute
+  absolute()
   overflow-y auto
   left 10px
-  top 40px
+  top 153px
   bottom 10px
   width 400px
-
   .track
     overflow hidden
     border 1px solid white
-
     .controls
       overflow hidden
-
       div
-        float left
-        margin 5px
-        border 1px solid red
-
+        display inline-block
+        width 48px
+        height 48px
+        cursor pointer
+        opacity(0.5)
+        &:hover
+          opacity(1.0)
+      // http://www.iconfinder.com/search/?q=iconset%3Aoxygen
+      .play, .pause, .stop
+        background-position center
+      .play
+        background url('/img/player/play.png') no-repeat
+      .pause
+        background url('/img/player/pause.png') no-repeat
+      .stop
+        background url('/img/player/stop.png') no-repeat
+      //&.mute
     .row
       overflow hidden
-
     .column
       width 40px
       height 40px
       padding 5px
-      border 1px solid white
+      border-top 3px solid black
+      border-bottom 3px solid black
+      border-left 1px solid black
+      border-right 1px solid black
       float left
-      background-color #222
+      //background #eff2f5 url('/img/drop-area.png') no-repeat
+      background linear-gradient(50px top, lighten(#DBDBDB, 10%), lighten(#DBDBDB, 25%))
 
 .chat
   display none
@@ -783,7 +839,6 @@ a.button
   bottom 0
   top 40px
   position absolute
-  border 1px solid green
 
 .sound
   z-index 9
@@ -807,67 +862,65 @@ a.button
     right 0
     z-index 10
 
-.main-room h1.name
+.main-room
   display block
   clear both
-  background #CCC
-  margin 5px
-  border-radius 10px
-  border #C1C1C1
-  height 30px
   overflow hidden
-
-  .headline
-    float left
-    margin 0 10px
-    line-height 30px
-    font-size 16px
-    color #111
-
-  .description
-    line-height 30px
-    margin 0 10px
-    float left
-    font-size 12px
-    color #444
-    text-shadow 1px 1px 1px white
-
-.dialog-wrapper, #spinner, #overlay
-    position absolute
+  .title, .room-description, .statistics
+    absolute()
+  .title
     top 0
     left 0
+    right 75%
+    height 48px
+  .room-description
+    top 10px
+    left 25%
+    right 25%
+    height 38px
+    border: 1px solid #bababa
+    box-shadow(inset 0 1px 0 #fcfcfc)
+    border-radius(6px)
+    background linear-gradient(60px top, #f6f6f6, #e7e7e7)
+    p
+      margin 0
+      padding 0
+      line-height 38px
+      color #2d2d2d
+  .statistics
+    left 75%
     right 0
-    bottom 0
-    display none
+.dialog-wrapper, #spinner, #overlay
+  absolute()
+  top 0
+  left 0
+  right 0
+  bottom 0
+  display none
 
 #spinner
-    background #c8c8c8
-    opacity 0.8
-    filter Alpha(Opacity=80)
-    z-index 1002
+  background #c8c8c8
+  opacity(0.8)
+  z-index 1002
 
 #inner-spinner
-    background #5d5d5d
-    color white
-    float left
-    width 160px
-    height 160px
-    -webkit-border-radius 15px
-    -moz-border-radius 15px
-    border-radius 15px
-    top 50%
-    left 50%
-    margin-top -80px
-    margin-left -80px
-    position absolute
-    opacity .90
-    filter Alpha(Opacity=90)
+  background #5d5d5d
+  color white
+  float left
+  width 160px
+  height 160px
+  border-radius(15px)
+  margin-top -80px
+  margin-left -80px
+  absolute()
+  top 50%
+  left 50%
+  opacity(0.9)
 
 #overlay
-    background #666
-    opacity .50
-    filter Alpha(Opacity=50)
-    z-index 1001
+  background #666
+  opacity(0.5)
+  z-index 1001
 
 
 /* ==|== media queries ======================================================
