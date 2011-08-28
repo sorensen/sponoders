@@ -7,9 +7,11 @@
       iframe#vote(src='http://nodeknockout.com/iframe/sponoders', frameborder=0, scrolling='no', allowtransparency=true, width=115, height=25)
     #sidebar
       ul#quicklaunch
-        li.selected: a#rooms(href='/#/'): span Rooms
+        li: a#rooms(href='/#/'): span Rooms
         li: a#create-room(href='/#/create-room'): span New Room
+        li: a#settings(href='/#/settings'): span Profile
         li: a#login(accesskey='L', href='/login'): span Login
+        li.selected: a#register(accesskey='L', href='/register'): span Signup
       //#logged-in
     #main-wrapper
       #main-content
