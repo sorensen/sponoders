@@ -41,14 +41,17 @@
 
     Tracker.prototype.play =  function(pos) {
         var that = this;
-        this.playing = true;
-        this._play(this.position);
-        var interval = function() {
-            that.position += 250;
-            that._play(that.position)
-            that.trigger('playing', that.position)
+        if (this.playing === false) {
+            this.position = pos || this.position;
+            this.playing = true;
+            this._play(this.position);
+            var interval = function() {
+                that.position += 250;
+                that._play(that.position)
+                that.trigger('playing', that.position)
+            }
+            this.timer = setInterval(interval, 250)
         }
-        this.timer = setInterval(interval, 250)
     }
 
     Tracker.prototype.playSound = function(sound) {
@@ -69,6 +72,7 @@
             soundManager.resumeAll()
         } else {
             this.paused = true;
+            this.playing = false;
             soundManager.pauseAll()
             clearInterval(this.timer);
         }
@@ -93,7 +97,7 @@
 
     soundManager.url = 'swf/';
     soundManager.flashVersion = 9; // optional: shiny features (default = 8)
-    soundManager.useFlashBlock = true; // optionally, enable when you're ready to dive in
+    soundManager.useFlashBlock = false; // optionally, enable when you're ready to dive in
     soundManager.useHTML5Audio = false;
     soundManager.useHighPerformance = true;
     soundManager.useFastPolling = true;
