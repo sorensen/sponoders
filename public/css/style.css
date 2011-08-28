@@ -1350,8 +1350,8 @@ a.button {
 /* line 779 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .track-wrapper .track .controls div {
   display: inline-block;
-  width: 48px;
-  height: 48px;
+  width: 46px;
+  height: 46px;
   cursor: pointer;
   opacity: 0.5;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
@@ -1359,38 +1359,51 @@ a.button {
 
 /* line 785 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .track-wrapper .track .controls div:hover {
-  opacity: 1;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 0.75;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
 }
 
 /* line 788 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .track-wrapper .track .controls .play,
 .track-wrapper .track .controls .pause,
 .track-wrapper .track .controls .stop {
-  background-position: center;
+  margin-right: 10px;
 }
 
 /* line 790 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
-.track-wrapper .track .controls .play {
-  background: url("/img/player/play.png") no-repeat;
+.track-wrapper .track .controls .play,
+.track-wrapper .track .controls .pause,
+.track-wrapper .track .controls .stop,
+.track-wrapper .track .controls .mute {
+  background: url("/img/player/sprite.png") no-repeat;
 }
 
 /* line 792 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
-.track-wrapper .track .controls .pause {
-  background: url("/img/player/pause.png") no-repeat;
+.track-wrapper .track .controls .play {
+  background-position: -92px 0px;
 }
 
 /* line 794 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
-.track-wrapper .track .controls .stop {
-  background: url("/img/player/stop.png") no-repeat;
+.track-wrapper .track .controls .pause {
+  background-position: -46px 0px;
 }
 
 /* line 796 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+.track-wrapper .track .controls .stop {
+  background-position: -138px 0px;
+}
+
+/* line 798 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+.track-wrapper .track .controls .mute {
+  background-position: 0px 0px;
+}
+
+/* line 800 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .track-wrapper .track .row {
   overflow: hidden;
 }
 
-/* line 798 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 802 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .track-wrapper .track .column {
   width: 40px;
   height: 40px;
@@ -1405,17 +1418,17 @@ a.button {
   background: linear-gradient(top, #fff 0%, #e4e4e4 100%);
 }
 
-/* line 808 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 812 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .chat {
   display: none;
 }
 
-/* line 810 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 814 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .chat .input-wrap {
   left: 10px;
 }
 
-/* line 812 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 816 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .chat .message-form {
   position: absolute;
   bottom: 0;
@@ -1436,7 +1449,7 @@ a.button {
   background: linear-gradient(top, #f6f6f6 0%, #e7e7e7 100%);
 }
 
-/* line 823 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 827 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .chat .message-form input {
   position: absolute;
   ((null)): 0;
@@ -1464,7 +1477,7 @@ a.button {
   height: 27px;
 }
 
-/* line 839 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 843 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .chat .messages {
   position: absolute;
   top: 0;
@@ -1474,7 +1487,7 @@ a.button {
   overflow-y: auto;
 }
 
-/* line 847 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 851 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .chat .messages .message {
   position: relative;
   margin: 5px 3px;
@@ -1498,7 +1511,7 @@ a.button {
   overflow: hidden;
 }
 
-/* line 861 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 865 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .chat .messages .message .small-avatar {
   float: left;
   margin-top: 3px;
@@ -1509,24 +1522,24 @@ a.button {
   margin: 0 10px 0 0;
 }
 
-/* line 870 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 874 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .chat .messages .message .small-avatar img {
   height: 30px;
   width: 30px;
 }
 
-/* line 874 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 878 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .chat .messages .message .timeago {
   float: right;
   padding: 0 5px 0 10px;
 }
 
-/* line 878 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 882 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .chat .messages .message .username {
   padding: 0 10px 0 0;
 }
 
-/* line 881 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 885 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .library,
 .chat {
   left: 0;
@@ -1536,7 +1549,7 @@ a.button {
   position: absolute;
 }
 
-/* line 888 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 892 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .sound {
   z-index: 9;
   list-style: none outside;
@@ -1564,7 +1577,27 @@ a.button {
   overflow: hidden;
 }
 
-/* line 906 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 910 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+.synth {
+  background: #de0040;
+}
+
+/* line 913 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+.bass {
+  background: #777;
+}
+
+/* line 916 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+.drums {
+  background: #888;
+}
+
+/* line 919 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+.horns {
+  background: #343;
+}
+
+/* line 922 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .beat {
   border: 1px solid #008000;
   position: relative;
@@ -1590,7 +1623,7 @@ a.button {
   overflow: hidden;
 }
 
-/* line 922 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 938 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .beat .remove {
   display: block;
   position: absolute;
@@ -1610,14 +1643,14 @@ a.button {
   font-weight: bold;
 }
 
-/* line 938 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 954 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .main-room {
   display: block;
   clear: both;
   overflow: hidden;
 }
 
-/* line 943 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 959 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .main-room .title {
   border: 1px solid #bababa;
   -webkit-box-shadow: inset 0 1px 0 #fcfcfc;
@@ -1638,7 +1671,7 @@ a.button {
   position: absolute;
 }
 
-/* line 954 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 970 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .main-room .title h3 {
   margin: 0 10px;
   font-size: 18px;
@@ -1647,7 +1680,7 @@ a.button {
   float: left;
 }
 
-/* line 961 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 977 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .main-room .room-description {
   margin: 0;
   padding: 0;
@@ -1656,13 +1689,13 @@ a.button {
   color: #5d5d5d;
 }
 
-/* line 967 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 983 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .main-room .statistics {
   left: 75%;
   right: 0;
 }
 
-/* line 970 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 986 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .dialog-wrapper,
 #spinner,
 #overlay {
@@ -1676,7 +1709,7 @@ a.button {
   display: none;
 }
 
-/* line 978 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 994 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #spinner {
   background: #c8c8c8;
   opacity: 0.8;
@@ -1684,7 +1717,7 @@ a.button {
   z-index: 1002;
 }
 
-/* line 983 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 999 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #inner-spinner {
   background: #5d5d5d;
   color: #fff;
@@ -1705,14 +1738,14 @@ a.button {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
 }
 
-/* line 997 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 1013 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #vote {
   position: absolute;
   top: 4px;
   right: 0;
 }
 
-/* line 1002 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 1018 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #overlay {
   background: #666;
   opacity: 0.5;
@@ -1720,25 +1753,25 @@ a.button {
   z-index: 1001;
 }
 
-/* line 1007 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 1023 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 #application.login .wrapper #main-wrapper {
   left: 20px;
   right: 20px;
 }
 
-/* line 1011 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 1027 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .input-wrap {
   position: absolute;
   left: 120px;
   right: 30px;
 }
 
-/* line 1016 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 1032 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .unhappyMessage {
   display: none;
 }
 
-/* line 1019 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 1035 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .error span {
   border: 1px solid #900;
   padding: 10px;
@@ -1752,7 +1785,7 @@ a.button {
   display: block;
 }
 
-/* line 1029 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 1045 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* ==|== media queries ======================================================
  * PLACEHOLDER Media Queries for Responsive Design.
  * These override the primary ('mobile first') styles
@@ -1760,24 +1793,24 @@ a.button {
  * ==========================================================================
  */
 
-/* line 1035 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 1051 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 @media only screen and (min-width: 480px) {
 }
 
-/* line 1038 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 1054 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 @media only screen and (min-width: 768px) {
 }
 
-/* line 1041 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 1057 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* ==|== non-semantic helper classes ========================================
  * Please define your styles before this section.
  * ==========================================================================
  */
 
-/* line 1045 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 1061 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* For image replacement */
 
-/* line 1047 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 1063 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .ir {
   display: block;
   border: 0;
@@ -1789,24 +1822,24 @@ a.button {
   direction: ltr;
 }
 
-/* line 1056 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 1072 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .ir br {
   display: none;
 }
 
-/* line 1059 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 1075 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* Hide from both screenreaders and browsers: h5bp.com/u */
 
-/* line 1061 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 1077 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .hidden {
   display: none !important;
   visibility: hidden;
 }
 
-/* line 1065 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 1081 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* Hide only visually, but have it available for screenreaders: h5bp.com/v */
 
-/* line 1067 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 1083 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -1818,9 +1851,9 @@ a.button {
   width: 1px;
 }
 
-/* line 1076 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 1092 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 
-/* line 1077 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 1093 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -1831,49 +1864,49 @@ a.button {
   width: auto;
 }
 
-/* line 1085 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 1101 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
 
-/* line 1087 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 1103 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* Hide visually and from screenreaders, but maintain layout */
 
-/* line 1089 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 1105 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .invisible {
   visibility: hidden;
 }
 
-/* line 1092 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 1108 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* Contain floats: h5bp.com/q */
 
-/* line 1094 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 1110 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .clearfix {
   *zoom: 1;
 }
 
-/* line 1095 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 1111 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .clearfix:before {
   content: "";
   display: table;
 }
 
-/* line 1098 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 1114 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 .clearfix:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 1104 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 1120 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 /* ==|== print styles =======================================================
  * Print styles.
  * Inlined to avoid required HTTP connection: h5bp.com/r
  * ==========================================================================
  */
 
-/* line 1109 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 1125 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 @media print {
 
-/* line 1110 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 1126 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -1882,68 +1915,68 @@ a.button {
     -ms-filter: none !important;
   }
 
-/* line 1117 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 1133 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   a {
     text-decoration: underline;
   }
 
-/* line 1119 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 1135 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   a:visited {
     text-decoration: underline;
   }
 
-/* line 1121 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 1137 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-/* line 1123 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 1139 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
 
-/* line 1125 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 1141 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   .ir a:after {
     content: "";
   }
 
-/* line 1127 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 1143 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
 
-/* line 1128 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 1144 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-/* line 1131 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 1147 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-/* line 1134 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 1150 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   thead {
     display: table-header-group;
   }
 
-/* line 1137 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 1153 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   tr {
     page-break-inside: avoid;
   }
 
-/* line 1139 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 1155 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   img {
     page-break-inside: avoid;
     max-width: 100% !important;
   }
 
-/* line 1142 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 1158 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   @page {
     margin: 0.5cm;
   }
 
-/* line 1145 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 1161 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   p,
   h2,
   h3 {
@@ -1951,7 +1984,7 @@ a.button {
     widows: 3;
   }
 
-/* line 1148 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
+/* line 1164 : /Users/sorensen/dev/projects/sponoders/public/css/style.styl */
   h2,
   h3 {
     page-break-after: avoid;
