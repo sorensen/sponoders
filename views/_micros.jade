@@ -6,6 +6,7 @@ script#application-template(type='text/template')
       ul#breadcrumbs
         li.iconic.home: a#home Tracker.io
         li: span
+<<<<<<< HEAD
     #message_wrapper
       #message
         .container
@@ -19,6 +20,17 @@ script#application-template(type='text/template')
         li: a#library: span Library
         li: a#beats: span Beats
         li: a#logout(accesskey='L', href='/logout'): span Logout
+=======
+      #logged-in
+    #sidebar
+      ul#quicklaunch
+        li.selected: a#rooms(href='#/rooms'): span Rooms
+        li: a#settings(href='#/settings'): span Settings
+        li: a#credits(href='#/credits'): span Credits
+        //li: a#library: span Library
+        //li: a#beats: span Beats
+        //li: a#logout(accesskey='L', href='/logout'): span Logout
+>>>>>>> e974cef40100e12e754e712aa217561306f44a61
     #main-wrapper
       #main-content
         #user-track
@@ -38,10 +50,35 @@ script#application-template(type='text/template')
     #track-list
     #beat-list
     #footer
+     p
+       span NKO 2011
+       span Beau Sorensen, Nick Baugh, Jacob Chapel
+     p.stack
+       span DNode
+       span Backbone
+       span Mongoose
+       span Backbone-DNode
+       span Node.js
+
   #spinner
     #inner-spinner
   #overlay
   .dialog-wrapper#create-room-dialog
+
+//- Logged in User
+script#main-user(type='text/template')
+  span.avatar {{ avatar }}
+  span.username {{ username }}
+  span: a#logout(href='/logout') Logout
+
+//- Home page
+script#home-template(type='text/template')
+    #message_wrapper
+      #message
+        .container
+          p You haven't joined a room yet
+          span Select a room to join or create your own for free.
+        a.button#create-room(href='#/create-room', accesskey='C') Create a new room
 
 //- Application statistics
 script#application-stats-template(type='text/template')
@@ -116,18 +153,23 @@ script#library-template(type='text/template')
 script#room-template(type='text/template')
   h1.name
     span.headline {{ name }}
-  .controls
-    .icon#add-favorite(title='Add to Favorites', accesskey='W')&nbsp;
-    .icon#remove-favorite(title='Remove from Favorites', accesskey='Q')&nbsp;
-    .icon#leave-room(title='Leave Room', accesskey='X')&nbsp;
-    .admin-controls
-      button.delete-room.delete Delete Room
+    //.controls
+    //  .icon#add-favorite(title='Add to Favorites', accesskey='W')&nbsp;
+    //  .icon#remove-favorite(title='Remove from Favorites', accesskey='Q')&nbsp;
+    //  .icon#leave-room(title='Leave Room', accesskey='X')&nbsp;
+    //  .admin-controls
+    //    button.delete-room.delete Delete Room
 
     p.description {{ description }}
   .statistics.room-stats
-  .track
+  .track-wrapper
+    .track
   .users
   .extras
+    .controls
+      button#show-library Library
+      button#show-chat Chat
+    
     .library
     .chat
       .messages
