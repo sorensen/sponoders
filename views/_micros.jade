@@ -10,13 +10,14 @@ script#application-template(type='text/template')
     #sidebar
       ul#quicklaunch
         li.selected: a#rooms(href='#/'): span Rooms
+        li: a#create-room(href='#/create-room'): span New Room
         li: a#settings(href='#/settings'): span Profile
         //li: a#credits(href='#/credits'): span Credits
         //li: a#library: span Library
         //li: a#beats: span Beats
         li: a#login(accesskey='L', href='/login'): span Login
-        li: a#logout(accesskey='L', href='/logout'): span Logout
         li: a#register(accesskey='L', href='/register'): span Signup
+        li: a#logout(accesskey='L', href='/logout'): span Logout
       //#logged-in
     #main-wrapper
       #main-content
@@ -129,15 +130,16 @@ script#library-template(type='text/template')
 
 //- Room
 script#room-template(type='text/template')
-  .title: h3 {{ name }}
+  .title
+    h3 {{ name }}
+    .room-description {{ description }}
+
     //.controls
     //  .icon#add-favorite(title='Add to Favorites', accesskey='W')&nbsp;
     //  .icon#remove-favorite(title='Remove from Favorites', accesskey='Q')&nbsp;
     //  .icon#leave-room(title='Leave Room', accesskey='X')&nbsp;
     //  .admin-controls
     //    button.delete-room.delete Delete Room
-  .room-description
-    p {{ description }}
   .statistics.room-stats
   .track-wrapper
     .track
@@ -199,10 +201,10 @@ script#settings-template(type='text/template')
         label(for='settings-password') Password:
         span.input-wrap
           input#settings-password(type='password', name='password')
-      p.dialog
-        label(for='settings-password-confirm') Repeat Password:
-        span.input-wrap
-          input#settings-password-confirm(type='password', name='password_confirm')
+      //p.dialog
+      //  label(for='settings-password-confirm') Repeat Password:
+      //  span.input-wrap
+      //    input#settings-password-confirm(type='password', name='password_confirm')
     .controls
       button.submit#settings-submit Save
       button.cancel Cancel
