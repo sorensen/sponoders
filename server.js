@@ -101,7 +101,7 @@ app.configure('development', function() {
 });
 
 // Production
-app.configure('PRODUCTION', function() {
+app.configure('production', function() {
     port = 80;
     app.use(express.static(staticViews, {maxAge: cacheAge}));
     app.use(express.static(__dirname + '/lib', {maxAge: cacheAge}));
@@ -263,8 +263,18 @@ app.get('/logout', function(req, res) {
 // Initialize
 // ----------
 
-app.listen(process.env.NODE_ENV === 'production' ? 80 : 3000);
+//app.listen(process.env.NODE_ENV === 'production' ? 80 : 3000);
 //app.listen(parseInt(process.env.PORT) || 7777); http://74.207.240.185/
+app.listen(process.env.NODE_ENV === 'production' ? 80 : 8000, function() {
+  console.log('Ready');
+
+  // if run as root, downgrade to the owner of this file
+  if (process.getuid() === 0)
+    require('fs').stat(__filename, function(err, stats) {
+      if (err) return console.log(err)
+      process.setuid(stats.uid);
+    });
+});
 console.log('Listening on ' + app.address().port);
 
 // Attatch the DNode middleware and connect
