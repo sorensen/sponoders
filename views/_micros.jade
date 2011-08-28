@@ -4,37 +4,20 @@ script#application-template(type='text/template')
   .wrapper
     #header
       ul#breadcrumbs
-        li.iconic.home: a#home Tracker.io
+        li.iconic.home: a#home Loopon
         li: span
-    #message_wrapper
-      #message
-        .container
-          p You haven't joined a room yet
-          span Select a room to join or create your own for free.
-        button#create-room(accesskey='C') Create a new room
+      iframe(src='http://nodeknockout.com/iframe/sponoders', frameborder=0, scrolling='no', allowtransparency=true, width=115, height=25)
     #sidebar
       ul#quicklaunch
         li.selected: a#rooms(href='#/rooms'): span Rooms
-        li: a#settings(href='#/settings'): span Settings
+        li: a#settings(href='#/settings'): span Profile
         li: a#credits(href='#/credits'): span Credits
         //li: a#library: span Library
         //li: a#beats: span Beats
-        //li: a#logout(accesskey='L', href='/logout'): span Logout
+        li: a#logout(accesskey='L', href='/logout'): span Logout
       //#logged-in
     #main-wrapper
       #main-content
-        #user-track
-          .tracker
-          p.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse elementum mauris placerat diam blandit condimentum. Etiam porta orci quis felis laoreet sed adipiscing dolor varius. Nunc augue lorem, facilisis sed volutpat in, vehicula et purus. Quisque non enim dui, non viverra massa. Etiam ut velit elit. Fusce eu augue vel purus egestas pharetra. Fusce ac leo orci, venenatis rhoncus eros.
-            Cras vestibulum orci ac eros euismod gravida. Pellentesque malesuada fermentum nisi id interdum. Donec mollis, ante vel lobortis bibendum, purus quam laoreet tellus, ut pellentesque leo magna non lectus. Aliquam vehicula nulla pharetra tortor tristique vel porta arcu pretium. Quisque viverra hendrerit venenatis. Phasellus mauris neque, placerat a pulvinar id, tincidunt ac dui. Nunc dictum libero non neque volutpat id sodales ante suscipit. Ut hendrerit, massa eu scelerisque accumsan, sem urna fermentum enim, vel fringilla velit ante et felis. Nulla in sem vel dolor vestibulum varius. Vestibulum tortor odio, adipiscing non aliquet id, porta nec turpis. Etiam tempor lacinia est, vel placerat lectus tempus ut. Cras hendrerit, dolor a dignissim malesuada, ante magna auctor justo, ac dapibus elit massa in nisl.
-            Nam sed odio in lectus porta feugiat a ut nibh. Sed venenatis odio ac magna varius faucibus. Maecenas non lacus mauris. Quisque vel libero erat. In ligula felis, imperdiet sed sagittis sed, facilisis eget ipsum. In id mi pellentesque velit pharetra facilisis. Donec diam enim, interdum in imperdiet vitae, lobortis ac mi. Mauris dignissim sollicitudin sodales. Nulla pharetra accumsan tristique. Mauris iaculis, ligula eget aliquam lacinia, elit nunc cursus tortor, quis hendrerit sapien metus ac orci. Sed turpis turpis, suscipit consequat pulvinar at, convallis nec libero.
-            Nulla posuere elit eu nisi sagittis cursus. Vivamus scelerisque libero ut dolor cursus in ultricies eros fringilla. Nam egestas molestie molestie. Nam at nibh in nisl varius gravida. Nam malesuada convallis viverra. Sed venenatis nibh sed urna fermentum varius. Nam vulputate dolor id quam hendrerit sagittis volutpat quam volutpat. Vivamus et orci ut purus congue feugiat quis eu libero. Donec euismod rutrum eleifend. Quisque ut turpis orci. Ut egestas leo at dolor pretium nec faucibus ipsum dictum. Nulla aliquam pellentesque auctor. Phasellus felis tortor, fringilla nec tincidunt nec, porttitor ut eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-            Ut porta tincidunt augue, a venenatis odio dapibus sit amet. Aenean sapien arcu, auctor a luctus a, laoreet id felis. Nullam posuere odio eu sem bibendum dapibus. Praesent a lectus at mauris tempus tincidunt et a odio. Nullam aliquet neque vitae eros ultricies nec pharetra est sodales. In diam purus, pellentesque in pharetra ac, iaculis id est. Duis convallis gravida lectus, a sodales nibh iaculis vel. Sed iaculis pellentesque nisl, at suscipit tellus cursus a. Cras eleifend tempus elit in congue. Aliquam convallis gravida mi, in fermentum nisl tristique vel. Phasellus pulvinar, urna eget consectetur convallis, erat urna tincidunt nibh, vel interdum mauris dolor nec diam.
-            Suspendisse potenti. Sed ultricies porta tortor sit amet ullamcorper. Maecenas urna libero, lacinia vel fermentum sagittis, luctus in elit. Vivamus rhoncus rutrum turpis sit amet tincidunt. Morbi euismod lacus et ante lacinia a aliquet libero porttitor. Suspendisse id lacus non justo imperdiet pellentesque porttitor a nibh. Nulla tellus nisi, scelerisque eget accumsan volutpat, iaculis sit amet tellus. Vivamus ac pretium elit. Nam volutpat interdum dui, ut ultrices sem facilisis vel. Phasellus non enim augue. Sed sit amet lacus id enim posuere sagittis nec nec erat.
-            Phasellus auctor rutrum semper. Ut malesuada, tellus in egestas molestie, justo mauris mattis leo, non ultricies risus nibh non sem. Quisque aliquet iaculis ornare. Phasellus mollis elementum massa, ultricies ultrices velit adipiscing at. Aliquam erat volutpat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam ornare auctor volutpat. Sed orci justo, imperdiet ac malesuada eget, fringilla non tellus. Pellentesque enim ipsum, varius quis sagittis non, egestas quis massa. Aenean molestie libero suscipit nunc tempus ut sollicitudin augue malesuada.
-            Vivamus suscipit augue et erat facilisis vestibulum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed est mi, vehicula in posuere et, fermentum vel diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam id metus dui, nec ullamcorper quam. Vivamus eu lacus risus, at tempor nunc. Integer ultricies nibh sapien. Proin suscipit dictum mauris non consectetur. Proin pretium laoreet viverra. Duis euismod nibh eu massa faucibus eu posuere elit vehicula. Fusce facilisis cursus turpis, ut iaculis elit semper ut.
-            Proin condimentum tempor adipiscing. Duis elit urna, aliquam in venenatis rutrum, vestibulum non neque. Quisque id nunc et lacus elementum ullamcorper. Quisque vitae lacus sed mi dictum ultricies quis vulputate erat. Donec imperdiet aliquam diam, at aliquam nulla ultrices varius. Cras vitae ante eget lacus pulvinar blandit. Nulla a nisi elit. Vivamus vitae erat eget augue pellentesque mattis sed ac enim. Suspendisse tincidunt auctor egestas. Nullam enim turpis, consectetur quis scelerisque ac, fermentum ac magna.
     #user-list
     #room-list
     #track-list
@@ -68,7 +51,7 @@ script#home-template(type='text/template')
       #message
         .container
           p You haven't joined a room yet
-          span Select a room to join or create your own for free.
+          span Select a room to join or create your own.
         a.button#create-room(href='#/create-room', accesskey='C') Create a new room
 
 //- Application statistics
@@ -106,10 +89,10 @@ script#user-template(type='text/template')
 //- Track
 script#track-template(type='text/template')
   .controls
-    .play Play
-    .pause Pause
-    .stop Stop
-    .mute Mute
+    .play
+    .pause
+    .stop
+    .mute
   .grid
 
 //- Track line item
@@ -144,16 +127,15 @@ script#library-template(type='text/template')
 
 //- Room
 script#room-template(type='text/template')
-  h1.name
-    span.headline {{ name }}
+  .title: h3 {{ name }}
     //.controls
     //  .icon#add-favorite(title='Add to Favorites', accesskey='W')&nbsp;
     //  .icon#remove-favorite(title='Remove from Favorites', accesskey='Q')&nbsp;
     //  .icon#leave-room(title='Leave Room', accesskey='X')&nbsp;
     //  .admin-controls
     //    button.delete-room.delete Delete Room
-
-    p.description {{ description }}
+  .room-description
+    p {{ description }}
   .statistics.room-stats
   .track-wrapper
     .track
@@ -162,7 +144,6 @@ script#room-template(type='text/template')
     .controls
       button#show-library Library
       button#show-chat Chat
-
     .library
     .chat
       .messages
@@ -188,36 +169,36 @@ script#room-stats-template(type='text/template')
 
 //- Settings template
 script#settings-template(type='text/template')
-  #settings-form.dialog
+  #settings-form
     .title
       h3 Settings
     .content
-      p
+      p.dialog
         label(for='settings-username') ID:
         span.input-wrap
           input#settings-id(type='text', name='id', disabled='disabled', value='{{ _id }}')
-      p
+      p.dialog
         label(for='settings-username') Username:
         span.input-wrap
           input#settings-username(type='text', name='username', disabled='disabled', value='{{ username }}')
-      p
-        label(for='settings-displayname') Display Name: (optional)
+      p.dialog
+        label(for='settings-displayname') Display Name:
         span.input-wrap
           input#settings-displayname(type='text', name='displayname', value='{{ displayName }}')
-      p
+      p.dialog
         label(for='settings-email') Email:
         span.input-wrap
           input#settings-email(type='text', name='email', value='{{ email }}')
-      p
+      p.dialog.description
         label(for='settings-bio') Bio:
         span.input-wrap
           textarea#settings-bio(name='bio', rows='3') {{ bio }}
-      p
+      p.dialog
         label(for='settings-password') Password:
         span.input-wrap
           input#settings-password(type='password', name='password')
-      p
-        label(for='settings-password-confirm') Confirm Password:
+      p.dialog
+        label(for='settings-password-confirm') Repeat Password:
         span.input-wrap
           input#settings-password-confirm(type='password', name='password_confirm')
     .controls

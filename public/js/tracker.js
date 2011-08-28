@@ -83,7 +83,7 @@
 
     Tracker.prototype._play = function(position) {
         var line = this.track;
-        if (line.end === position) return this.position = 0;
+        if (line.end === position) return this.position = -250;
         line = line[''+position];
         if (line) {
             for (var key in line) {
