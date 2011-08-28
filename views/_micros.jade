@@ -6,12 +6,12 @@ script#application-template(type='text/template')
       ul#breadcrumbs
         li.iconic.home: a#home Loopon
         li: span
-      iframe(src='http://nodeknockout.com/iframe/sponoders', frameborder=0, scrolling='no', allowtransparency=true, width=115, height=25)
+      iframe#vote(src='http://nodeknockout.com/iframe/sponoders', frameborder=0, scrolling='no', allowtransparency=true, width=115, height=25)
     #sidebar
       ul#quicklaunch
-        li.selected: a#rooms(href='#/rooms'): span Rooms
+        li.selected: a#rooms(href='#/'): span Rooms
         li: a#settings(href='#/settings'): span Profile
-        li: a#credits(href='#/credits'): span Credits
+        //li: a#credits(href='#/credits'): span Credits
         //li: a#library: span Library
         //li: a#beats: span Beats
         li: a#logout(accesskey='L', href='/logout'): span Logout
@@ -73,7 +73,7 @@ script#application-stats-template(type='text/template')
 script#message-list-template(type='text/template')
 script#message-template(type='text/template')
   span.small-avatar: img(src='{{ avatar }}')
-  a.username(href='#/users/{{ username }}') {{ displayName }}
+  span.username {{ displayName }}
   span.data {{ text }}
   abbr.created.timeago(title='{{ created }}') {{ created }}
 
@@ -181,18 +181,18 @@ script#settings-template(type='text/template')
         label(for='settings-username') Username:
         span.input-wrap
           input#settings-username(type='text', name='username', disabled='disabled', value='{{ username }}')
-      p.dialog
-        label(for='settings-displayname') Display Name:
-        span.input-wrap
-          input#settings-displayname(type='text', name='displayname', value='{{ displayName }}')
+      //p.dialog
+      //  label(for='settings-displayname') Display Name:
+      //  span.input-wrap
+      //    input#settings-displayname(type='text', name='displayname', value='{{ displayName }}')
       p.dialog
         label(for='settings-email') Email:
         span.input-wrap
           input#settings-email(type='text', name='email', value='{{ email }}')
-      p.dialog.description
-        label(for='settings-bio') Bio:
-        span.input-wrap
-          textarea#settings-bio(name='bio', rows='3') {{ bio }}
+      //p.dialog.description
+      //  label(for='settings-bio') Bio:
+      //  span.input-wrap
+      //    textarea#settings-bio(name='bio', rows='3') {{ bio }}
       p.dialog
         label(for='settings-password') Password:
         span.input-wrap

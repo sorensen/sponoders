@@ -1,19 +1,47 @@
-#login
-  form(action='/login', method='POST')
-    .title
-      h3 Login
-    .content
-      p.error!= error
-      p
-        label(for='login-username') Username: 
-        span.input-wrap
-          input#login-username(type='text', name='username')
-      p
-        label(for='login-password') Password: 
-        span.input-wrap
-          input#login-password(type='password', name='password')
-    .controls
-      button.submit#login-submit Login
-      button.cancel Cancel
-    
-    p: a(href='/register') Register
+#application.login
+  .wrapper
+    #header
+      ul#breadcrumbs
+        li.iconic.home: a#home Loopon
+        li: span
+      iframe#vote(src='http://nodeknockout.com/iframe/sponoders', frameborder=0, scrolling='no', allowtransparency=true, width=115, height=25)
+    #main-wrapper
+      #main-content
+        #login
+          form(action='/login', method='POST')
+            .title
+              h3 Login
+            .content
+              p.error!= error
+              p.dialog
+                label(for='login-username') Username: 
+                span.input-wrap
+                  input#login-username(type='text', name='username')
+              p.dialog
+                label(for='login-password') Password: 
+                span.input-wrap
+                  input#login-password(type='password', name='password')
+            .controls
+              button.submit#login-submit Login
+              //button.cancel Cancel
+              a.button(href='/register') Register
+    #user-list
+    #room-list
+    #track-list
+    #beat-list
+    #footer
+     p.nko
+       span NKO 2011
+     p.authors
+       span Beau Sorensen, Nick Baugh, Jacob Chapel
+     p.stack
+       span DNode
+       span Backbone
+       span Mongoose
+       span Backbone-DNode
+       span Node.js
+
+  #spinner
+    #inner-spinner
+  #overlay
+  .dialog-wrapper#create-room-dialog

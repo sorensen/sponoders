@@ -1,27 +1,55 @@
-#register
-  form(action='/register', method='POST')
-    .title
-      h3 Signup
-    .content
-      p.error!= error
-      p
-        label(for='signup-username') Username: 
-        span.input-wrap
-          input#signup-username(type='text', name='username')
-      p
-        label(for='signup-displayname') Display Name: (optional)
-        span.input-wrap
-          input#signup-displayname(type='text', name='displayname')
-      p
-        label(for='signup-email') Email: 
-        span.input-wrap
-          input#signup-email(type='text', name='email')
-      p
-        label(for='signup-password') Password: 
-        span.input-wrap
-          input#signup-password(type='password', name='password')
-    .controls
-      button.submit#signup-submit Signup
-      button.cancel Cancel
+#application.login
+  .wrapper
+    #header
+      ul#breadcrumbs
+        li.iconic.home: a#home Loopon
+        li: span
+      iframe#vote(src='http://nodeknockout.com/iframe/sponoders', frameborder=0, scrolling='no', allowtransparency=true, width=115, height=25)
+    #main-wrapper
+      #main-content
+        #login
+          form(action='/register', method='POST')
+            .title
+              h3 Signup
+            .content
+              p.error!= error
+              p.dialog
+                label(for='signup-username') Username: 
+                span.input-wrap
+                  input#signup-username(type='text', name='username')
+              //p.dialog
+              //  label(for='signup-displayname') Display: (optional)
+              //  span.input-wrap
+              //    input#signup-displayname(type='text', name='displayname')
+              p.dialog
+                label(for='signup-email') Email: 
+                span.input-wrap
+                  input#signup-email(type='text', name='email')
+              p.dialog
+                label(for='signup-password') Password: 
+                span.input-wrap
+                  input#signup-password(type='password', name='password')
+            .controls
+              button.submit#signup-submit Signup
+              a.button(href='/login') Login
+            
+    #user-list
+    #room-list
+    #track-list
+    #beat-list
+    #footer
+     p.nko
+       span NKO 2011
+     p.authors
+       span Beau Sorensen, Nick Baugh, Jacob Chapel
+     p.stack
+       span DNode
+       span Backbone
+       span Mongoose
+       span Backbone-DNode
+       span Node.js
 
-    p: a(href='/login') Login
+  #spinner
+    #inner-spinner
+  #overlay
+  .dialog-wrapper#create-room-dialog
