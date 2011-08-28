@@ -569,7 +569,13 @@ a.button
             font-size 14px
             text-align center
             opacity(0.5)
-            &#rooms:after, &#settings:after, &#credits:after, &#logout:after
+            &#rooms:after
+            &#create-room:after
+            &#settings:after
+            &#credits:after
+            &#logout:after
+            &#login:after
+            &#register:after
               content: ""
               absolute()
               top: 12px
@@ -581,6 +587,10 @@ a.button
               width 35px
               height 36px
               background-position 0px 0px
+            &#create-room:after
+              width 36px
+              height 36px
+              background-position -141px 0px
             &#settings:after
               width 35px
               height 35px
@@ -593,6 +603,14 @@ a.button
               width 36px
               height 36px
               background-position -105px 0px
+            &#login:after
+              background-position -212px 0px
+              width 30px
+              height 36px
+            &#register:after
+              background-position -177px 0px
+              width 35px
+              height 36px
             span
               display inline-block
               margin-top 50px
@@ -985,7 +1003,7 @@ a.button
     float left
     color #fff
     text-shadow 0 -1px 1px #000
-  
+
   .room-description, .description
     margin 0
     padding 0
