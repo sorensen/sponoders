@@ -6,13 +6,15 @@ script#application-template(type='text/template')
       ul#breadcrumbs
         li.iconic.home: a#home(href='/#') Tracker.io
         li: span
+      #logged-in
     #sidebar
       ul#quicklaunch
         li.selected: a#rooms(href='#/rooms'): span Rooms
         li: a#settings(href='#/settings'): span Settings
-        li: a#library: span Library
-        li: a#beats: span Beats
-        li: a#logout(accesskey='L', href='/logout'): span Logout
+        li: a#credits(href='#/credits'): span Credits
+        //li: a#library: span Library
+        //li: a#beats: span Beats
+        //li: a#logout(accesskey='L', href='/logout'): span Logout
     #main-wrapper
       #main-content
         #user-track
@@ -32,10 +34,26 @@ script#application-template(type='text/template')
     #track-list
     #beat-list
     #footer
+     p
+       span NKO 2011
+       span Beau Sorensen, Nick Baugh, Jacob Chapel
+     p.stack
+       span DNode
+       span Backbone
+       span Mongoose
+       span Backbone-DNode
+       span Node.js
+
   #spinner
     #inner-spinner
   #overlay
   .dialog-wrapper#create-room-dialog
+
+//- Logged in User
+script#main-user(type='text/template')
+  span.avatar {{ avatar }}
+  span.username {{ username }}
+  span: a#logout(href='/logout') Logout
 
 //- Home page
 script#home-template(type='text/template')

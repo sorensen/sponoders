@@ -723,6 +723,44 @@ button
     color #444
     text-shadow 1px 1px 1px white
 
+.dialog-wrapper, #spinner, #overlay
+    position absolute
+    top 0
+    left 0
+    right 0
+    bottom 0
+    display none
+
+#spinner
+    background #c8c8c8
+    opacity 0.8
+    filter Alpha(Opacity=80)
+    z-index 1002
+
+#inner-spinner
+    background #5d5d5d
+    color white
+    float left
+    width 160px
+    height 160px
+    -webkit-border-radius 15px
+    -moz-border-radius 15px
+    border-radius 15px
+    top 50%
+    left 50%
+    margin-top -80px
+    margin-left -80px
+    position absolute
+    opacity .90
+    filter Alpha(Opacity=90)
+
+#overlay 
+    background #666
+    opacity .50
+    filter Alpha(Opacity=50)
+    z-index 1001
+
+
 /* ==|== media queries ======================================================
  * PLACEHOLDER Media Queries for Responsive Design.
  * These override the primary ('mobile first') styles
