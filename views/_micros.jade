@@ -6,7 +6,12 @@ script#application-template(type='text/template')
       ul#breadcrumbs
         li.iconic.home: a#home Tracker.io
         li: span
-      #logged-in
+    #message_wrapper
+      #message
+        .container
+          p You haven't joined a room yet
+          span Select a room to join or create your own for free.
+        button#create-room(accesskey='C') Create a new room
     #sidebar
       ul#quicklaunch
         li.selected: a#rooms(href='#/rooms'): span Rooms
@@ -15,7 +20,7 @@ script#application-template(type='text/template')
         //li: a#library: span Library
         //li: a#beats: span Beats
         //li: a#logout(accesskey='L', href='/logout'): span Logout
-
+      //#logged-in
     #main-wrapper
       #main-content
         #user-track
@@ -154,7 +159,7 @@ script#room-template(type='text/template')
     .controls
       button#show-library Library
       button#show-chat Chat
-    
+
     .library
     .chat
       .messages

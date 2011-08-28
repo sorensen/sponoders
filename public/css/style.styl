@@ -337,7 +337,7 @@ horizontal-list-item()
  * ==========================================================================
  */
 
-bg_fill               = #e3e3e3
+bg_fill               = #dbdbdb
 
 /*dk_gradient_top     = #cecece
 dk_gradient_bottom    = #a6a6a6
@@ -382,7 +382,7 @@ h1, h2, h3, h4, h5, h6, ul, li
   margin 0
   padding 0
 
-button
+button, .button
   -reset()
   height 30px
   background: button_top
@@ -408,6 +408,11 @@ button
     outline: none
     background: linear-gradient(30px top, button_bottom, button_top)
     box-shadow(0 0 5px 1px black)
+a.button
+  padding-top: 0
+  padding-bottom: 0
+  line-height 30px
+  color white
 #application
   absolute()
   top 0
@@ -443,16 +448,15 @@ button
             display inline-block
             color breadcrumb_fill
     #message_wrapper
-      absolute()
-      top: 32px
-      left: 80px
-      right: 0
       height: 90px
       z-index: 2
       background-color message_wrapper_fill
       #message
+        absolute()
+        top: 15px
+        left: 0
+        right: 0
         margin 0 auto
-        margin-top 15px
         width 700px
         height 60px
         background-color message_fill
@@ -480,7 +484,7 @@ button
             color message_span
           p, span
             margin-left 15px
-        button
+        button, a.button
           float left
           margin-top 15px
           width 200px
@@ -565,8 +569,56 @@ button
         left 0
         right 0
         bottom 0
-        overflow auto
-        background color_bg url('/img/concrete_wall_3.png') repeat
+        overflow-y auto
+        background-color bg_fill
+        //background color_bg url('/img/concrete_wall_3.png') repeat
+        // TODO: .dialog
+        room_darken = #e7e7e7 - 10%
+        .room
+          relative()
+          margin 10px
+          border: 1px solid #bababa
+          box-shadow(inset 0 1px 0 #fcfcfc)
+          height 60px
+          border-radius(6px)
+          margin-bottom: 0
+          background linear-gradient(60px top, #f6f6f6, #e7e7e7)
+          &:hover, &.hover
+            background linear-gradient(60px top, #f6f6f6, room_darken)
+            cursor: pointer
+          &:active, &.active
+            box-shadow(inset 0 -1px 0 0 room_darken)
+            background: linear-gradient(60px top, #e7e7e7, #f6f6f6)
+          &:focus, &.focus
+            outline: none
+            background: linear-gradient(60px top, #e7e7e7, #f6f6f6)
+          a
+            absolute()
+            left 0
+            right 25%
+            display block
+            text-decoration none
+            h3, p
+              text-shadow(0 1px 1px white)
+              line-height 20px
+              font-size 13px
+            h3
+              margin-top 10px
+              color #2d2d2d
+              margin-left 20px
+            p.description
+              color #5d5d5d
+              margin 0
+              margin-left 20px
+              padding 0
+          div.statistics
+            absolute()
+            left 75%
+            right 0
+            color lighten(#2d2d2d, 15%)
+            height 60px
+            line-height 60px
+            font-size 12px
         #user-track
           width 250px
           border-right: 1px solid gray
@@ -714,7 +766,7 @@ button
     line-height 30px
     font-size 16px
     color #111
-  
+
   .description
     line-height 30px
     margin 0 10px
@@ -754,7 +806,7 @@ button
     opacity .90
     filter Alpha(Opacity=90)
 
-#overlay 
+#overlay
     background #666
     opacity .50
     filter Alpha(Opacity=50)
