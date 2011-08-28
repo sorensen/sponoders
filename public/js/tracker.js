@@ -21,7 +21,7 @@
         this.position = 0
         this.volume = 100
         this.playing = false;
-        this._paused = false;
+        this.paused = false;
         this.muted = false;
         this.sounds = [
             {name: 'backward', type: 'synth'},
@@ -89,6 +89,7 @@
     Tracker.prototype.play =  function(pos) {
         var that = this;
         if (this.playing === false) {
+            this.paused = false;
             this.position = pos || this.position;
             this.playing = true;
             this._play(this.position);
@@ -114,11 +115,7 @@
     }
 
     Tracker.prototype.pause = function() {
-        if (this.paused) {
-            this.paused = false;
-            this.play(this.position)
-            soundManager.resumeAll()
-        } else {
+        if (!this.paused) {
             this.paused = true;
             this.playing = false;
             this.trigger('stop', this.position);
