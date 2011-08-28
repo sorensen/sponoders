@@ -40,8 +40,9 @@ script#application-template(type='text/template')
     #track-list
     #beat-list
     #footer
-     p
+     p.nko
        span NKO 2011
+     p.authors
        span Beau Sorensen, Nick Baugh, Jacob Chapel
      p.stack
        span DNode
@@ -119,6 +120,8 @@ script#track-line-template(type='text/template')
     .column(col='3')
     .column(col='4')
     .column(col='5')
+    .column(col='6')
+    .column(col='7')
 
 //- Beat
 script#beat-template(type='text/template')
@@ -223,23 +226,18 @@ script#settings-template(type='text/template')
 
 //- Create new room
 script#create-room-template(type='text/template')
-  #create-room-form.dialog
+  #create-room-form
     .title
       h3 Create a new room
     .content
-      p
+      p.dialog
         label(for='create-room-name') Name:
         span.input-wrap
           input#create-room-name(type='text', name='room', placeholder='Room name')
-      p
+      p.dialog.description
         label(for='create-room-description') Description:
         span.input-wrap
           textarea#create-room-description(type='text', name='description', placeholder='Description')
-      p
-        label(for='create-room-restricted') Private room:
-        span.input-wrap
-          input#create-room-restricted(type='checkbox', name='restricted')
     .controls
       button.submit#create-room-submit Create
-      button.cancel Cancel
 
